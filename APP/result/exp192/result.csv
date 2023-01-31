@@ -1,0 +1,8 @@
+image,genus_1,gender_1,confidence_1,genus_2,gender_2,confidence_2,img_withbb_path
+Colorful_New_Spider,Telamonia,F,74.36,Thyene,F,43.7,C:\Code\ChungyuanProjects\SpiderDataset01\APP\runs\detect\exp192\Colorful_New_Spider.jpg
+Cyclosa_ginnaga,Cyclosa,F,78.38000000000001,NA,NA,NA,C:\Code\ChungyuanProjects\SpiderDataset01\APP\runs\detect\exp192\Cyclosa_ginnaga.jpg
+Cyrtarachne_akirai_male,Cyrtarachne,F,68.11,Eriovixia,F,51.05,C:\Code\ChungyuanProjects\SpiderDataset01\APP\runs\detect\exp192\Cyrtarachne_akirai_male.jpg
+Epocilla_blairei,Epocilla,M,96.54,NA,NA,NA,C:\Code\ChungyuanProjects\SpiderDataset01\APP\runs\detect\exp192\Epocilla_blairei.jpg
+Gu's_spine_spider,Gasteracantha,F,96.94,NA,NA,NA,C:\Code\ChungyuanProjects\SpiderDataset01\APP\runs\detect\exp192\Gu's_spine_spider.jpg
+Padillothorax_semiostrinus,Mendoza,F,57.599999999999994,Chrysilla,M,51.15,C:\Code\ChungyuanProjects\SpiderDataset01\APP\runs\detect\exp192\Padillothorax_semiostrinus.jpg
+Thousands,Chikunia,F,95.22,NA,NA,NA,C:\Code\ChungyuanProjects\SpiderDataset01\APP\runs\detect\exp192\Thousands.jpg
