@@ -1,5 +1,5 @@
 import os
-os.system('pip install -r requirements.txt')
+# os.system('pip install -r requirements.txt')
 
 import tkinter as tk
 from tkinter import filedialog
@@ -24,10 +24,14 @@ def resource_path(relative_path):
 
 landing_photo_path = resource_path('bin/landing_photo.jpg')
 
+ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
+DEFAULT_WEIGHT_DIR = os.path.join(ROOT_PATH, 'bin', 'weights')
+
 #[TODO] make a log file, where it stores img_name, weight used and result, so next time the same image is loaded, it will not run detection again
 
 IMAGE_LOADED = False
 DEFAULT_WEIGHT = True
+SINGLE_IMG = True
 
 def inChinese(file_name):
     if any(u'\u4e00' <= char <= u'\u9fff' for char in file_name):
@@ -65,10 +69,18 @@ def open_img():
     global img
     global img_label
     global display_img
+    global SINGLE_IMG
+    global IMAGE_LOADED
 
-    img_path = filedialog.askopenfilename()
+    img_path = filedialog.askopenfilenames(parent=root, title='Select images', filetypes=(("jpg files", "*.jpg"), ("all files", "*.*")))
     # [TODO] If multiple images are selected, run detection on each of them
-    if img_path:
+
+    # if only one image is selected
+    if len(img_path) == 0:
+        pass
+    elif len(img_path) == 1:
+        print('Loaded single image, path: {}'.format(img_path))
+        img_path = img_path[0]
         # convert all images to jpg
         img_name = os.path.basename(img_path).split('.')[0]
         # replace all spaces with _
@@ -93,12 +105,42 @@ def open_img():
         IMAGE_LOADED = True
         button_process.config(state='normal')
     else:
-        pass
+        print('Loaded multiple images..')
+        SINGLE_IMG = False
+        # if multiple images are selected
+        # copy all selected images to a temporary folder 
+        temp_dir = os.path.join(ROOT_PATH, 'temp')
+        if not os.path.exists(temp_dir):
+            os.mkdir(temp_dir)
+        else:
+            for file in os.listdir(temp_dir):
+                # move all files in temp_dir to processed folder
+                try:
+                    os.rename(os.path.join(temp_dir, file), os.path.join('processed', file))
+                except FileExistsError:
+                    os.remove(os.path.join('processed', file))
+                    os.rename(os.path.join(temp_dir, file), os.path.join('processed', file))
+        for im_path in img_path:
+            img_name = os.path.basename(im_path).split('.')[0]
+            # replace all spaces with _
+            img_name = img_name.replace(' ', '_')
+            if inChinese(img_name):
+                img_name = available_name(temp_dir, translated(img_name))
+            img = Image.open(im_path)
+            img = img.convert('RGB')
+            img.save(os.path.join(temp_dir, '{}.jpg'.format(img_name)))
+
+        print('All images are copied to temp folder: {}'.format(temp_dir))
+        notify_label.config(text = 'Multple images selected!', fg='red', font = notify_font)
+        IMAGE_LOADED = True
+        button_process.config(state='normal')
+        img_path = temp_dir
 
 def choose_weight():
     global weight_path
-    weight_folder = "/bin/weights"
-    weight_path = filedialog.askopenfilename(initialdir=weight_folder, title="Select weight file", filetypes=(("weights files", "*.pt"), ("all files", "*.*")))
+    global DEFAULT_WEIGHT
+
+    weight_path = filedialog.askopenfilename(initialdir=DEFAULT_WEIGHT_DIR, title="Select weight file", filetypes=(("weights files", "*.pt"), ("all files", "*.*")))
     if weight_path:
         weight_label.config(text='Weight file selected: {}'.format(os.path.basename(weight_path)))
         DEFAULT_WEIGHT = False
@@ -131,11 +173,11 @@ def process_img():
         runner = eval(img_path, weight_path)
     else:
         runner = eval(img_path)
-    try:
-        genus_list, gender_list, confidence_list, img_withbb_path = runner.get_info()
+    if SINGLE_IMG:
+        _, info_list, img_withbb_path = runner.get_info()
 
         # if no bounding box is detected, show the original image
-        if genus_list == []:
+        if info_list == []:
             img_withbb_path = img_path
         #[TODO] display img_name and which weight file is used
         
@@ -153,14 +195,20 @@ def process_img():
         bb_label.image = bb_img
 
         display_text = ''
-        for i in range(len(genus_list)):
-            display_text += '\nGenus: {}\nGender: {}\nConfidence: {}\n'.format(genus_list[i], gender_list[i], round(confidence_list[i],2))
+        for i in range(len(info_list)):
+            display_text += '\nGenus: {}\nGender: {}\nConfidence: {}\n'.format(info_list[i][0], info_list[i][1], round(info_list[i][2],2))
         # adjust the height of result_label to match the height if bb_window
         result_window.geometry(f'400x{bb_img.height()+50}')
         result_label.config(text=display_text)
 
-    except:
-        result_label.config(text='No result')
+    else:
+        csv_out = runner.get_info_multiple()
+        display_text = 'Multiple images detected \n'
+        display_text += 'Result saved to {}'.format(csv_out)
+        result_label.config(text=display_text)
+
+    # except Exception as e:
+    #     result_label.config(text='Error occured: {}'.format(e))
 
     # # save result
     # result_label = tk.Label(result_window, text='Saving result...')
@@ -193,7 +241,7 @@ img_label.config(borderwidth=2, relief='solid')
 img_label.pack()
 
 
-browse_text = 'Select an image'
+browse_text = 'Select image(s)'
 weight_text = 'Select weight file'
 process_text = 'Process image'
 quit_text = 'Quit'
