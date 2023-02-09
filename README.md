@@ -1,7 +1,8 @@
-# TaiSpi_ID
+# SpiderID_APP
  
-# Taiwan Spider Identification App
-A state-of-the-art solution for spider species recognition in Taiwan.
+# Spider Identification App
+Implement YOLO-based models, the state-of-the-art object detection models, as a solution for spider species recognition.
+The first version have been trained on Taiwan spiders dataset.
 
 ## Overview
 Our app uses a YOLO-based Convolutional Neural Network (CNN) trained on open-access data to accurately identify spiders native to Taiwan. With its user-friendly interface, simply upload an image of a spider and the app will return a prediction of its species in real-time. 
