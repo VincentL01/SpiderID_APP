@@ -20,6 +20,8 @@ pip install -r requirements.txt
 2. Run yolo_download.bat to download yolov7
 3. Copy my_detect.py into bin/yolov7, along side with files like detect.py, export.py, etc..
 4. Run the app and choose spider image/images for identification
+    If one image is selected, the result would be displayed on the screen (new window is opened)
+    If several images are selected, the result would be saved at path: APP/result/exp{num}/result.csv
 5. Result would be displayed directly if one image was selected, and would be saved in 
 
 ## Help protect biodiversity
