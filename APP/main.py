@@ -73,7 +73,6 @@ def open_img():
     global IMAGE_LOADED
 
     img_path = filedialog.askopenfilenames(parent=root, title='Select images', filetypes=(("jpg files", "*.jpg"), ("all files", "*.*")))
-    # [TODO] If multiple images are selected, run detection on each of them
 
     # if only one image is selected
     if len(img_path) == 0:
