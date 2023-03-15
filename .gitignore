@@ -5,6 +5,7 @@ __pycache__/
 
 # Testing
 processed/
+runs/
 
 # C extensions
 *.so
