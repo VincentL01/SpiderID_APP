@@ -22,7 +22,7 @@ pip install -r requirements.txt
 4. Run the app and choose spider image/images for identification
     If one image is selected, the result would be displayed on the screen (new window is opened)
     If several images are selected, the result would be saved at path: APP/result/exp{num}/result.csv
-5. Result would be displayed directly if one image was selected, and would be saved in 
+5. Video processing would take a lot of time if using CPU (>400ms per frame)
 
 ## Help protect biodiversity
 Join the fight against biodiversity loss and enhance your spider knowledge with our Taiwan Spider Identification App!

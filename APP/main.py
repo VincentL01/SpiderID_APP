@@ -10,7 +10,6 @@ import sys
 from googletrans import Translator
 import pinyin
 
-# install all required packages
 
 
 def resource_path(relative_path):
@@ -218,6 +217,19 @@ def process_img():
     # if other buttons are clicked, result_window will be destroyed
     result_window.protocol("WM_DELETE_WINDOW", result_window.destroy)
 
+def process_video():
+    global video_path
+    global DEFAULT_WEIGHT
+
+    DEFAULT_VIDEO_DIR = resource_path('test')
+    video_path = filedialog.askopenfilename(initialdir=DEFAULT_VIDEO_DIR, title="Select video file", filetypes=(("video files", "*.mp4"), ("all files", "*.*")))
+    if video_path:
+        notify_label.config(text='Video selected!', fg='red', font= notify_font)
+        video_label.config(text='Video selected: {}'.format(os.path.basename(video_path)))
+        DEFAULT_WEIGHT = False
+    else:
+        pass
+
 root = tk.Tk()
 root.title('Image Processing')
 
@@ -239,31 +251,40 @@ img_label.config(image=img)
 img_label.config(borderwidth=2, relief='solid')
 img_label.pack()
 
+texts = {
+    'browse_text' : 'Select image(s)',
+    'weight_text' : 'Select weight file',
+    'process_text' : 'Process image',
+    'video_text' : 'Process video',
+    'video_text_local' : 'From playback files',
+    'video_text_stream' : 'From live feed',
+    'quit_text' : 'Quit'
+}
 
-browse_text = 'Select image(s)'
-weight_text = 'Select weight file'
-process_text = 'Process image'
-quit_text = 'Quit'
-
-button_width = max(len(browse_text), len(weight_text), len(process_text), len(quit_text))
+button_width = max(len(texts['browse_text']), len(texts['weight_text']), len(texts['process_text']), len(texts['quit_text']))
 button_fg = 'white'
 button_bg = 'green'
 button_font = ('helvetica', 12, 'bold')
 
 # BUTTON to select image
-button_browse = tk.Button(root, text=browse_text, padx = 10, pady = 5, command=open_img,
+button_browse = tk.Button(root, text=texts['browse_text'], padx = 10, pady = 5, command=open_img,
                         fg = button_fg, bg = button_bg, width = button_width, font = button_font)
 button_browse.pack()
 
 # BUTTON to select WEIGHT FILE
-button_weight = tk.Button(root, text=weight_text, padx = 10, pady = 5, command=choose_weight,
+button_weight = tk.Button(root, text=texts['weight_text'], padx = 10, pady = 5, command=choose_weight,
                         fg = button_fg, bg = button_bg, width = button_width, font = button_font)
 button_weight.pack()
 
 # BUTTON to process image
-button_process = tk.Button(root, text=process_text, padx = 10, pady = 5, command=process_img,
+button_process = tk.Button(root, text=texts['process_text'], padx = 10, pady = 5, command=process_img,
                         fg = button_fg, bg = button_bg,  width = button_width, font = button_font)
 button_process.pack()
+
+# BUTTON to process video
+button_video = tk.Button(root, text=texts['video_text'], padx = 10, pady = 5, command=process_video,
+                        fg = button_fg, bg = button_bg,  width = button_width, font = button_font)
+button_video.pack()
 
 # if img has not been loaded, this button will be disabled
 if IMAGE_LOADED == False:
@@ -272,7 +293,7 @@ else:
     button_process.config(state='normal')
 
 # BUTTON to quit
-button_quit = tk.Button(root, text=quit_text, padx = 10, pady = 5, command=root.quit,
+button_quit = tk.Button(root, text=texts['quit_text'], padx = 10, pady = 5, command=root.quit,
                         fg = button_fg, bg = button_bg,  width = button_width, font = button_font)
 button_quit.pack()
 

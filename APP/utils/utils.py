@@ -18,6 +18,7 @@ ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 YOLOV7_DIR = os.path.join(ROOT_DIR, 'bin', 'yolov7')
 RUN_DIR = os.path.join(ROOT_DIR, 'runs', 'detect')
 
+
 DETECT_PATH_V7 = os.path.join(YOLOV7_DIR, 'detect.py')
 
 CLASS_LISTS = {
@@ -36,9 +37,9 @@ GENERA_LIST_PATH_DEFAULT = os.path.join(ROOT_DIR, 'bin', CLASS_LISTS['WG'])
 
 class EVALUATION_V7():
 
-    def __init__(self, img_path, weight_path = WEIGHT_PATH_DEFAULT):
+    def __init__(self, media_path, weight_path = WEIGHT_PATH_DEFAULT):
 
-        self.img_path = img_path
+        self.media_path = media_path
         
         self.weight_path = weight_path
 
@@ -55,12 +56,14 @@ class EVALUATION_V7():
         self.run_num = self.run_detection()
     
     def run_detection(self):
+        if not os.path.exists(RUN_DIR):
+            os.mkdir(RUN_DIR)
         if len(os.listdir(RUN_DIR)) == 0:
             run_num = 'exp'
         else:
             run_num = 'exp'+str(len(os.listdir(RUN_DIR))+1)
         
-        command = f'python {DETECT_PATH_V7} --source {self.img_path} --weights {self.weight_path} --save-txt --save-conf'
+        command = f'python {DETECT_PATH_V7} --source {self.media_path} --weights {self.weight_path} --save-txt --save-conf'
         os.system(command)
         
         return run_num
@@ -69,7 +72,7 @@ class EVALUATION_V7():
         
         # return genus, confidence
         if custom_label_path == 'Default':
-            img_name = os.path.basename(self.img_path).split('.')[0]
+            img_name = os.path.basename(self.media_path).split('.')[0]
             label_path = os.path.join(RUN_DIR, self.run_num, 'labels', img_name + '.txt')
         else:
             img_name = os.path.basename(custom_label_path).split('.')[0]
