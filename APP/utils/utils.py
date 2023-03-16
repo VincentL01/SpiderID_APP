@@ -16,7 +16,10 @@ import sys
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 YOLOV7_DIR = os.path.join(ROOT_DIR, 'bin', 'yolov7')
-RUN_DIR = os.path.join(ROOT_DIR, 'runs', 'detect')
+RUN_DIR = os.path.join(ROOT_DIR, 'runs')
+if not os.path.exists(RUN_DIR):
+    os.mkdir(RUN_DIR)
+DETECT_DIR = os.path.join(RUN_DIR, 'detect')
 
 
 DETECT_PATH_V7 = os.path.join(YOLOV7_DIR, 'detect.py')
@@ -56,12 +59,12 @@ class EVALUATION_V7():
         self.run_num = self.run_detection()
     
     def run_detection(self):
-        if not os.path.exists(RUN_DIR):
-            os.mkdir(RUN_DIR)
-        if len(os.listdir(RUN_DIR)) == 0:
+        if not os.path.exists(DETECT_DIR):
+            os.mkdir(DETECT_DIR)
+        if len(os.listdir(DETECT_DIR)) == 0:
             run_num = 'exp'
         else:
-            run_num = 'exp'+str(len(os.listdir(RUN_DIR))+1)
+            run_num = 'exp'+str(len(os.listdir(DETECT_DIR))+1)
         
         command = f'python {DETECT_PATH_V7} --source {self.media_path} --weights {self.weight_path} --save-txt --save-conf'
         os.system(command)
@@ -73,12 +76,12 @@ class EVALUATION_V7():
         # return genus, confidence
         if custom_label_path == 'Default':
             img_name = os.path.basename(self.media_path).split('.')[0]
-            label_path = os.path.join(RUN_DIR, self.run_num, 'labels', img_name + '.txt')
+            label_path = os.path.join(DETECT_DIR, self.run_num, 'labels', img_name + '.txt')
         else:
             img_name = os.path.basename(custom_label_path).split('.')[0]
             label_path = custom_label_path
 
-        img_withbb_path = os.path.join(RUN_DIR, self.run_num, img_name + '.jpg')
+        img_withbb_path = os.path.join(DETECT_DIR, self.run_num, img_name + '.jpg')
         with open(label_path, 'r') as f:
             lines = f.readlines()
         
@@ -120,7 +123,7 @@ class EVALUATION_V7():
         csv_out_path = os.path.join(csv_out_dir, 'result.csv')
 
         # interfered images path
-        labels_dir = os.path.join(RUN_DIR, self.run_num, 'labels')
+        labels_dir = os.path.join(DETECT_DIR, self.run_num, 'labels')
         labels = os.listdir(labels_dir)
         labels = [label for label in labels if label.endswith('.txt')]
 

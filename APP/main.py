@@ -77,6 +77,8 @@ def open_img():
     if len(img_path) == 0:
         pass
     elif len(img_path) == 1:
+        if not os.path.isdir('processed'):
+            os.mkdir('processed')
         print('Loaded single image, path: {}'.format(img_path))
         img_path = img_path[0]
         # convert all images to jpg

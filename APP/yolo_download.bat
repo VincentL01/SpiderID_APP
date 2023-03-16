@@ -10,4 +10,6 @@ if not exist "%target_dir%" (
   echo YOLOv7 repository already exists.
 )
 
+pip install -r requirements.txt
+
 echo Done.
