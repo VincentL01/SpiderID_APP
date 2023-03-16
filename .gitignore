@@ -3,12 +3,12 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Testing
-processed/
-runs/
-
 # C extensions
 *.so
+
+# Testing
+*.ipynb
+my_detect.py
 
 # Distribution / packaging
 .Python
