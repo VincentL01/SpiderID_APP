@@ -174,7 +174,7 @@ def process_img():
     else:
         runner = eval(img_path)
     if SINGLE_IMG:
-        _, info_list, img_withbb_path = runner.get_info()
+        _, info_list, img_withbb_path = runner.get_info_single()
 
         # if no bounding box is detected, show the original image
         if info_list == []:
@@ -202,7 +202,7 @@ def process_img():
         result_label.config(text=display_text)
 
     else:
-        csv_out = runner.get_info_multiple()
+        csv_out, _ = runner.get_info_multiple()
         display_text = 'Multiple images detected \n'
         display_text += 'Result saved to {}'.format(csv_out)
         result_label.config(text=display_text)
@@ -223,14 +223,28 @@ def process_video():
     global video_path
     global DEFAULT_WEIGHT
 
+    # create a new window to display result
+    result_window = tk.Toplevel(root)
+    result_window.title('Result')
+    result_label = tk.Label(result_window)
+    result_label.config(font=('Arial', 20))
+    result_label.pack()
+
     DEFAULT_VIDEO_DIR = resource_path('test')
     video_path = filedialog.askopenfilename(initialdir=DEFAULT_VIDEO_DIR, title="Select video file", filetypes=(("video files", "*.mp4"), ("all files", "*.*")))
     if video_path:
         notify_label.config(text='Video selected!', fg='red', font= notify_font)
-        video_label.config(text='Video selected: {}'.format(os.path.basename(video_path)))
-        DEFAULT_WEIGHT = False
-    else:
-        pass
+        if DEFAULT_WEIGHT:
+            print('Evaluating video with default weight file')
+            video_runner = eval(video_path)
+        else:
+            print('Evaluating video with weight file: {}'.format(weight_path))
+            video_runner = eval(video_path, weight_path)
+
+        percentage, avg_confidence = video_runner.get_info_multiple()
+        print('Percentage of correct detection: {}'.format(percentage))
+        print('Average confidence: {}'.format(avg_confidence))
+
 
 root = tk.Tk()
 root.title('Image Processing')

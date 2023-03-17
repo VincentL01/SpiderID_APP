@@ -37,6 +37,9 @@ if not os.path.exists(RESULT_DIR):
 WEIGHT_PATH_DEFAULT = os.path.join(ROOT_DIR, 'bin', 'weights', 'v7_WG.pt')
 GENERA_LIST_PATH_DEFAULT = os.path.join(ROOT_DIR, 'bin', CLASS_LISTS['WG'])
 
+img_formats = ['bmp', 'jpg', 'jpeg', 'png', 'tif', 'tiff', 'dng', 'webp', 'mpo']  # acceptable image suffixes
+vid_formats = ['mov', 'avi', 'mp4', 'mpg', 'mpeg', 'm4v', 'wmv', 'mkv']  # acceptable video suffixes
+
 
 class EVALUATION_V7():
 
@@ -58,7 +61,10 @@ class EVALUATION_V7():
 
         self.run_num = self.run_detection()
     
+
+
     def run_detection(self):
+
         if not os.path.exists(DETECT_DIR):
             os.mkdir(DETECT_DIR)
         if len(os.listdir(DETECT_DIR)) == 0:
@@ -66,14 +72,21 @@ class EVALUATION_V7():
         else:
             run_num = 'exp'+str(len(os.listdir(DETECT_DIR))+1)
         
-        command = f'python {DETECT_PATH_V7} --source {self.media_path} --weights {self.weight_path} --save-txt --save-conf'
+        # if media file ends with img_formats, run detection on single image
+        if self.media_path.split('.')[-1] in vid_formats:
+            command = f'python {DETECT_PATH_V7} --source {self.media_path} --weights {self.weight_path} --save-txt --save-conf --no-trace --img-size 512 --view-img'
+        else:
+            command = f'python {DETECT_PATH_V7} --source {self.media_path} --weights {self.weight_path} --save-txt --save-conf --no-trace --img-size 512'           
+
+
         os.system(command)
         
         return run_num
 
-    def get_info(self, custom_label_path = 'Default'):
+
+
+    def get_info_single(self, custom_label_path = 'Default'):
         
-        # return genus, confidence
         if custom_label_path == 'Default':
             img_name = os.path.basename(self.media_path).split('.')[0]
             label_path = os.path.join(DETECT_DIR, self.run_num, 'labels', img_name + '.txt')
@@ -115,6 +128,8 @@ class EVALUATION_V7():
 
         return img_name, info_list, img_withbb_path
 
+
+
     def get_info_multiple(self):
 
         csv_out_dir = os.path.join(RESULT_DIR, self.run_num)
@@ -135,7 +150,7 @@ class EVALUATION_V7():
         for label in labels:
             label_path = os.path.join(labels_dir, label)
             print('Working with label path', label_path)
-            img_name, info_list, img_withbb_path = self.get_info(custom_label_path = label_path)
+            img_name, info_list, img_withbb_path = self.get_info_single(custom_label_path = label_path)
             if len(info_list) == 0:
                 # write a row with img_name, NA, NA, NA, NA, NA, NA, img_withbb_path
                 # using pd.concat
@@ -148,4 +163,38 @@ class EVALUATION_V7():
         df.to_csv(csv_out_path, index=False)
         print('Result saved to', csv_out_path)
 
-        return csv_out_path
+        return csv_out_path, df
+    
+
+
+    def get_info_video(self):
+        _, df = self.get_info_multiple()
+        genders = df['gender_1'].unique().tolist() + df['gender_2'].unique().tolist()
+        stat = {}
+        # iterate through rows of column genus_1 and genus_2
+        for _, row in df.iterrows():
+            genus_1 = row['genus_1']
+            genus_2 = row['genus_2']
+            # if genus_1 is not NA
+            if genus_1 != 'NA':
+                # add value in confidence_1 to stat
+                if genus_1 not in stat:
+                    stat[genus_1] = row['confidence_1']
+                else:
+                    stat[genus_1] += row['confidence_1']
+            # if genus_2 is not NA
+            if genus_2 != 'NA':
+                # add value in confidence_2 to stat
+                if genus_2 not in stat:
+                    stat[genus_2] = row['confidence_2']
+                else:
+                    stat[genus_2] += row['confidence_2']
+        
+        # Calculate percentage of appearance of each genus in the video
+        percentage = {}
+        avg_confidence = {}
+        for genus in stat:
+            percentage[genus] = len(stat(genus))/len(df)
+            avg_confidence[genus] = stat(genus)/len(stat(genus))
+        
+        return percentage, avg_confidence
