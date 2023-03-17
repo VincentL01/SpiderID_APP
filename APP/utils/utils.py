@@ -168,33 +168,51 @@ class EVALUATION_V7():
 
 
     def get_info_video(self):
-        _, df = self.get_info_multiple()
-        genders = df['gender_1'].unique().tolist() + df['gender_2'].unique().tolist()
-        stat = {}
-        # iterate through rows of column genus_1 and genus_2
-        for _, row in df.iterrows():
-            genus_1 = row['genus_1']
-            genus_2 = row['genus_2']
-            # if genus_1 is not NA
-            if genus_1 != 'NA':
-                # add value in confidence_1 to stat
-                if genus_1 not in stat:
-                    stat[genus_1] = row['confidence_1']
+        csv_out_path, _ = self.get_info_multiple()
+
+        df = pd.read_csv(csv_out_path)
+
+        if self.weight_type == 'WG':
+            has_gender = True
+        else:
+            has_gender = False
+
+        def add_to_dict(row, g_num, result_dict, has_gender = True):
+            if not pd.isna(row[f'genus_{g_num}']):
+                if has_gender == True:
+                    key = (row[f'genus_{g_num}'], row[f'gender_{g_num}'])
                 else:
-                    stat[genus_1] += row['confidence_1']
-            # if genus_2 is not NA
-            if genus_2 != 'NA':
-                # add value in confidence_2 to stat
-                if genus_2 not in stat:
-                    stat[genus_2] = row['confidence_2']
+                    key = row[f'genus_{g_num}', 'NA']
+                if key not in result_dict:
+                    result_dict[key] = {}
+                    result_dict[key]['count'] = 1
+                    result_dict[key]['confidence'] = row[f'confidence_{g_num}']
                 else:
-                    stat[genus_2] += row['confidence_2']
+                    result_dict[key]['count'] += 1
+                    result_dict[key]['confidence'] += row[f'confidence_{g_num}']
         
-        # Calculate percentage of appearance of each genus in the video
-        percentage = {}
-        avg_confidence = {}
-        for genus in stat:
-            percentage[genus] = len(stat(genus))/len(df)
-            avg_confidence[genus] = stat(genus)/len(stat(genus))
+        result_dict = {}
+        for idx, row in df.iterrows():
+            add_to_dict(row, 1, result_dict, has_gender = has_gender)
+            add_to_dict(row, 2, result_dict, has_gender = has_gender)
+
+        result_dict[('others', 'NA')] = {}
+        result_dict[('others', 'NA')]['count'] = 0
+        result_dict[('others', 'NA')]['confidence'] = 0
+
+        threshold = int(0.1*len(df))
+        unuse_keys = []
+        for key, value in result_dict.items():
+            if value['count'] < threshold:
+                # add to a key name 'others'
+                result_dict[('others', 'NA')]['count'] += value['count']
+                result_dict[('others', 'NA')]['confidence'] += value['confidence']
+                unuse_keys.append(key)
         
-        return percentage, avg_confidence
+        for key in unuse_keys:
+            del result_dict[key]
+
+        for key, value in result_dict.items():
+            value['confidence'] = value['confidence'] / value['count']
+        
+        return result_dict, len(df)

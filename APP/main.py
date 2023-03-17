@@ -3,6 +3,7 @@ import os
 
 import tkinter as tk
 from tkinter import filedialog
+from tkinter import ttk
 from PIL import ImageTk, Image
 import time
 from utils.utils import EVALUATION_V7 as eval
@@ -195,8 +196,12 @@ def process_img():
         bb_label.image = bb_img
 
         display_text = ''
-        for i in range(len(info_list)):
-            display_text += '\nGenus: {}\nGender: {}\nConfidence: {}\n'.format(info_list[i][0], info_list[i][1], round(info_list[i][2],2))
+        if runner.weight_type == 'WG':
+            for i in range(len(info_list)):
+                display_text += '\nGenus: {}\nGender: {}\nConfidence: {}\n'.format(info_list[i][0], info_list[i][1], round(info_list[i][2],2))
+        elif runner.weight_type == 'NG':
+            for i in range(len(info_list)):
+                display_text += '\nGenus: {}\nConfidence: {}\n'.format(info_list[i][0], round(info_list[i][1],2))
         # adjust the height of result_label to match the height if bb_window
         result_window.geometry(f'400x{bb_img.height()+50}')
         result_label.config(text=display_text)
@@ -226,9 +231,10 @@ def process_video():
     # create a new window to display result
     result_window = tk.Toplevel(root)
     result_window.title('Result')
-    result_label = tk.Label(result_window)
+
+    result_label = ttk.Label(result_window)
     result_label.config(font=('Arial', 20))
-    result_label.pack()
+    result_label.grid(row=0, column=0, sticky='ew')
 
     DEFAULT_VIDEO_DIR = resource_path('test')
     video_path = filedialog.askopenfilename(initialdir=DEFAULT_VIDEO_DIR, title="Select video file", filetypes=(("video files", "*.mp4"), ("all files", "*.*")))
@@ -241,9 +247,23 @@ def process_video():
             print('Evaluating video with weight file: {}'.format(weight_path))
             video_runner = eval(video_path, weight_path)
 
-        percentage, avg_confidence = video_runner.get_info_multiple()
-        print('Percentage of correct detection: {}'.format(percentage))
-        print('Average confidence: {}'.format(avg_confidence))
+        result_dict, total_frame = video_runner.get_info_video()
+        display_text = ''
+        if video_runner.weight_type == 'WG':
+            for key in result_dict:
+                display_text += '\nGenus: {} - Gender: {}\nSensitivity: {}/{}\nConfidence: {}\n'.format(key[0], key[1], result_dict[key]['count'], total_frame, round(result_dict[key]['confidence'],2))
+        elif video_runner.weight_type == 'NG':
+            for key in result_dict:
+                display_text += '\nGenus: {}\nSensitivity: {}/{}\nConfidence: {}\n'.format(key[0], result_dict[key]['count'], total_frame, round(result_dict[key]['confidence'],2))
+        result_label.config(text=display_text)
+        # expand the window to fit the text
+        result_window.geometry(f'500x{result_label.winfo_height()+200}')
+        # change the appear location of the window
+        result_window.geometry("+{}+{}".format(root.winfo_x()+root.winfo_width(), root.winfo_y()))
+
+        notify_label.config(text='Video processed!', fg='green', font= notify_font)
+
+
 
 
 root = tk.Tk()
