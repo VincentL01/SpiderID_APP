@@ -12,7 +12,6 @@ my_detect.py
 APP/processed/*
 APP/result/*
 APP/runs/*
-APP/bin/yolov7/
 APP/traced_model.pt
 APP/yolov7.pt
 APP/yolov7_training.pt
