@@ -10,6 +10,40 @@ from utils.utils import EVALUATION_V7 as eval
 import sys
 from googletrans import Translator
 import pinyin
+from pathlib import Path
+
+import logging
+from colorlog import ColoredFormatter
+
+logger = logging.getLogger(__name__)
+
+# save log to Log/log.txt
+Path('Log').mkdir(parents=True, exist_ok=True)
+
+# Configure the logging module
+log_file = 'Log/log.txt'
+
+# Define the log format with colors
+log_format = "%(asctime)s %(log_color)s%(levelname)-8s%(reset)s %(message)s"
+
+# Create a formatter with colored output
+formatter = ColoredFormatter(log_format)
+
+# Create a file handler to save logs to the file
+file_handler = logging.FileHandler(log_file, mode='a')  # Set the mode to 'a' for append
+file_handler.setFormatter(logging.Formatter("%(asctime)s %(levelname)-8s %(message)s"))
+
+# Create a stream handler to display logs on the console with colored output
+stream_handler = logging.StreamHandler()
+stream_handler.setFormatter(formatter)
+
+# Get the root logger
+logger = logging.getLogger()
+logger.setLevel(logging.DEBUG)
+
+# Add the handlers to the logger
+logger.addHandler(file_handler)
+logger.addHandler(stream_handler)
 
 
 def resource_path(relative_path):
@@ -69,7 +103,9 @@ def choose_weight():
     if weight_path:
         weight_label.config(text='Weight file selected: {}'.format(os.path.basename(weight_path)))
         DEFAULT_WEIGHT = False
+        logger.info("Weight file selected: {}".format(os.path.basename(weight_path)))
     else:
+        logger.info("No weight file selected, using default weight")
         pass
 
 def process_img():
@@ -79,7 +115,7 @@ def process_img():
 
     # if only one image is selected
     if len(img_path) == 0:
-        pass
+        return
     elif len(img_path) == 1:
         if not os.path.isdir('processed'):
             os.mkdir('processed')
@@ -162,17 +198,24 @@ def process_img():
 
     # run detection
     if DEFAULT_WEIGHT == False:
+        logger.debug("Using custom weight file: {}".format(weight_path))
         runner = eval(img_path, weight_path)
     else:
+        logger.debug("Using default weight file")
         runner = eval(img_path)
     if SINGLE_IMG:
+        logger.info('Running detection on single image: {}'.format(img_path))
+
         _, info_list, img_withbb_path = runner.get_info_single()
 
         # if no bounding box is detected, show the original image
         if info_list == []:
+            logger.debug('No bounding box detected!')
             img_withbb_path = img_path
         #[TODO] display img_name and which weight file is used
         
+        logger.info('Display image saved to: {}'.format(img_withbb_path))
+
         bb_img = Image.open(img_withbb_path)
         bb_img = bb_img.convert('RGB')
         # if the image is too big, resize it, highest dimension = 800, keep aspect ratio
@@ -186,22 +229,31 @@ def process_img():
         bb_label.config(image=bb_img)
         bb_label.image = bb_img
 
+
         display_text = ''
         if runner.weight_type == 'WG':
             for i in range(len(info_list)):
+                logger.debug(f"Genus:{info_list[i][0]}, type = {type(info_list[i][0])}")
+                logger.debug(f"Gender:{info_list[i][1]}, type = {type(info_list[i][1])}")
+                logger.debug(f"Confidence:{info_list[i][2]}, type = {type(info_list[i][2])}")
                 display_text += '\nGenus: {}\nGender: {}\nConfidence: {}\n'.format(info_list[i][0], info_list[i][1], round(info_list[i][2],2))
         elif runner.weight_type == 'NG':
             for i in range(len(info_list)):
-                display_text += '\nGenus: {}\nConfidence: {}\n'.format(info_list[i][0], round(info_list[i][1],2))
+                logger.debug(f"Genus:{info_list[i][0]}, type = {type(info_list[i][0])}")
+                logger.debug(f"Gender:{info_list[i][1]}, type = {type(info_list[i][1])}")
+                logger.debug(f"Confidence:{info_list[i][2]}, type = {type(info_list[i][2])}")
+                display_text += '\nGenus: {}\nConfidence: {}\n'.format(info_list[i][0], round(info_list[i][2],2))
         # adjust the height of result_label to match the height if bb_window
         result_window.geometry(f'400x{bb_img.height()+50}')
         result_label.config(text=display_text)
 
     else:
+        logger.info("Multiple images detected")
         csv_out, _ = runner.get_info_multiple()
         display_text = 'Multiple images detected \n'
         display_text += 'Result saved to {}'.format(csv_out)
         result_label.config(text=display_text)
+        logger.info("Result saved to {}".format(csv_out))
 
     # except Exception as e:
     #     result_label.config(text='Error occured: {}'.format(e))
@@ -219,6 +271,8 @@ def process_video():
     global video_path
     global DEFAULT_WEIGHT
 
+    logger.info("Processing video...")
+
     # create a new window to display result
     result_window = tk.Toplevel(root)
     result_window.title('Result')
@@ -232,9 +286,11 @@ def process_video():
     if video_path:
         notify_label.config(text='Video selected!', fg='red', font= notify_font)
         if DEFAULT_WEIGHT:
+            logger.debug("Using custom weight file: {}".format(weight_path))
             print('Evaluating video with default weight file')
             video_runner = eval(video_path)
         else:
+            logger.debug("Using default weight file")
             print('Evaluating video with weight file: {}'.format(weight_path))
             video_runner = eval(video_path, weight_path)
 

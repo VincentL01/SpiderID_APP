@@ -1,0 +1,36 @@
+2023-06-06 15:49:07,805 Weight file selected: v7_AUG_NG.pt
+2023-06-06 15:49:22,977 Running detection on single image: processed/Nurscia.jpg
+2023-06-06 15:49:22,978 Display image saved to: C:\Code\SpiderID_APP\APP\runs\detect\exp60\Nurscia.jpg
+2023-06-06 15:50:00,661 Weight file selected: v7_AUG_NG.pt
+2023-06-06 15:50:15,396 Running detection on single image: processed/Nurscia.jpg
+2023-06-06 15:50:15,396 Display image saved to: C:\Code\SpiderID_APP\APP\runs\detect\exp61\Nurscia.jpg
+2023-06-06 15:55:12,239 Weight file selected: v7_AUG_NG.pt
+2023-06-06 15:55:25,184 Running detection on single image: processed/Nurscia.jpg
+2023-06-06 15:55:25,184 Display image saved to: C:\Code\SpiderID_APP\APP\runs\detect\exp62\Nurscia.jpg
+2023-06-06 15:56:55,083 DEBUG    STREAM b'IHDR' 16 13
+2023-06-06 15:56:55,083 DEBUG    STREAM b'pHYs' 41 9
+2023-06-06 15:56:55,083 DEBUG    STREAM b'IDAT' 62 8192
+2023-06-06 15:56:57,754 INFO     Weight file selected: v7_AUG_NG.pt
+2023-06-06 15:57:01,813 DEBUG    Using custom weight file: C:/Code/SpiderID_APP/APP/bin/weights/v7_AUG_NG.pt
+2023-06-06 15:57:07,690 INFO     Running detection on single image: processed/Nurscia.jpg
+2023-06-06 15:57:07,691 INFO     Display image saved to: C:\Code\SpiderID_APP\APP\runs\detect\exp63\Nurscia.jpg
+2023-06-06 15:58:41,029 DEBUG    STREAM b'IHDR' 16 13
+2023-06-06 15:58:41,029 DEBUG    STREAM b'pHYs' 41 9
+2023-06-06 15:58:41,029 DEBUG    STREAM b'IDAT' 62 8192
+2023-06-06 15:58:48,144 INFO     Weight file selected: v7_AUG_NG.pt
+2023-06-06 15:58:54,313 DEBUG    Using custom weight file: C:/Code/SpiderID_APP/APP/bin/weights/v7_AUG_NG.pt
+2023-06-06 15:58:59,908 INFO     Running detection on single image: processed/Nurscia.jpg
+2023-06-06 15:58:59,908 INFO     Display image saved to: C:\Code\SpiderID_APP\APP\runs\detect\exp64\Nurscia.jpg
+2023-06-06 15:58:59,918 DEBUG    Genus:Nurscia, type = <class 'str'>
+2023-06-06 15:58:59,918 DEBUG    Gender:NA, type = <class 'str'>
+2023-06-06 15:58:59,918 DEBUG    Confidence:95.12, type = <class 'float'>
+2023-06-06 16:01:07,795 DEBUG    STREAM b'IHDR' 16 13
+2023-06-06 16:01:07,795 DEBUG    STREAM b'pHYs' 41 9
+2023-06-06 16:01:07,796 DEBUG    STREAM b'IDAT' 62 8192
+2023-06-06 16:01:12,161 INFO     Weight file selected: v7_AUG_NG.pt
+2023-06-06 16:01:16,345 DEBUG    Using custom weight file: C:/Code/SpiderID_APP/APP/bin/weights/v7_AUG_NG.pt
+2023-06-06 16:01:22,041 INFO     Running detection on single image: processed/Nurscia.jpg
+2023-06-06 16:01:22,042 INFO     Display image saved to: C:\Code\SpiderID_APP\APP\runs\detect\exp65\Nurscia.jpg
+2023-06-06 16:01:22,049 DEBUG    Genus:Nurscia, type = <class 'str'>
+2023-06-06 16:01:22,049 DEBUG    Gender:NA, type = <class 'str'>
+2023-06-06 16:01:22,050 DEBUG    Confidence:95.12, type = <class 'float'>
