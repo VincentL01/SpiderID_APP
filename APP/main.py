@@ -12,7 +12,6 @@ from googletrans import Translator
 import pinyin
 
 
-
 def resource_path(relative_path):
     ### Get absolute path to resource, works for dev and for PyInstaller
     try:
@@ -22,16 +21,14 @@ def resource_path(relative_path):
     
     return os.path.join(base_path, relative_path)
 
-landing_photo_path = resource_path('bin/landing_photo.jpg')
+landing_photo_path = resource_path('bin/support/landing_photo.png')
 
 ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_WEIGHT_DIR = os.path.join(ROOT_PATH, 'bin', 'weights')
 
 #[TODO] make a log file, where it stores img_name, weight used and result, so next time the same image is loaded, it will not run detection again
 
-IMAGE_LOADED = False
 DEFAULT_WEIGHT = True
-SINGLE_IMG = True
 
 def inChinese(file_name):
     if any(u'\u4e00' <= char <= u'\u9fff' for char in file_name):
@@ -64,13 +61,19 @@ def available_name(file_dir, file_name):
 
     return file_name
 
-def open_img():
-    global img_path
-    global img
-    global img_label
-    global display_img
-    global SINGLE_IMG
-    global IMAGE_LOADED
+def choose_weight():
+    global weight_path
+    global DEFAULT_WEIGHT
+
+    weight_path = filedialog.askopenfilename(initialdir=DEFAULT_WEIGHT_DIR, title="Select weight file", filetypes=(("weights files", "*.pt"), ("all files", "*.*")))
+    if weight_path:
+        weight_label.config(text='Weight file selected: {}'.format(os.path.basename(weight_path)))
+        DEFAULT_WEIGHT = False
+    else:
+        pass
+
+def process_img():
+    SINGLE_IMG = True
 
     img_path = filedialog.askopenfilenames(parent=root, title='Select images', filetypes=(("jpg files", "*.jpg"), ("all files", "*.*")))
 
@@ -93,14 +96,14 @@ def open_img():
         img.save('processed/{}.jpg'.format(img_name))
         img_path = 'processed/{}.jpg'.format(img_name)
 
-        # resize image to the highest dimension of 500, while keeping the aspect ratio
-        w, h = img.size
-        if w > h:
-            display_img = img.resize((500, int(h / w * 500)))
-        else:
-            display_img = img.resize((int(w / h * 500), 500))
-        display_img = ImageTk.PhotoImage(display_img)
-        img_label.config(image=display_img)
+        # # resize image to the highest dimension of 500, while keeping the aspect ratio
+        # w, h = img.size
+        # if w > h:
+        #     display_img = img.resize((500, int(h / w * 500)))
+        # else:
+        #     display_img = img.resize((int(w / h * 500), 500))
+        # display_img = ImageTk.PhotoImage(display_img)
+        # img_label.config(image=display_img)
 
         img = ImageTk.PhotoImage(Image.open(img_path))
         IMAGE_LOADED = True
@@ -137,18 +140,6 @@ def open_img():
         button_process.config(state='normal')
         img_path = temp_dir
 
-def choose_weight():
-    global weight_path
-    global DEFAULT_WEIGHT
-
-    weight_path = filedialog.askopenfilename(initialdir=DEFAULT_WEIGHT_DIR, title="Select weight file", filetypes=(("weights files", "*.pt"), ("all files", "*.*")))
-    if weight_path:
-        weight_label.config(text='Weight file selected: {}'.format(os.path.basename(weight_path)))
-        DEFAULT_WEIGHT = False
-    else:
-        pass
-
-def process_img():
     # this notify_label would replace the old notify_label
     if img_path:
         notify_label.config(text='Image processing!', fg='red', font = notify_font)
@@ -266,8 +257,10 @@ def process_video():
 
 
 
+### GUI ###
+
 root = tk.Tk()
-root.title('Image Processing')
+root.title('SpiderID APP')
 
 canvas = tk.Canvas(root, width=700, height=700, bg='lightsteelblue2', relief='raised')
 canvas.pack()
@@ -281,31 +274,32 @@ weight_label.pack()
 
 img_label = tk.Label(canvas)
 # load initial photo
-img = ImageTk.PhotoImage(Image.open(landing_photo_path))
+img = Image.open(landing_photo_path)
+# resize image to make large dimension is 612, small dimension is scaled accordingly
+if img.width > img.height:
+    img = img.resize((612, int(img.height*612/img.width)), Image.ANTIALIAS)
+else:
+    img = img.resize((int(img.width*612/img.height), 612), Image.ANTIALIAS)
+img = ImageTk.PhotoImage(img)
 img_label.config(image=img)
 # give it a thin black border
 img_label.config(borderwidth=2, relief='solid')
 img_label.pack()
 
 texts = {
-    'browse_text' : 'Select image(s)',
     'weight_text' : 'Select weight file',
-    'process_text' : 'Process image',
+    'process_text' : 'Process image(s)',
     'video_text' : 'Process video',
     'video_text_local' : 'From playback files',
     'video_text_stream' : 'From live feed',
     'quit_text' : 'Quit'
 }
 
-button_width = max(len(texts['browse_text']), len(texts['weight_text']), len(texts['process_text']), len(texts['quit_text']))
+button_width = max(len(texts['weight_text']), len(texts['process_text']), len(texts['quit_text']))
 button_fg = 'white'
 button_bg = 'green'
 button_font = ('helvetica', 12, 'bold')
 
-# BUTTON to select image
-button_browse = tk.Button(root, text=texts['browse_text'], padx = 10, pady = 5, command=open_img,
-                        fg = button_fg, bg = button_bg, width = button_width, font = button_font)
-button_browse.pack()
 
 # BUTTON to select WEIGHT FILE
 button_weight = tk.Button(root, text=texts['weight_text'], padx = 10, pady = 5, command=choose_weight,
@@ -322,11 +316,6 @@ button_video = tk.Button(root, text=texts['video_text'], padx = 10, pady = 5, co
                         fg = button_fg, bg = button_bg,  width = button_width, font = button_font)
 button_video.pack()
 
-# if img has not been loaded, this button will be disabled
-if IMAGE_LOADED == False:
-    button_process.config(state='disabled')
-else:
-    button_process.config(state='normal')
 
 # BUTTON to quit
 button_quit = tk.Button(root, text=texts['quit_text'], padx = 10, pady = 5, command=root.quit,

@@ -74,9 +74,9 @@ class EVALUATION_V7():
         
         # if media file ends with img_formats, run detection on single image
         if self.media_path.split('.')[-1] in vid_formats:
-            command = f'python {DETECT_PATH_V7} --source {self.media_path} --weights {self.weight_path} --save-txt --save-conf --no-trace --img-size 512 --view-img'
+            command = f'python {DETECT_PATH_V7} --source {self.media_path} --weights {self.weight_path} --conf-thres 0.03 --iou-thres 0.5 --save-txt --save-conf --augment --no-trace --img-size 512 --view-img'
         else:
-            command = f'python {DETECT_PATH_V7} --source {self.media_path} --weights {self.weight_path} --save-txt --save-conf --no-trace --img-size 512'           
+            command = f'python {DETECT_PATH_V7} --source {self.media_path} --weights {self.weight_path} --conf-thres 0.03 --iou-thres 0.5 --save-txt --save-conf --augment --no-trace --img-size 512'           
 
 
         os.system(command)
