@@ -6,11 +6,14 @@ from tkinter import filedialog
 from tkinter import ttk
 from PIL import ImageTk, Image
 import time
-from utils.utils import EVALUATION_V7 as eval
 import sys
 from googletrans import Translator
 import pinyin
 from pathlib import Path
+import threading
+
+from utils.utils import EVALUATION_V7 as eval
+from utils.imageviewer import ImageViewer
 
 import logging
 from colorlog import ColoredFormatter
@@ -229,7 +232,6 @@ def process_img():
         bb_label.config(image=bb_img)
         bb_label.image = bb_img
 
-
         display_text = ''
         if runner.weight_type == 'WG':
             for i in range(len(info_list)):
@@ -310,7 +312,12 @@ def process_video():
 
         notify_label.config(text='Video processed!', fg='green', font= notify_font)
 
+def view_img():
+    app = ImageViewer()
+    app.mainloop()
 
+def exit_program():
+    root.destroy()
 
 
 ### GUI ###
@@ -348,6 +355,7 @@ texts = {
     'video_text' : 'Process video',
     'video_text_local' : 'From playback files',
     'video_text_stream' : 'From live feed',
+    'view history' : 'View History',
     'quit_text' : 'Quit'
 }
 
@@ -372,12 +380,16 @@ button_video = tk.Button(root, text=texts['video_text'], padx = 10, pady = 5, co
                         fg = button_fg, bg = button_bg,  width = button_width, font = button_font)
 button_video.pack()
 
+# BUTTON to view processed images
+button_view = tk.Button(root, text=texts['view history'], padx = 10, pady = 5, command=view_img,
+                        fg = button_fg, bg = button_bg,  width = button_width, font = button_font)
+button_view.pack()
+
 
 # BUTTON to quit
-button_quit = tk.Button(root, text=texts['quit_text'], padx = 10, pady = 5, command=root.quit,
+button_quit = tk.Button(root, text=texts['quit_text'], padx = 10, pady = 5, command=exit_program,
                         fg = button_fg, bg = button_bg,  width = button_width, font = button_font)
 button_quit.pack()
-
 
 
 root.mainloop()

@@ -1,7 +1,16 @@
 import os
 import pandas as pd
-
+from pathlib import Path
+from tkinter import ttk
+import shutil
+import json
 import sys
+from datetime import datetime
+from pathlib import Path
+
+import logging
+
+logger = logging.getLogger(__name__)
 
 # def resource_path(relative_path):
 #     ### Get absolute path to resource, works for dev and for PyInstaller
@@ -20,6 +29,7 @@ RUN_DIR = os.path.join(ROOT_DIR, 'runs')
 if not os.path.exists(RUN_DIR):
     os.mkdir(RUN_DIR)
 DETECT_DIR = os.path.join(RUN_DIR, 'detect')
+PROCESSED_DIR = os.path.join(ROOT_DIR, 'processed')
 
 
 DETECT_PATH_V7 = os.path.join(YOLOV7_DIR, 'detect.py')
@@ -37,6 +47,8 @@ if not os.path.exists(RESULT_DIR):
 WEIGHT_PATH_DEFAULT = os.path.join(ROOT_DIR, 'bin', 'weights', 'v7_WG.pt')
 GENERA_LIST_PATH_DEFAULT = os.path.join(ROOT_DIR, 'bin', CLASS_LISTS['WG'])
 
+HISTORY_PATH = os.path.join(ROOT_DIR, 'bin', 'history.json')
+
 img_formats = ['bmp', 'jpg', 'jpeg', 'png', 'tif', 'tiff', 'dng', 'webp', 'mpo']  # acceptable image suffixes
 vid_formats = ['mov', 'avi', 'mp4', 'mpg', 'mpeg', 'm4v', 'wmv', 'mkv']  # acceptable video suffixes
 
@@ -49,12 +61,16 @@ class EVALUATION_V7():
         
         self.weight_path = weight_path
 
-        weight_name = os.path.basename(weight_path)
-        self.weight_type = weight_name.split('.')[0].split('_')[-1]
-        if self.weight_type not in ['WG', 'NG']:
-            print('WRONG WEIGHT NAME FORMAT !')
-            print('Weight name must end with _NG (no gender) or _WG (with gender)')
-            exit()
+        self.weight_name = Path(self.weight_path).stem
+        if 'wg' in self.weight_name.lower():
+            self.weight_type = 'WG'
+        elif 'ng' in self.weight_name.lower():
+            self.weight_type = 'NG'
+        else:
+            message = 'WRONG WEIGHT NAME FORMAT !'            
+            message += '\nWeight name must end with _NG (no gender) or _WG (with gender)'
+            raise Exception(message)
+
         genera_list_path = os.path.join(ROOT_DIR, 'bin', CLASS_LISTS[self.weight_type])
         with open(genera_list_path, 'r') as f:
             self.genera_list = f.read().strip().split(',')
@@ -71,39 +87,162 @@ class EVALUATION_V7():
             run_num = 'exp'
         else:
             run_num = 'exp'+str(len(os.listdir(DETECT_DIR))+1)
+
+        command = "python"
+
+        file_name = Path(self.media_path).name
+        save_path = os.path.join(DETECT_DIR, run_num)
+
+        if self.processed_before(file_name):
+            logger.info(f"File {file_name} has been processed before. Analyze again?")
+            #display message box using tkinter, ask user if they want to overwrite
+            choice = ttk.messagebox.askyesno(title="Duplication", message="File already exists. Analyze again?")
+            if choice == False:
+                logger.debug("User chose not to continue analysis")
+                return
+            else:
+                logger.debug("User chose to continue analysis")
+                pass
+                # while True:
+                #     try:
+                #         shutil.rmtree(save_path)
+                #         break
+                #     except:
+                #         choice = ttk.messagebox.askyesno(title="File in use", message="File is open. Close file and try again.")
+                #         if choice == False:
+                #             return
+                #         else:
+                #             continue
+
+        default_args = [
+            f"{DETECT_PATH_V7}",
+            f"--source {self.media_path}",
+            f"--weights {self.weight_path}",
+            "--conf-thres 0.03",
+            "--iou-thres 0.5",
+            "--save-txt",
+            "--save-conf",
+            "--augment",
+            "--no-trace",
+            "--img-size 512",
+        ]
         
         # if media file ends with img_formats, run detection on single image
         if self.media_path.split('.')[-1] in vid_formats:
-            command = f'python {DETECT_PATH_V7} --source {self.media_path} --weights {self.weight_path} --conf-thres 0.03 --iou-thres 0.5 --save-txt --save-conf --augment --no-trace --img-size 512 --view-img'
+            args = default_args + [f"--view-img"]
         else:
-            command = f'python {DETECT_PATH_V7} --source {self.media_path} --weights {self.weight_path} --conf-thres 0.03 --iou-thres 0.5 --save-txt --save-conf --augment --no-trace --img-size 512'           
+            args = default_args
 
+        for arg in args:
+            command += " " + arg
 
         os.system(command)
-        
+
+        logger.info(f"Detection completed for {self.media_path}")
+
+        # save to history
+        self.write_to_history(file_name, save_path)
+
         return run_num
 
 
+    def processed_before(self, file_name):
+        try:
+            with open(HISTORY_PATH, 'r') as f:
+                history = json.load(f)
+        except FileNotFoundError:
+            logger.debug("History file not found")
+            # create history file
+            with open(HISTORY_PATH, 'w') as f:
+                json.dump({}, f)
+            logger.debug("Created blank history file!")
+            return False
+        
+        if self.weight_name not in history:
+            logger.debug(f"Weight {self.weight_name} has not been processed before")
+            history[self.weight_name] = {}
+            with open(HISTORY_PATH, 'w') as f:
+                json.dump(history, f)
+            logger.debug(f"Added weight {self.weight_name} with blank dict to history file")
+            return False
 
-    def get_info_single(self, custom_label_path = 'Default'):
+        if file_name in history[self.weight_name]:
+            logger.debug(f"File {file_name} has been processed before")
+            return True
+        else:
+            logger.debug(f"File {file_name} has not been processed before")
+            return False
+
+
+    def write_to_history(self, file_name, save_path):
+        
+        with open(HISTORY_PATH, 'r') as f:
+            history = json.load(f)
+
+        if (history == {}) or (history is None) or (history == "") or (self.weight_name not in history):
+            history[self.weight_name] = {}
+            logger.debug(f"History file of weight {self.weight_name} is empty. Created blank dictionary")
+
+        # Get the current date and time
+        current_time = datetime.now()
+
+        # Format the current date and time
+        formatted_time = current_time.strftime("%Y%m%d-%H%M%S")
+
+        if file_name == "temp":
+            # use pathlib and glob to find all .jpg in save_path
+            file_names = [p.name for p in Path(save_path).glob('*.jpg')]
+
+            for file_name in file_names:
+                if file_name not in history[self.weight_name]:
+                    history[self.weight_name][file_name] = [(save_path, formatted_time)]
+                    logger.debug(f"History file of weight {self.weight_name} is empty. Created new entry")
+                else:
+                    history[self.weight_name][file_name].append((save_path, formatted_time))
+                    logger.debug(f"History file of weight {self.weight_name} is not empty. Appended to existing entry")
+        else:
+            if file_name not in history[self.weight_name]:
+                history[self.weight_name][file_name] = [(save_path, formatted_time)]
+                logger.debug(f"History file of weight {self.weight_name} is empty. Created new entry")
+            else:
+                history[self.weight_name][file_name].append((save_path, formatted_time))
+                logger.debug(f"History file of weight {self.weight_name} is not empty. Appended to existing entry")
+
+        with open(HISTORY_PATH, 'w') as f:
+            json.dump(history, f)
+        logger.debug(f"Saved to history file")
+
+    
+    def get_save_paths(self, file_name):
+
+        with open(HISTORY_PATH, 'r') as f:
+            history = json.load(f)
+
+        save_paths = history[self.weight_name][file_name]
+
+        return save_paths
+
+
+    def get_info_single(self, custom_label_path = 'Default', mode='last'):
         
         if custom_label_path == 'Default':
-            img_name = os.path.basename(self.media_path).split('.')[0]
-            label_path = os.path.join(DETECT_DIR, self.run_num, 'labels', img_name + '.txt')
+            img_name = Path(self.media_path).name
+            img_stem = Path(self.media_path).stem
+            save_paths = self.get_save_paths(img_name)
+            if mode == 'last':
+                label_path = os.path.join(save_paths[-1][0], 'labels', img_stem + '.txt')
         else:
-            img_name = os.path.basename(custom_label_path).split('.')[0]
+            img_name = Path(self.media_path).name
             label_path = custom_label_path
 
-        img_withbb_path = os.path.join(DETECT_DIR, self.run_num, img_name + '.jpg')
+        img_withbb_path = os.path.join(DETECT_DIR, self.run_num, img_name)
+        # img_wobb_path = os.path.join(PROCESSED_DIR, img_name)
         with open(label_path, 'r') as f:
             lines = f.readlines()
         
         info_list = []
-        # genus_list = []
-        # gender_list = []
-        # confidence_list = []
 
-        for i, line in enumerate(lines):
+        for line in lines:
             line = line.split()
             genus_code = line[0]
             genus_compact = self.genera_list[int(genus_code)]
@@ -118,13 +257,10 @@ class EVALUATION_V7():
             info_list.append((genus, gender, confidence))
             # sort info_list by confidence, from high to low
             info_list = sorted(info_list, key=lambda x: x[2], reverse=True)
-            # keep top 2 results
-            if len(info_list) > 2:
-                info_list = info_list[:2]
 
-            # genus_list.append(genus)
-            # gender_list.append(gender)
-            # confidence_list.append(confidence)
+            # # keep top 2 results
+            # if len(info_list) > 2:
+            #     info_list = info_list[:2]
 
         return img_name, info_list, img_withbb_path
 

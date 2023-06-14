@@ -1,0 +1,1033 @@
+2023-06-14 13:01:50,821 DEBUG    Loading history for weight: v7_AUG_NG
+2023-06-14 13:01:50,821 DEBUG    Images analyzed using weight v7_AUG_NG: 1
+2023-06-14 13:01:50,821 DEBUG    Image files: ['Argiope-aetheroides']
+2023-06-14 13:02:32,024 DEBUG    Loading history for weight: v7_AUG_NG
+2023-06-14 13:02:32,024 DEBUG    Images analyzed using weight v7_AUG_NG: 1
+2023-06-14 13:02:32,024 DEBUG    Image files: ['Argiope-aetheroides']
+2023-06-14 13:03:02,230 DEBUG    Loading history for weight: v7_AUG_NG
+2023-06-14 13:03:02,238 DEBUG    Images analyzed using weight v7_AUG_NG: 1
+2023-06-14 13:03:02,238 DEBUG    Image files: ['Argiope-aetheroides']
+2023-06-14 13:03:03,028 DEBUG    Image Argiope-aetheroides analyzed at 2023-06-14 12:24:14
+2023-06-14 13:06:06,430 DEBUG    Loading history for weight: v7_AUG_NG
+2023-06-14 13:06:06,430 DEBUG    Images analyzed using weight v7_AUG_NG: 1
+2023-06-14 13:06:06,430 DEBUG    Image files: ['Argiope-aetheroides.jpg']
+2023-06-14 13:06:07,251 DEBUG    Image Argiope-aetheroides.jpg analyzed at 2023-06-14 12:24:14
+2023-06-14 13:08:06,784 DEBUG    Loading history for weight: v7_AUG_NG
+2023-06-14 13:08:06,785 DEBUG    Images analyzed using weight v7_AUG_NG: 1
+2023-06-14 13:08:06,785 DEBUG    Image files: ['Argiope-aetheroides.jpg']
+2023-06-14 13:08:07,724 DEBUG    Image Argiope-aetheroides.jpg analyzed at 2023-06-14 12:24:14
+2023-06-14 13:16:41,741 DEBUG    Loading history for weight: v7_AUG_NG
+2023-06-14 13:16:41,741 DEBUG    Images analyzed using weight v7_AUG_NG: 1
+2023-06-14 13:16:41,741 DEBUG    Image files: ['Argiope-aetheroides.jpg']
+2023-06-14 13:16:43,503 DEBUG    Image Argiope-aetheroides.jpg analyzed at 2023-06-14 12:24:14
+2023-06-14 13:22:30,262 DEBUG    Loading history for weight: v7_AUG_NG
+2023-06-14 13:22:30,262 DEBUG    Images analyzed using weight v7_AUG_NG: 1
+2023-06-14 13:22:30,262 DEBUG    Image files: ['Argiope-aetheroides.jpg']
+2023-06-14 13:22:31,113 DEBUG    Image Argiope-aetheroides.jpg analyzed at 2023-06-14 12:24:14
+2023-06-14 13:42:58,698 DEBUG    Loading history for weight: v7_AUG_NG
+2023-06-14 13:42:58,698 DEBUG    Images analyzed using weight v7_AUG_NG: 1
+2023-06-14 13:42:58,698 DEBUG    Image files: ['Argiope-aetheroides.jpg']
+2023-06-14 13:43:00,097 DEBUG    Image Argiope-aetheroides.jpg analyzed at 2023-06-14 12:24:14
+2023-06-14 13:43:00,117 DEBUG    Info list: [('Argiope', 'NA', [0.427, 0.506006, 0.398, 0.60961], 93.95)]
+2023-06-14 13:43:00,117 DEBUG    Confidence threshold: 0.1
+2023-06-14 13:43:00,117 DEBUG    Filtered info list: [('Argiope', 'NA', [0.427, 0.506006, 0.398, 0.60961], 93.95)]
+2023-06-14 13:43:56,115 DEBUG    Loading history for weight: v7_AUG_NG
+2023-06-14 13:43:56,115 DEBUG    Images analyzed using weight v7_AUG_NG: 1
+2023-06-14 13:43:56,115 DEBUG    Image files: ['Argiope-aetheroides.jpg']
+2023-06-14 13:46:20,855 DEBUG    Loading history for weight: v7_AUG_NG
+2023-06-14 13:46:20,855 DEBUG    Images analyzed using weight v7_AUG_NG: 1
+2023-06-14 13:46:20,855 DEBUG    Image files: ['Argiope-aetheroides.jpg']
+2023-06-14 13:46:21,518 DEBUG    Image Argiope-aetheroides.jpg analyzed at 2023-06-14 12:24:14
+2023-06-14 13:46:21,538 DEBUG    Info list: [('Argiope', 'NA', [0.427, 0.506006, 0.398, 0.60961], 93.95)]
+2023-06-14 13:46:21,538 DEBUG    Confidence threshold: 0.1
+2023-06-14 13:46:21,538 DEBUG    Filtered info list: [('Argiope', 'NA', [0.427, 0.506006, 0.398, 0.60961], 93.95)]
+2023-06-14 13:47:56,985 DEBUG    Loading history for weight: v7_AUG_NG
+2023-06-14 13:47:56,985 DEBUG    Images analyzed using weight v7_AUG_NG: 1
+2023-06-14 13:47:56,985 DEBUG    Image files: ['Argiope-aetheroides.jpg']
+2023-06-14 13:47:57,694 DEBUG    Image Argiope-aetheroides.jpg analyzed at 2023-06-14 12:24:14
+2023-06-14 13:47:57,714 DEBUG    Info list: [('Argiope', 'NA', [0.427, 0.506006, 0.398, 0.60961], 93.95)]
+2023-06-14 13:47:57,714 DEBUG    Confidence threshold: 0.1
+2023-06-14 13:47:57,714 DEBUG    Filtered info list: [('Argiope', 'NA', [0.427, 0.506006, 0.398, 0.60961], 93.95)]
+2023-06-14 13:49:24,555 DEBUG    Loading history for weight: v7_AUG_NG
+2023-06-14 13:49:24,555 DEBUG    Images analyzed using weight v7_AUG_NG: 1
+2023-06-14 13:49:24,555 DEBUG    Image files: ['Argiope-aetheroides.jpg']
+2023-06-14 13:49:27,057 DEBUG    Image Argiope-aetheroides.jpg analyzed at 2023-06-14 12:24:14
+2023-06-14 13:49:27,077 DEBUG    Info list: [('Argiope', 'NA', [0.427, 0.506006, 0.398, 0.60961], 93.95)]
+2023-06-14 13:49:27,077 DEBUG    Confidence threshold: 0
+2023-06-14 13:49:27,077 DEBUG    Filtered info list: [('Argiope', 'NA', [0.427, 0.506006, 0.398, 0.60961], 93.95)]
+2023-06-14 13:49:36,697 DEBUG    Loading history for weight: v7_AUG_NG
+2023-06-14 13:49:36,697 DEBUG    Images analyzed using weight v7_AUG_NG: 1
+2023-06-14 13:49:36,697 DEBUG    Image files: ['Argiope-aetheroides.jpg']
+2023-06-14 13:49:40,807 DEBUG    Image Argiope-aetheroides.jpg analyzed at 2023-06-14 12:24:14
+2023-06-14 13:49:40,812 DEBUG    Info list: [('Argiope', 'NA', [0.427, 0.506006, 0.398, 0.60961], 93.95)]
+2023-06-14 13:49:40,812 DEBUG    Confidence threshold: 0.1
+2023-06-14 13:49:40,812 DEBUG    Filtered info list: [('Argiope', 'NA', [0.427, 0.506006, 0.398, 0.60961], 93.95)]
+2023-06-14 13:51:54,654 DEBUG    Loading history for weight: v7_AUG_NG
+2023-06-14 13:51:54,654 DEBUG    Images analyzed using weight v7_AUG_NG: 1
+2023-06-14 13:51:54,654 DEBUG    Image files: ['Argiope-aetheroides.jpg']
+2023-06-14 13:51:55,293 DEBUG    Image Argiope-aetheroides.jpg analyzed at 2023-06-14 12:24:14
+2023-06-14 13:51:55,313 DEBUG    Info list: [('Argiope', 'NA', [0.427, 0.506006, 0.398, 0.60961], 93.95)]
+2023-06-14 13:51:55,313 DEBUG    Confidence threshold: 0
+2023-06-14 13:51:55,313 DEBUG    Filtered info list: [('Argiope', 'NA', [0.427, 0.506006, 0.398, 0.60961], 93.95)]
+2023-06-14 13:52:18,808 DEBUG    Loading history for weight: v7_AUG_NG
+2023-06-14 13:52:18,808 DEBUG    Images analyzed using weight v7_AUG_NG: 1
+2023-06-14 13:52:18,808 DEBUG    Image files: ['Argiope-aetheroides.jpg']
+2023-06-14 13:52:19,647 DEBUG    Image Argiope-aetheroides.jpg analyzed at 2023-06-14 12:24:14
+2023-06-14 13:52:19,667 DEBUG    Info list: [('Argiope', 'NA', [0.427, 0.506006, 0.398, 0.60961], 93.95)]
+2023-06-14 13:52:19,667 DEBUG    Confidence threshold: 0
+2023-06-14 13:52:19,667 DEBUG    Filtered info list: [('Argiope', 'NA', [0.427, 0.506006, 0.398, 0.60961], 93.95)]
+2023-06-14 13:56:27,400 DEBUG    Loading history for weight: v7_AUG_NG
+2023-06-14 13:56:27,400 DEBUG    Images analyzed using weight v7_AUG_NG: 1
+2023-06-14 13:56:27,400 DEBUG    Image files: ['Argiope-aetheroides.jpg']
+2023-06-14 13:56:28,038 DEBUG    Image Argiope-aetheroides.jpg analyzed at 2023-06-14 12:24:14
+2023-06-14 13:56:28,048 DEBUG    Info list: [('Argiope', 'NA', [0.427, 0.506006, 0.398, 0.60961], 93.95)]
+2023-06-14 13:56:28,048 DEBUG    Confidence threshold: 0
+2023-06-14 13:56:28,048 DEBUG    Filtered info list: [('Argiope', 'NA', [0.427, 0.506006, 0.398, 0.60961], 93.95)]
+2023-06-14 13:56:46,775 DEBUG    Loading history for weight: v7_AUG_NG
+2023-06-14 13:56:46,775 DEBUG    Images analyzed using weight v7_AUG_NG: 1
+2023-06-14 13:56:46,775 DEBUG    Image files: ['Argiope-aetheroides.jpg']
+2023-06-14 13:56:47,378 DEBUG    Image Argiope-aetheroides.jpg analyzed at 2023-06-14 12:24:14
+2023-06-14 13:56:47,398 DEBUG    Info list: [('Argiope', 'NA', [0.427, 0.506006, 0.398, 0.60961], 93.95)]
+2023-06-14 13:56:47,398 DEBUG    Confidence threshold: 0
+2023-06-14 13:56:47,398 DEBUG    Filtered info list: [('Argiope', 'NA', [0.427, 0.506006, 0.398, 0.60961], 93.95)]
+2023-06-14 13:59:42,174 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:42,174 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:42,174 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:42,184 DEBUG    Slider value changed: 0.10658914728682171
+2023-06-14 13:59:42,184 DEBUG    Slider value changed: 0.11317829457364342
+2023-06-14 13:59:42,195 DEBUG    Slider value changed: 0.11976744186046512
+2023-06-14 13:59:42,204 DEBUG    Slider value changed: 0.1263565891472868
+2023-06-14 13:59:42,204 DEBUG    Slider value changed: 0.13294573643410854
+2023-06-14 13:59:42,204 DEBUG    Slider value changed: 0.13953488372093023
+2023-06-14 13:59:42,214 DEBUG    Slider value changed: 0.15271317829457365
+2023-06-14 13:59:42,214 DEBUG    Slider value changed: 0.15930232558139534
+2023-06-14 13:59:42,224 DEBUG    Slider value changed: 0.17248062015503876
+2023-06-14 13:59:42,224 DEBUG    Slider value changed: 0.17906976744186048
+2023-06-14 13:59:42,224 DEBUG    Slider value changed: 0.18565891472868218
+2023-06-14 13:59:42,224 DEBUG    Slider value changed: 0.19224806201550387
+2023-06-14 13:59:42,234 DEBUG    Slider value changed: 0.19883720930232557
+2023-06-14 13:59:42,234 DEBUG    Slider value changed: 0.212015503875969
+2023-06-14 13:59:42,234 DEBUG    Slider value changed: 0.2186046511627907
+2023-06-14 13:59:42,244 DEBUG    Slider value changed: 0.2251937984496124
+2023-06-14 13:59:42,244 DEBUG    Slider value changed: 0.2317829457364341
+2023-06-14 13:59:42,244 DEBUG    Slider value changed: 0.23837209302325582
+2023-06-14 13:59:42,244 DEBUG    Slider value changed: 0.24496124031007752
+2023-06-14 13:59:42,254 DEBUG    Slider value changed: 0.25155038759689924
+2023-06-14 13:59:42,254 DEBUG    Slider value changed: 0.25813953488372093
+2023-06-14 13:59:42,254 DEBUG    Slider value changed: 0.2647286821705427
+2023-06-14 13:59:42,264 DEBUG    Slider value changed: 0.2713178294573644
+2023-06-14 13:59:42,264 DEBUG    Slider value changed: 0.2779069767441861
+2023-06-14 13:59:42,264 DEBUG    Slider value changed: 0.28449612403100777
+2023-06-14 13:59:42,264 DEBUG    Slider value changed: 0.29108527131782946
+2023-06-14 13:59:42,274 DEBUG    Slider value changed: 0.30426356589147285
+2023-06-14 13:59:42,274 DEBUG    Slider value changed: 0.31085271317829455
+2023-06-14 13:59:42,284 DEBUG    Slider value changed: 0.3174418604651163
+2023-06-14 13:59:42,284 DEBUG    Slider value changed: 0.324031007751938
+2023-06-14 13:59:42,284 DEBUG    Slider value changed: 0.33062015503875963
+2023-06-14 13:59:42,284 DEBUG    Slider value changed: 0.3372093023255814
+2023-06-14 13:59:42,294 DEBUG    Slider value changed: 0.34379844961240313
+2023-06-14 13:59:42,294 DEBUG    Slider value changed: 0.35038759689922483
+2023-06-14 13:59:42,304 DEBUG    Slider value changed: 0.3569767441860465
+2023-06-14 13:59:42,304 DEBUG    Slider value changed: 0.3635658914728682
+2023-06-14 13:59:42,304 DEBUG    Slider value changed: 0.3701550387596899
+2023-06-14 13:59:42,314 DEBUG    Slider value changed: 0.3767441860465116
+2023-06-14 13:59:42,324 DEBUG    Slider value changed: 0.3833333333333333
+2023-06-14 13:59:42,334 DEBUG    Slider value changed: 0.389922480620155
+2023-06-14 13:59:42,334 DEBUG    Slider value changed: 0.3965116279069768
+2023-06-14 13:59:42,344 DEBUG    Slider value changed: 0.4031007751937985
+2023-06-14 13:59:42,354 DEBUG    Slider value changed: 0.4096899224806201
+2023-06-14 13:59:42,365 DEBUG    Slider value changed: 0.4162790697674419
+2023-06-14 13:59:42,374 DEBUG    Slider value changed: 0.4228682170542636
+2023-06-14 13:59:42,394 DEBUG    Slider value changed: 0.4228682170542636
+2023-06-14 13:59:42,794 DEBUG    Slider value changed: 0.4162790697674419
+2023-06-14 13:59:42,794 DEBUG    Slider value changed: 0.4096899224806201
+2023-06-14 13:59:42,804 DEBUG    Slider value changed: 0.4031007751937985
+2023-06-14 13:59:42,804 DEBUG    Slider value changed: 0.3965116279069768
+2023-06-14 13:59:42,804 DEBUG    Slider value changed: 0.389922480620155
+2023-06-14 13:59:42,814 DEBUG    Slider value changed: 0.3833333333333333
+2023-06-14 13:59:42,814 DEBUG    Slider value changed: 0.3767441860465116
+2023-06-14 13:59:42,824 DEBUG    Slider value changed: 0.3701550387596899
+2023-06-14 13:59:42,824 DEBUG    Slider value changed: 0.3635658914728682
+2023-06-14 13:59:42,836 DEBUG    Slider value changed: 0.3569767441860465
+2023-06-14 13:59:42,836 DEBUG    Slider value changed: 0.35038759689922483
+2023-06-14 13:59:42,846 DEBUG    Slider value changed: 0.34379844961240313
+2023-06-14 13:59:42,854 DEBUG    Slider value changed: 0.3372093023255814
+2023-06-14 13:59:42,854 DEBUG    Slider value changed: 0.33062015503875963
+2023-06-14 13:59:42,864 DEBUG    Slider value changed: 0.324031007751938
+2023-06-14 13:59:42,864 DEBUG    Slider value changed: 0.3174418604651163
+2023-06-14 13:59:42,864 DEBUG    Slider value changed: 0.31085271317829455
+2023-06-14 13:59:42,874 DEBUG    Slider value changed: 0.30426356589147285
+2023-06-14 13:59:42,884 DEBUG    Slider value changed: 0.29767441860465116
+2023-06-14 13:59:42,884 DEBUG    Slider value changed: 0.29108527131782946
+2023-06-14 13:59:42,884 DEBUG    Slider value changed: 0.28449612403100777
+2023-06-14 13:59:42,894 DEBUG    Slider value changed: 0.2779069767441861
+2023-06-14 13:59:42,904 DEBUG    Slider value changed: 0.2713178294573644
+2023-06-14 13:59:42,904 DEBUG    Slider value changed: 0.2647286821705427
+2023-06-14 13:59:42,915 DEBUG    Slider value changed: 0.25813953488372093
+2023-06-14 13:59:42,915 DEBUG    Slider value changed: 0.25155038759689924
+2023-06-14 13:59:42,934 DEBUG    Slider value changed: 0.24496124031007752
+2023-06-14 13:59:42,934 DEBUG    Slider value changed: 0.23837209302325582
+2023-06-14 13:59:42,946 DEBUG    Slider value changed: 0.2317829457364341
+2023-06-14 13:59:42,954 DEBUG    Slider value changed: 0.2251937984496124
+2023-06-14 13:59:42,964 DEBUG    Slider value changed: 0.2186046511627907
+2023-06-14 13:59:42,964 DEBUG    Slider value changed: 0.212015503875969
+2023-06-14 13:59:42,974 DEBUG    Slider value changed: 0.2054263565891473
+2023-06-14 13:59:42,974 DEBUG    Slider value changed: 0.19883720930232557
+2023-06-14 13:59:42,984 DEBUG    Slider value changed: 0.19224806201550387
+2023-06-14 13:59:42,994 DEBUG    Slider value changed: 0.18565891472868218
+2023-06-14 13:59:42,994 DEBUG    Slider value changed: 0.17906976744186048
+2023-06-14 13:59:42,994 DEBUG    Slider value changed: 0.17248062015503876
+2023-06-14 13:59:43,004 DEBUG    Slider value changed: 0.16589147286821704
+2023-06-14 13:59:43,004 DEBUG    Slider value changed: 0.15930232558139534
+2023-06-14 13:59:43,014 DEBUG    Slider value changed: 0.15271317829457365
+2023-06-14 13:59:43,014 DEBUG    Slider value changed: 0.14612403100775195
+2023-06-14 13:59:43,014 DEBUG    Slider value changed: 0.14612403100775195
+2023-06-14 13:59:43,024 DEBUG    Slider value changed: 0.13953488372093023
+2023-06-14 13:59:43,024 DEBUG    Slider value changed: 0.13294573643410854
+2023-06-14 13:59:43,024 DEBUG    Slider value changed: 0.1263565891472868
+2023-06-14 13:59:43,034 DEBUG    Slider value changed: 0.11976744186046512
+2023-06-14 13:59:43,046 DEBUG    Slider value changed: 0.11317829457364342
+2023-06-14 13:59:43,046 DEBUG    Slider value changed: 0.10658914728682171
+2023-06-14 13:59:43,054 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,054 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,054 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,054 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,064 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,064 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,074 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,074 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,074 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,074 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,084 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,084 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,084 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,094 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,094 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,114 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,114 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,124 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,124 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,124 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,134 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,134 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,144 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,146 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,154 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,165 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,167 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,174 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,180 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,186 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,194 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,194 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,194 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,204 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,214 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,224 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,234 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,234 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,246 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,254 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,254 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,264 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,284 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,304 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,304 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,314 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,324 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,334 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,334 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,334 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:43,344 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:47,993 DEBUG    Loading history for weight: v7_AUG_NG
+2023-06-14 13:59:47,993 DEBUG    Images analyzed using weight v7_AUG_NG: 1
+2023-06-14 13:59:47,993 DEBUG    Image files: ['Argiope-aetheroides.jpg']
+2023-06-14 13:59:49,163 DEBUG    Image Argiope-aetheroides.jpg analyzed at 2023-06-14 12:24:14
+2023-06-14 13:59:49,183 DEBUG    Info list: [('Argiope', 'NA', [0.427, 0.506006, 0.398, 0.60961], 93.95)]
+2023-06-14 13:59:49,183 DEBUG    Confidence threshold: 0.1
+2023-06-14 13:59:49,183 DEBUG    Filtered info list: [('Argiope', 'NA', [0.427, 0.506006, 0.398, 0.60961], 93.95)]
+2023-06-14 13:59:49,193 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:51,029 DEBUG    Slider value changed: 0.11976744186046512
+2023-06-14 13:59:51,039 DEBUG    Drawn bounding boxes with Confidence threshold = 0.11976744186046512
+2023-06-14 13:59:51,039 DEBUG    Displayed results with Confidence threshold = 0.11976744186046512
+2023-06-14 13:59:51,049 DEBUG    Displayed results with Confidence threshold = 0.11976744186046512
+2023-06-14 13:59:51,049 DEBUG    Slider value changed: 0.1263565891472868
+2023-06-14 13:59:51,049 DEBUG    Drawn bounding boxes with Confidence threshold = 0.1263565891472868
+2023-06-14 13:59:51,049 DEBUG    Displayed results with Confidence threshold = 0.1263565891472868
+2023-06-14 13:59:51,049 DEBUG    Displayed results with Confidence threshold = 0.1263565891472868
+2023-06-14 13:59:51,049 DEBUG    Slider value changed: 0.13294573643410854
+2023-06-14 13:59:51,049 DEBUG    Drawn bounding boxes with Confidence threshold = 0.13294573643410854
+2023-06-14 13:59:51,049 DEBUG    Displayed results with Confidence threshold = 0.13294573643410854
+2023-06-14 13:59:51,049 DEBUG    Displayed results with Confidence threshold = 0.13294573643410854
+2023-06-14 13:59:51,049 DEBUG    Slider value changed: 0.13953488372093023
+2023-06-14 13:59:51,061 DEBUG    Drawn bounding boxes with Confidence threshold = 0.13953488372093023
+2023-06-14 13:59:51,061 DEBUG    Displayed results with Confidence threshold = 0.13953488372093023
+2023-06-14 13:59:51,061 DEBUG    Displayed results with Confidence threshold = 0.13953488372093023
+2023-06-14 13:59:51,061 DEBUG    Slider value changed: 0.14612403100775195
+2023-06-14 13:59:51,061 DEBUG    Drawn bounding boxes with Confidence threshold = 0.14612403100775195
+2023-06-14 13:59:51,061 DEBUG    Displayed results with Confidence threshold = 0.14612403100775195
+2023-06-14 13:59:51,061 DEBUG    Displayed results with Confidence threshold = 0.14612403100775195
+2023-06-14 13:59:51,061 DEBUG    Slider value changed: 0.15271317829457365
+2023-06-14 13:59:51,061 DEBUG    Drawn bounding boxes with Confidence threshold = 0.15271317829457365
+2023-06-14 13:59:51,061 DEBUG    Displayed results with Confidence threshold = 0.15271317829457365
+2023-06-14 13:59:51,061 DEBUG    Displayed results with Confidence threshold = 0.15271317829457365
+2023-06-14 13:59:51,071 DEBUG    Slider value changed: 0.15930232558139534
+2023-06-14 13:59:51,071 DEBUG    Drawn bounding boxes with Confidence threshold = 0.15930232558139534
+2023-06-14 13:59:51,071 DEBUG    Displayed results with Confidence threshold = 0.15930232558139534
+2023-06-14 13:59:51,071 DEBUG    Displayed results with Confidence threshold = 0.15930232558139534
+2023-06-14 13:59:51,071 DEBUG    Slider value changed: 0.16589147286821704
+2023-06-14 13:59:51,071 DEBUG    Drawn bounding boxes with Confidence threshold = 0.16589147286821704
+2023-06-14 13:59:51,071 DEBUG    Displayed results with Confidence threshold = 0.16589147286821704
+2023-06-14 13:59:51,071 DEBUG    Displayed results with Confidence threshold = 0.16589147286821704
+2023-06-14 13:59:51,071 DEBUG    Slider value changed: 0.17248062015503876
+2023-06-14 13:59:51,080 DEBUG    Drawn bounding boxes with Confidence threshold = 0.17248062015503876
+2023-06-14 13:59:51,080 DEBUG    Displayed results with Confidence threshold = 0.17248062015503876
+2023-06-14 13:59:51,080 DEBUG    Displayed results with Confidence threshold = 0.17248062015503876
+2023-06-14 13:59:51,080 DEBUG    Slider value changed: 0.17906976744186048
+2023-06-14 13:59:51,080 DEBUG    Drawn bounding boxes with Confidence threshold = 0.17906976744186048
+2023-06-14 13:59:51,080 DEBUG    Displayed results with Confidence threshold = 0.17906976744186048
+2023-06-14 13:59:51,080 DEBUG    Displayed results with Confidence threshold = 0.17906976744186048
+2023-06-14 13:59:51,080 DEBUG    Slider value changed: 0.18565891472868218
+2023-06-14 13:59:51,080 DEBUG    Drawn bounding boxes with Confidence threshold = 0.18565891472868218
+2023-06-14 13:59:51,080 DEBUG    Displayed results with Confidence threshold = 0.18565891472868218
+2023-06-14 13:59:51,080 DEBUG    Displayed results with Confidence threshold = 0.18565891472868218
+2023-06-14 13:59:51,090 DEBUG    Slider value changed: 0.19224806201550387
+2023-06-14 13:59:51,090 DEBUG    Drawn bounding boxes with Confidence threshold = 0.19224806201550387
+2023-06-14 13:59:51,090 DEBUG    Displayed results with Confidence threshold = 0.19224806201550387
+2023-06-14 13:59:51,090 DEBUG    Displayed results with Confidence threshold = 0.19224806201550387
+2023-06-14 13:59:51,090 DEBUG    Slider value changed: 0.19883720930232557
+2023-06-14 13:59:51,090 DEBUG    Drawn bounding boxes with Confidence threshold = 0.19883720930232557
+2023-06-14 13:59:51,090 DEBUG    Displayed results with Confidence threshold = 0.19883720930232557
+2023-06-14 13:59:51,090 DEBUG    Displayed results with Confidence threshold = 0.19883720930232557
+2023-06-14 13:59:51,090 DEBUG    Slider value changed: 0.2054263565891473
+2023-06-14 13:59:51,090 DEBUG    Drawn bounding boxes with Confidence threshold = 0.2054263565891473
+2023-06-14 13:59:51,090 DEBUG    Displayed results with Confidence threshold = 0.2054263565891473
+2023-06-14 13:59:51,090 DEBUG    Displayed results with Confidence threshold = 0.2054263565891473
+2023-06-14 13:59:51,100 DEBUG    Slider value changed: 0.212015503875969
+2023-06-14 13:59:51,100 DEBUG    Drawn bounding boxes with Confidence threshold = 0.212015503875969
+2023-06-14 13:59:51,100 DEBUG    Displayed results with Confidence threshold = 0.212015503875969
+2023-06-14 13:59:51,100 DEBUG    Displayed results with Confidence threshold = 0.212015503875969
+2023-06-14 13:59:51,100 DEBUG    Slider value changed: 0.2186046511627907
+2023-06-14 13:59:51,100 DEBUG    Drawn bounding boxes with Confidence threshold = 0.2186046511627907
+2023-06-14 13:59:51,100 DEBUG    Displayed results with Confidence threshold = 0.2186046511627907
+2023-06-14 13:59:51,100 DEBUG    Displayed results with Confidence threshold = 0.2186046511627907
+2023-06-14 13:59:51,100 DEBUG    Slider value changed: 0.2251937984496124
+2023-06-14 13:59:51,100 DEBUG    Drawn bounding boxes with Confidence threshold = 0.2251937984496124
+2023-06-14 13:59:51,100 DEBUG    Displayed results with Confidence threshold = 0.2251937984496124
+2023-06-14 13:59:51,110 DEBUG    Displayed results with Confidence threshold = 0.2251937984496124
+2023-06-14 13:59:51,110 DEBUG    Slider value changed: 0.2317829457364341
+2023-06-14 13:59:51,110 DEBUG    Drawn bounding boxes with Confidence threshold = 0.2317829457364341
+2023-06-14 13:59:51,110 DEBUG    Displayed results with Confidence threshold = 0.2317829457364341
+2023-06-14 13:59:51,110 DEBUG    Displayed results with Confidence threshold = 0.2317829457364341
+2023-06-14 13:59:51,110 DEBUG    Slider value changed: 0.23837209302325582
+2023-06-14 13:59:51,110 DEBUG    Drawn bounding boxes with Confidence threshold = 0.23837209302325582
+2023-06-14 13:59:51,120 DEBUG    Displayed results with Confidence threshold = 0.23837209302325582
+2023-06-14 13:59:51,120 DEBUG    Displayed results with Confidence threshold = 0.23837209302325582
+2023-06-14 13:59:51,120 DEBUG    Slider value changed: 0.24496124031007752
+2023-06-14 13:59:51,122 DEBUG    Drawn bounding boxes with Confidence threshold = 0.24496124031007752
+2023-06-14 13:59:51,122 DEBUG    Displayed results with Confidence threshold = 0.24496124031007752
+2023-06-14 13:59:51,122 DEBUG    Displayed results with Confidence threshold = 0.24496124031007752
+2023-06-14 13:59:51,125 DEBUG    Slider value changed: 0.25155038759689924
+2023-06-14 13:59:51,125 DEBUG    Drawn bounding boxes with Confidence threshold = 0.25155038759689924
+2023-06-14 13:59:51,125 DEBUG    Displayed results with Confidence threshold = 0.25155038759689924
+2023-06-14 13:59:51,125 DEBUG    Displayed results with Confidence threshold = 0.25155038759689924
+2023-06-14 13:59:51,132 DEBUG    Slider value changed: 0.25813953488372093
+2023-06-14 13:59:51,132 DEBUG    Drawn bounding boxes with Confidence threshold = 0.25813953488372093
+2023-06-14 13:59:51,132 DEBUG    Displayed results with Confidence threshold = 0.25813953488372093
+2023-06-14 13:59:51,132 DEBUG    Displayed results with Confidence threshold = 0.25813953488372093
+2023-06-14 13:59:51,162 DEBUG    Slider value changed: 0.2647286821705427
+2023-06-14 13:59:51,162 DEBUG    Drawn bounding boxes with Confidence threshold = 0.2647286821705427
+2023-06-14 13:59:51,162 DEBUG    Displayed results with Confidence threshold = 0.2647286821705427
+2023-06-14 13:59:51,162 DEBUG    Displayed results with Confidence threshold = 0.2647286821705427
+2023-06-14 13:59:51,175 DEBUG    Slider value changed: 0.2713178294573644
+2023-06-14 13:59:51,175 DEBUG    Drawn bounding boxes with Confidence threshold = 0.2713178294573644
+2023-06-14 13:59:51,175 DEBUG    Displayed results with Confidence threshold = 0.2713178294573644
+2023-06-14 13:59:51,175 DEBUG    Displayed results with Confidence threshold = 0.2713178294573644
+2023-06-14 13:59:51,183 DEBUG    Slider value changed: 0.2779069767441861
+2023-06-14 13:59:51,193 DEBUG    Drawn bounding boxes with Confidence threshold = 0.2779069767441861
+2023-06-14 13:59:51,193 DEBUG    Displayed results with Confidence threshold = 0.2779069767441861
+2023-06-14 13:59:51,193 DEBUG    Displayed results with Confidence threshold = 0.2779069767441861
+2023-06-14 13:59:51,203 DEBUG    Slider value changed: 0.28449612403100777
+2023-06-14 13:59:51,213 DEBUG    Drawn bounding boxes with Confidence threshold = 0.28449612403100777
+2023-06-14 13:59:51,213 DEBUG    Displayed results with Confidence threshold = 0.28449612403100777
+2023-06-14 13:59:51,213 DEBUG    Displayed results with Confidence threshold = 0.28449612403100777
+2023-06-14 13:59:51,213 DEBUG    Slider value changed: 0.29108527131782946
+2023-06-14 13:59:51,223 DEBUG    Drawn bounding boxes with Confidence threshold = 0.29108527131782946
+2023-06-14 13:59:51,223 DEBUG    Displayed results with Confidence threshold = 0.29108527131782946
+2023-06-14 13:59:51,223 DEBUG    Displayed results with Confidence threshold = 0.29108527131782946
+2023-06-14 13:59:51,223 DEBUG    Slider value changed: 0.29767441860465116
+2023-06-14 13:59:51,233 DEBUG    Drawn bounding boxes with Confidence threshold = 0.29767441860465116
+2023-06-14 13:59:51,233 DEBUG    Displayed results with Confidence threshold = 0.29767441860465116
+2023-06-14 13:59:51,233 DEBUG    Displayed results with Confidence threshold = 0.29767441860465116
+2023-06-14 13:59:51,233 DEBUG    Slider value changed: 0.30426356589147285
+2023-06-14 13:59:51,243 DEBUG    Drawn bounding boxes with Confidence threshold = 0.30426356589147285
+2023-06-14 13:59:51,243 DEBUG    Displayed results with Confidence threshold = 0.30426356589147285
+2023-06-14 13:59:51,243 DEBUG    Displayed results with Confidence threshold = 0.30426356589147285
+2023-06-14 13:59:51,278 DEBUG    Slider value changed: 0.31085271317829455
+2023-06-14 13:59:51,283 DEBUG    Drawn bounding boxes with Confidence threshold = 0.31085271317829455
+2023-06-14 13:59:51,283 DEBUG    Displayed results with Confidence threshold = 0.31085271317829455
+2023-06-14 13:59:51,283 DEBUG    Displayed results with Confidence threshold = 0.31085271317829455
+2023-06-14 13:59:51,283 DEBUG    Slider value changed: 0.3174418604651163
+2023-06-14 13:59:51,283 DEBUG    Drawn bounding boxes with Confidence threshold = 0.3174418604651163
+2023-06-14 13:59:51,283 DEBUG    Displayed results with Confidence threshold = 0.3174418604651163
+2023-06-14 13:59:51,283 DEBUG    Displayed results with Confidence threshold = 0.3174418604651163
+2023-06-14 13:59:51,293 DEBUG    Slider value changed: 0.324031007751938
+2023-06-14 13:59:51,293 DEBUG    Drawn bounding boxes with Confidence threshold = 0.324031007751938
+2023-06-14 13:59:51,293 DEBUG    Displayed results with Confidence threshold = 0.324031007751938
+2023-06-14 13:59:51,293 DEBUG    Displayed results with Confidence threshold = 0.324031007751938
+2023-06-14 13:59:51,303 DEBUG    Slider value changed: 0.33062015503875963
+2023-06-14 13:59:51,303 DEBUG    Drawn bounding boxes with Confidence threshold = 0.33062015503875963
+2023-06-14 13:59:51,313 DEBUG    Displayed results with Confidence threshold = 0.33062015503875963
+2023-06-14 13:59:51,313 DEBUG    Displayed results with Confidence threshold = 0.33062015503875963
+2023-06-14 13:59:51,317 DEBUG    Slider value changed: 0.3372093023255814
+2023-06-14 13:59:51,317 DEBUG    Drawn bounding boxes with Confidence threshold = 0.3372093023255814
+2023-06-14 13:59:51,317 DEBUG    Displayed results with Confidence threshold = 0.3372093023255814
+2023-06-14 13:59:51,317 DEBUG    Displayed results with Confidence threshold = 0.3372093023255814
+2023-06-14 13:59:51,317 DEBUG    Slider value changed: 0.34379844961240313
+2023-06-14 13:59:51,325 DEBUG    Drawn bounding boxes with Confidence threshold = 0.34379844961240313
+2023-06-14 13:59:51,325 DEBUG    Displayed results with Confidence threshold = 0.34379844961240313
+2023-06-14 13:59:51,325 DEBUG    Displayed results with Confidence threshold = 0.34379844961240313
+2023-06-14 13:59:51,325 DEBUG    Slider value changed: 0.35038759689922483
+2023-06-14 13:59:51,325 DEBUG    Drawn bounding boxes with Confidence threshold = 0.35038759689922483
+2023-06-14 13:59:51,325 DEBUG    Displayed results with Confidence threshold = 0.35038759689922483
+2023-06-14 13:59:51,325 DEBUG    Displayed results with Confidence threshold = 0.35038759689922483
+2023-06-14 13:59:51,335 DEBUG    Slider value changed: 0.3569767441860465
+2023-06-14 13:59:51,335 DEBUG    Drawn bounding boxes with Confidence threshold = 0.3569767441860465
+2023-06-14 13:59:51,335 DEBUG    Displayed results with Confidence threshold = 0.3569767441860465
+2023-06-14 13:59:51,335 DEBUG    Displayed results with Confidence threshold = 0.3569767441860465
+2023-06-14 13:59:51,335 DEBUG    Slider value changed: 0.3635658914728682
+2023-06-14 13:59:51,345 DEBUG    Drawn bounding boxes with Confidence threshold = 0.3635658914728682
+2023-06-14 13:59:51,345 DEBUG    Displayed results with Confidence threshold = 0.3635658914728682
+2023-06-14 13:59:51,345 DEBUG    Displayed results with Confidence threshold = 0.3635658914728682
+2023-06-14 13:59:51,345 DEBUG    Slider value changed: 0.3701550387596899
+2023-06-14 13:59:51,345 DEBUG    Drawn bounding boxes with Confidence threshold = 0.3701550387596899
+2023-06-14 13:59:51,345 DEBUG    Displayed results with Confidence threshold = 0.3701550387596899
+2023-06-14 13:59:51,345 DEBUG    Displayed results with Confidence threshold = 0.3701550387596899
+2023-06-14 13:59:51,355 DEBUG    Slider value changed: 0.3767441860465116
+2023-06-14 13:59:51,355 DEBUG    Drawn bounding boxes with Confidence threshold = 0.3767441860465116
+2023-06-14 13:59:51,355 DEBUG    Displayed results with Confidence threshold = 0.3767441860465116
+2023-06-14 13:59:51,355 DEBUG    Displayed results with Confidence threshold = 0.3767441860465116
+2023-06-14 13:59:51,361 DEBUG    Slider value changed: 0.3833333333333333
+2023-06-14 13:59:51,361 DEBUG    Drawn bounding boxes with Confidence threshold = 0.3833333333333333
+2023-06-14 13:59:51,361 DEBUG    Displayed results with Confidence threshold = 0.3833333333333333
+2023-06-14 13:59:51,361 DEBUG    Displayed results with Confidence threshold = 0.3833333333333333
+2023-06-14 13:59:51,365 DEBUG    Slider value changed: 0.389922480620155
+2023-06-14 13:59:51,365 DEBUG    Drawn bounding boxes with Confidence threshold = 0.389922480620155
+2023-06-14 13:59:51,365 DEBUG    Displayed results with Confidence threshold = 0.389922480620155
+2023-06-14 13:59:51,365 DEBUG    Displayed results with Confidence threshold = 0.389922480620155
+2023-06-14 13:59:51,365 DEBUG    Slider value changed: 0.3965116279069768
+2023-06-14 13:59:51,365 DEBUG    Drawn bounding boxes with Confidence threshold = 0.3965116279069768
+2023-06-14 13:59:51,365 DEBUG    Displayed results with Confidence threshold = 0.3965116279069768
+2023-06-14 13:59:51,365 DEBUG    Displayed results with Confidence threshold = 0.3965116279069768
+2023-06-14 13:59:51,375 DEBUG    Slider value changed: 0.4031007751937985
+2023-06-14 13:59:51,375 DEBUG    Drawn bounding boxes with Confidence threshold = 0.4031007751937985
+2023-06-14 13:59:51,375 DEBUG    Displayed results with Confidence threshold = 0.4031007751937985
+2023-06-14 13:59:51,375 DEBUG    Displayed results with Confidence threshold = 0.4031007751937985
+2023-06-14 13:59:51,385 DEBUG    Slider value changed: 0.4096899224806201
+2023-06-14 13:59:51,385 DEBUG    Drawn bounding boxes with Confidence threshold = 0.4096899224806201
+2023-06-14 13:59:51,385 DEBUG    Displayed results with Confidence threshold = 0.4096899224806201
+2023-06-14 13:59:51,385 DEBUG    Displayed results with Confidence threshold = 0.4096899224806201
+2023-06-14 13:59:51,395 DEBUG    Slider value changed: 0.4162790697674419
+2023-06-14 13:59:51,395 DEBUG    Drawn bounding boxes with Confidence threshold = 0.4162790697674419
+2023-06-14 13:59:51,395 DEBUG    Displayed results with Confidence threshold = 0.4162790697674419
+2023-06-14 13:59:51,395 DEBUG    Displayed results with Confidence threshold = 0.4162790697674419
+2023-06-14 13:59:51,405 DEBUG    Slider value changed: 0.4228682170542636
+2023-06-14 13:59:51,405 DEBUG    Drawn bounding boxes with Confidence threshold = 0.4228682170542636
+2023-06-14 13:59:51,405 DEBUG    Displayed results with Confidence threshold = 0.4228682170542636
+2023-06-14 13:59:51,405 DEBUG    Displayed results with Confidence threshold = 0.4228682170542636
+2023-06-14 13:59:51,425 DEBUG    Slider value changed: 0.4294573643410853
+2023-06-14 13:59:51,425 DEBUG    Drawn bounding boxes with Confidence threshold = 0.4294573643410853
+2023-06-14 13:59:51,425 DEBUG    Displayed results with Confidence threshold = 0.4294573643410853
+2023-06-14 13:59:51,425 DEBUG    Displayed results with Confidence threshold = 0.4294573643410853
+2023-06-14 13:59:51,435 DEBUG    Slider value changed: 0.436046511627907
+2023-06-14 13:59:51,445 DEBUG    Drawn bounding boxes with Confidence threshold = 0.436046511627907
+2023-06-14 13:59:51,445 DEBUG    Displayed results with Confidence threshold = 0.436046511627907
+2023-06-14 13:59:51,445 DEBUG    Displayed results with Confidence threshold = 0.436046511627907
+2023-06-14 13:59:51,465 DEBUG    Slider value changed: 0.44263565891472867
+2023-06-14 13:59:51,465 DEBUG    Drawn bounding boxes with Confidence threshold = 0.44263565891472867
+2023-06-14 13:59:51,465 DEBUG    Displayed results with Confidence threshold = 0.44263565891472867
+2023-06-14 13:59:51,465 DEBUG    Displayed results with Confidence threshold = 0.44263565891472867
+2023-06-14 13:59:51,465 DEBUG    Slider value changed: 0.44922480620155036
+2023-06-14 13:59:51,475 DEBUG    Drawn bounding boxes with Confidence threshold = 0.44922480620155036
+2023-06-14 13:59:51,475 DEBUG    Displayed results with Confidence threshold = 0.44922480620155036
+2023-06-14 13:59:51,475 DEBUG    Displayed results with Confidence threshold = 0.44922480620155036
+2023-06-14 13:59:51,475 DEBUG    Slider value changed: 0.45581395348837206
+2023-06-14 13:59:51,475 DEBUG    Drawn bounding boxes with Confidence threshold = 0.45581395348837206
+2023-06-14 13:59:51,475 DEBUG    Displayed results with Confidence threshold = 0.45581395348837206
+2023-06-14 13:59:51,475 DEBUG    Displayed results with Confidence threshold = 0.45581395348837206
+2023-06-14 13:59:51,485 DEBUG    Slider value changed: 0.46240310077519375
+2023-06-14 13:59:51,485 DEBUG    Drawn bounding boxes with Confidence threshold = 0.46240310077519375
+2023-06-14 13:59:51,485 DEBUG    Displayed results with Confidence threshold = 0.46240310077519375
+2023-06-14 13:59:51,485 DEBUG    Displayed results with Confidence threshold = 0.46240310077519375
+2023-06-14 13:59:51,495 DEBUG    Slider value changed: 0.46899224806201545
+2023-06-14 13:59:51,505 DEBUG    Drawn bounding boxes with Confidence threshold = 0.46899224806201545
+2023-06-14 13:59:51,505 DEBUG    Displayed results with Confidence threshold = 0.46899224806201545
+2023-06-14 13:59:51,505 DEBUG    Displayed results with Confidence threshold = 0.46899224806201545
+2023-06-14 13:59:51,521 DEBUG    Slider value changed: 0.47558139534883725
+2023-06-14 13:59:51,521 DEBUG    Drawn bounding boxes with Confidence threshold = 0.47558139534883725
+2023-06-14 13:59:51,521 DEBUG    Displayed results with Confidence threshold = 0.47558139534883725
+2023-06-14 13:59:51,521 DEBUG    Displayed results with Confidence threshold = 0.47558139534883725
+2023-06-14 13:59:51,526 DEBUG    Slider value changed: 0.48217054263565895
+2023-06-14 13:59:51,536 DEBUG    Drawn bounding boxes with Confidence threshold = 0.48217054263565895
+2023-06-14 13:59:51,536 DEBUG    Displayed results with Confidence threshold = 0.48217054263565895
+2023-06-14 13:59:51,536 DEBUG    Displayed results with Confidence threshold = 0.48217054263565895
+2023-06-14 13:59:51,536 DEBUG    Slider value changed: 0.48875968992248064
+2023-06-14 13:59:51,546 DEBUG    Drawn bounding boxes with Confidence threshold = 0.48875968992248064
+2023-06-14 13:59:51,546 DEBUG    Displayed results with Confidence threshold = 0.48875968992248064
+2023-06-14 13:59:51,546 DEBUG    Displayed results with Confidence threshold = 0.48875968992248064
+2023-06-14 13:59:51,561 DEBUG    Slider value changed: 0.49534883720930234
+2023-06-14 13:59:51,561 DEBUG    Drawn bounding boxes with Confidence threshold = 0.49534883720930234
+2023-06-14 13:59:51,561 DEBUG    Displayed results with Confidence threshold = 0.49534883720930234
+2023-06-14 13:59:51,566 DEBUG    Displayed results with Confidence threshold = 0.49534883720930234
+2023-06-14 13:59:51,566 DEBUG    Slider value changed: 0.501937984496124
+2023-06-14 13:59:51,566 DEBUG    Drawn bounding boxes with Confidence threshold = 0.501937984496124
+2023-06-14 13:59:51,566 DEBUG    Displayed results with Confidence threshold = 0.501937984496124
+2023-06-14 13:59:51,566 DEBUG    Displayed results with Confidence threshold = 0.501937984496124
+2023-06-14 13:59:51,577 DEBUG    Slider value changed: 0.5085271317829457
+2023-06-14 13:59:51,577 DEBUG    Drawn bounding boxes with Confidence threshold = 0.5085271317829457
+2023-06-14 13:59:51,577 DEBUG    Displayed results with Confidence threshold = 0.5085271317829457
+2023-06-14 13:59:51,577 DEBUG    Displayed results with Confidence threshold = 0.5085271317829457
+2023-06-14 13:59:51,583 DEBUG    Slider value changed: 0.5151162790697674
+2023-06-14 13:59:51,583 DEBUG    Drawn bounding boxes with Confidence threshold = 0.5151162790697674
+2023-06-14 13:59:51,583 DEBUG    Displayed results with Confidence threshold = 0.5151162790697674
+2023-06-14 13:59:51,583 DEBUG    Displayed results with Confidence threshold = 0.5151162790697674
+2023-06-14 13:59:51,597 DEBUG    Slider value changed: 0.5217054263565891
+2023-06-14 13:59:51,597 DEBUG    Drawn bounding boxes with Confidence threshold = 0.5217054263565891
+2023-06-14 13:59:51,597 DEBUG    Displayed results with Confidence threshold = 0.5217054263565891
+2023-06-14 13:59:51,597 DEBUG    Displayed results with Confidence threshold = 0.5217054263565891
+2023-06-14 13:59:51,601 DEBUG    Slider value changed: 0.5282945736434108
+2023-06-14 13:59:51,611 DEBUG    Drawn bounding boxes with Confidence threshold = 0.5282945736434108
+2023-06-14 13:59:51,611 DEBUG    Displayed results with Confidence threshold = 0.5282945736434108
+2023-06-14 13:59:51,611 DEBUG    Displayed results with Confidence threshold = 0.5282945736434108
+2023-06-14 13:59:51,611 DEBUG    Slider value changed: 0.5348837209302326
+2023-06-14 13:59:51,611 DEBUG    Drawn bounding boxes with Confidence threshold = 0.5348837209302326
+2023-06-14 13:59:51,611 DEBUG    Displayed results with Confidence threshold = 0.5348837209302326
+2023-06-14 13:59:51,611 DEBUG    Displayed results with Confidence threshold = 0.5348837209302326
+2023-06-14 13:59:51,621 DEBUG    Slider value changed: 0.5414728682170543
+2023-06-14 13:59:51,621 DEBUG    Drawn bounding boxes with Confidence threshold = 0.5414728682170543
+2023-06-14 13:59:51,621 DEBUG    Displayed results with Confidence threshold = 0.5414728682170543
+2023-06-14 13:59:51,621 DEBUG    Displayed results with Confidence threshold = 0.5414728682170543
+2023-06-14 13:59:51,635 DEBUG    Slider value changed: 0.548062015503876
+2023-06-14 13:59:51,635 DEBUG    Drawn bounding boxes with Confidence threshold = 0.548062015503876
+2023-06-14 13:59:51,635 DEBUG    Displayed results with Confidence threshold = 0.548062015503876
+2023-06-14 13:59:51,635 DEBUG    Displayed results with Confidence threshold = 0.548062015503876
+2023-06-14 13:59:51,635 DEBUG    Slider value changed: 0.5546511627906976
+2023-06-14 13:59:51,642 DEBUG    Drawn bounding boxes with Confidence threshold = 0.5546511627906976
+2023-06-14 13:59:51,642 DEBUG    Displayed results with Confidence threshold = 0.5546511627906976
+2023-06-14 13:59:51,642 DEBUG    Displayed results with Confidence threshold = 0.5546511627906976
+2023-06-14 13:59:51,642 DEBUG    Slider value changed: 0.5612403100775193
+2023-06-14 13:59:51,642 DEBUG    Drawn bounding boxes with Confidence threshold = 0.5612403100775193
+2023-06-14 13:59:51,652 DEBUG    Displayed results with Confidence threshold = 0.5612403100775193
+2023-06-14 13:59:51,652 DEBUG    Displayed results with Confidence threshold = 0.5612403100775193
+2023-06-14 13:59:51,652 DEBUG    Slider value changed: 0.5678294573643411
+2023-06-14 13:59:51,652 DEBUG    Drawn bounding boxes with Confidence threshold = 0.5678294573643411
+2023-06-14 13:59:51,652 DEBUG    Displayed results with Confidence threshold = 0.5678294573643411
+2023-06-14 13:59:51,652 DEBUG    Displayed results with Confidence threshold = 0.5678294573643411
+2023-06-14 13:59:51,652 DEBUG    Slider value changed: 0.5744186046511628
+2023-06-14 13:59:51,652 DEBUG    Drawn bounding boxes with Confidence threshold = 0.5744186046511628
+2023-06-14 13:59:51,652 DEBUG    Displayed results with Confidence threshold = 0.5744186046511628
+2023-06-14 13:59:51,652 DEBUG    Displayed results with Confidence threshold = 0.5744186046511628
+2023-06-14 13:59:51,662 DEBUG    Slider value changed: 0.5810077519379845
+2023-06-14 13:59:51,662 DEBUG    Drawn bounding boxes with Confidence threshold = 0.5810077519379845
+2023-06-14 13:59:51,662 DEBUG    Displayed results with Confidence threshold = 0.5810077519379845
+2023-06-14 13:59:51,662 DEBUG    Displayed results with Confidence threshold = 0.5810077519379845
+2023-06-14 13:59:51,662 DEBUG    Slider value changed: 0.5875968992248062
+2023-06-14 13:59:51,662 DEBUG    Drawn bounding boxes with Confidence threshold = 0.5875968992248062
+2023-06-14 13:59:51,662 DEBUG    Displayed results with Confidence threshold = 0.5875968992248062
+2023-06-14 13:59:51,662 DEBUG    Displayed results with Confidence threshold = 0.5875968992248062
+2023-06-14 13:59:51,672 DEBUG    Slider value changed: 0.5941860465116279
+2023-06-14 13:59:51,672 DEBUG    Drawn bounding boxes with Confidence threshold = 0.5941860465116279
+2023-06-14 13:59:51,672 DEBUG    Displayed results with Confidence threshold = 0.5941860465116279
+2023-06-14 13:59:51,672 DEBUG    Displayed results with Confidence threshold = 0.5941860465116279
+2023-06-14 13:59:51,672 DEBUG    Slider value changed: 0.6007751937984496
+2023-06-14 13:59:51,672 DEBUG    Drawn bounding boxes with Confidence threshold = 0.6007751937984496
+2023-06-14 13:59:51,672 DEBUG    Displayed results with Confidence threshold = 0.6007751937984496
+2023-06-14 13:59:51,672 DEBUG    Displayed results with Confidence threshold = 0.6007751937984496
+2023-06-14 13:59:51,672 DEBUG    Slider value changed: 0.6073643410852713
+2023-06-14 13:59:51,682 DEBUG    Drawn bounding boxes with Confidence threshold = 0.6073643410852713
+2023-06-14 13:59:51,682 DEBUG    Displayed results with Confidence threshold = 0.6073643410852713
+2023-06-14 13:59:51,682 DEBUG    Displayed results with Confidence threshold = 0.6073643410852713
+2023-06-14 13:59:51,682 DEBUG    Slider value changed: 0.613953488372093
+2023-06-14 13:59:51,682 DEBUG    Drawn bounding boxes with Confidence threshold = 0.613953488372093
+2023-06-14 13:59:51,682 DEBUG    Displayed results with Confidence threshold = 0.613953488372093
+2023-06-14 13:59:51,692 DEBUG    Displayed results with Confidence threshold = 0.613953488372093
+2023-06-14 13:59:51,692 DEBUG    Slider value changed: 0.6205426356589147
+2023-06-14 13:59:51,692 DEBUG    Drawn bounding boxes with Confidence threshold = 0.6205426356589147
+2023-06-14 13:59:51,692 DEBUG    Displayed results with Confidence threshold = 0.6205426356589147
+2023-06-14 13:59:51,692 DEBUG    Displayed results with Confidence threshold = 0.6205426356589147
+2023-06-14 13:59:51,702 DEBUG    Slider value changed: 0.6271317829457363
+2023-06-14 13:59:51,702 DEBUG    Drawn bounding boxes with Confidence threshold = 0.6271317829457363
+2023-06-14 13:59:51,702 DEBUG    Displayed results with Confidence threshold = 0.6271317829457363
+2023-06-14 13:59:51,702 DEBUG    Displayed results with Confidence threshold = 0.6271317829457363
+2023-06-14 13:59:51,702 DEBUG    Slider value changed: 0.6337209302325582
+2023-06-14 13:59:51,712 DEBUG    Drawn bounding boxes with Confidence threshold = 0.6337209302325582
+2023-06-14 13:59:51,712 DEBUG    Displayed results with Confidence threshold = 0.6337209302325582
+2023-06-14 13:59:51,712 DEBUG    Displayed results with Confidence threshold = 0.6337209302325582
+2023-06-14 13:59:51,712 DEBUG    Slider value changed: 0.6403100775193798
+2023-06-14 13:59:51,712 DEBUG    Drawn bounding boxes with Confidence threshold = 0.6403100775193798
+2023-06-14 13:59:51,712 DEBUG    Displayed results with Confidence threshold = 0.6403100775193798
+2023-06-14 13:59:51,722 DEBUG    Displayed results with Confidence threshold = 0.6403100775193798
+2023-06-14 13:59:51,722 DEBUG    Slider value changed: 0.6468992248062015
+2023-06-14 13:59:51,722 DEBUG    Drawn bounding boxes with Confidence threshold = 0.6468992248062015
+2023-06-14 13:59:51,722 DEBUG    Displayed results with Confidence threshold = 0.6468992248062015
+2023-06-14 13:59:51,722 DEBUG    Displayed results with Confidence threshold = 0.6468992248062015
+2023-06-14 13:59:51,722 DEBUG    Slider value changed: 0.6534883720930232
+2023-06-14 13:59:51,732 DEBUG    Drawn bounding boxes with Confidence threshold = 0.6534883720930232
+2023-06-14 13:59:51,732 DEBUG    Displayed results with Confidence threshold = 0.6534883720930232
+2023-06-14 13:59:51,732 DEBUG    Displayed results with Confidence threshold = 0.6534883720930232
+2023-06-14 13:59:51,732 DEBUG    Slider value changed: 0.6600775193798449
+2023-06-14 13:59:51,732 DEBUG    Drawn bounding boxes with Confidence threshold = 0.6600775193798449
+2023-06-14 13:59:51,732 DEBUG    Displayed results with Confidence threshold = 0.6600775193798449
+2023-06-14 13:59:51,732 DEBUG    Displayed results with Confidence threshold = 0.6600775193798449
+2023-06-14 13:59:51,742 DEBUG    Slider value changed: 0.6666666666666666
+2023-06-14 13:59:51,742 DEBUG    Drawn bounding boxes with Confidence threshold = 0.6666666666666666
+2023-06-14 13:59:51,752 DEBUG    Displayed results with Confidence threshold = 0.6666666666666666
+2023-06-14 13:59:51,752 DEBUG    Displayed results with Confidence threshold = 0.6666666666666666
+2023-06-14 13:59:51,752 DEBUG    Slider value changed: 0.6732558139534883
+2023-06-14 13:59:51,752 DEBUG    Drawn bounding boxes with Confidence threshold = 0.6732558139534883
+2023-06-14 13:59:51,752 DEBUG    Displayed results with Confidence threshold = 0.6732558139534883
+2023-06-14 13:59:51,752 DEBUG    Displayed results with Confidence threshold = 0.6732558139534883
+2023-06-14 13:59:51,762 DEBUG    Slider value changed: 0.67984496124031
+2023-06-14 13:59:51,762 DEBUG    Drawn bounding boxes with Confidence threshold = 0.67984496124031
+2023-06-14 13:59:51,772 DEBUG    Displayed results with Confidence threshold = 0.67984496124031
+2023-06-14 13:59:51,772 DEBUG    Displayed results with Confidence threshold = 0.67984496124031
+2023-06-14 13:59:51,772 DEBUG    Slider value changed: 0.6864341085271317
+2023-06-14 13:59:51,772 DEBUG    Drawn bounding boxes with Confidence threshold = 0.6864341085271317
+2023-06-14 13:59:51,772 DEBUG    Displayed results with Confidence threshold = 0.6864341085271317
+2023-06-14 13:59:51,772 DEBUG    Displayed results with Confidence threshold = 0.6864341085271317
+2023-06-14 13:59:51,782 DEBUG    Slider value changed: 0.6930232558139535
+2023-06-14 13:59:51,782 DEBUG    Drawn bounding boxes with Confidence threshold = 0.6930232558139535
+2023-06-14 13:59:51,782 DEBUG    Displayed results with Confidence threshold = 0.6930232558139535
+2023-06-14 13:59:51,782 DEBUG    Displayed results with Confidence threshold = 0.6930232558139535
+2023-06-14 13:59:51,782 DEBUG    Slider value changed: 0.6996124031007752
+2023-06-14 13:59:51,792 DEBUG    Drawn bounding boxes with Confidence threshold = 0.6996124031007752
+2023-06-14 13:59:51,792 DEBUG    Displayed results with Confidence threshold = 0.6996124031007752
+2023-06-14 13:59:51,792 DEBUG    Displayed results with Confidence threshold = 0.6996124031007752
+2023-06-14 13:59:51,792 DEBUG    Slider value changed: 0.7062015503875969
+2023-06-14 13:59:51,792 DEBUG    Drawn bounding boxes with Confidence threshold = 0.7062015503875969
+2023-06-14 13:59:51,792 DEBUG    Displayed results with Confidence threshold = 0.7062015503875969
+2023-06-14 13:59:51,792 DEBUG    Displayed results with Confidence threshold = 0.7062015503875969
+2023-06-14 13:59:51,802 DEBUG    Slider value changed: 0.7127906976744185
+2023-06-14 13:59:51,802 DEBUG    Drawn bounding boxes with Confidence threshold = 0.7127906976744185
+2023-06-14 13:59:51,802 DEBUG    Displayed results with Confidence threshold = 0.7127906976744185
+2023-06-14 13:59:51,802 DEBUG    Displayed results with Confidence threshold = 0.7127906976744185
+2023-06-14 13:59:51,812 DEBUG    Slider value changed: 0.7193798449612402
+2023-06-14 13:59:51,812 DEBUG    Drawn bounding boxes with Confidence threshold = 0.7193798449612402
+2023-06-14 13:59:51,812 DEBUG    Displayed results with Confidence threshold = 0.7193798449612402
+2023-06-14 13:59:51,812 DEBUG    Displayed results with Confidence threshold = 0.7193798449612402
+2023-06-14 13:59:51,812 DEBUG    Slider value changed: 0.725968992248062
+2023-06-14 13:59:51,822 DEBUG    Drawn bounding boxes with Confidence threshold = 0.725968992248062
+2023-06-14 13:59:51,822 DEBUG    Displayed results with Confidence threshold = 0.725968992248062
+2023-06-14 13:59:51,822 DEBUG    Displayed results with Confidence threshold = 0.725968992248062
+2023-06-14 13:59:51,822 DEBUG    Slider value changed: 0.7325581395348837
+2023-06-14 13:59:51,822 DEBUG    Drawn bounding boxes with Confidence threshold = 0.7325581395348837
+2023-06-14 13:59:51,822 DEBUG    Displayed results with Confidence threshold = 0.7325581395348837
+2023-06-14 13:59:51,822 DEBUG    Displayed results with Confidence threshold = 0.7325581395348837
+2023-06-14 13:59:51,822 DEBUG    Slider value changed: 0.7391472868217054
+2023-06-14 13:59:51,832 DEBUG    Drawn bounding boxes with Confidence threshold = 0.7391472868217054
+2023-06-14 13:59:51,832 DEBUG    Displayed results with Confidence threshold = 0.7391472868217054
+2023-06-14 13:59:51,832 DEBUG    Displayed results with Confidence threshold = 0.7391472868217054
+2023-06-14 13:59:51,832 DEBUG    Slider value changed: 0.7457364341085271
+2023-06-14 13:59:51,842 DEBUG    Drawn bounding boxes with Confidence threshold = 0.7457364341085271
+2023-06-14 13:59:51,842 DEBUG    Displayed results with Confidence threshold = 0.7457364341085271
+2023-06-14 13:59:51,842 DEBUG    Displayed results with Confidence threshold = 0.7457364341085271
+2023-06-14 13:59:51,842 DEBUG    Slider value changed: 0.7523255813953488
+2023-06-14 13:59:51,842 DEBUG    Drawn bounding boxes with Confidence threshold = 0.7523255813953488
+2023-06-14 13:59:51,842 DEBUG    Displayed results with Confidence threshold = 0.7523255813953488
+2023-06-14 13:59:51,842 DEBUG    Displayed results with Confidence threshold = 0.7523255813953488
+2023-06-14 13:59:51,852 DEBUG    Slider value changed: 0.7589147286821706
+2023-06-14 13:59:51,852 DEBUG    Drawn bounding boxes with Confidence threshold = 0.7589147286821706
+2023-06-14 13:59:51,852 DEBUG    Displayed results with Confidence threshold = 0.7589147286821706
+2023-06-14 13:59:51,852 DEBUG    Displayed results with Confidence threshold = 0.7589147286821706
+2023-06-14 13:59:51,872 DEBUG    Slider value changed: 0.7655038759689922
+2023-06-14 13:59:51,882 DEBUG    Drawn bounding boxes with Confidence threshold = 0.7655038759689922
+2023-06-14 13:59:51,882 DEBUG    Displayed results with Confidence threshold = 0.7655038759689922
+2023-06-14 13:59:51,882 DEBUG    Displayed results with Confidence threshold = 0.7655038759689922
+2023-06-14 13:59:51,933 DEBUG    Slider value changed: 0.7720930232558139
+2023-06-14 13:59:51,939 DEBUG    Drawn bounding boxes with Confidence threshold = 0.7720930232558139
+2023-06-14 13:59:51,939 DEBUG    Displayed results with Confidence threshold = 0.7720930232558139
+2023-06-14 13:59:51,939 DEBUG    Displayed results with Confidence threshold = 0.7720930232558139
+2023-06-14 13:59:51,949 DEBUG    Slider value changed: 0.7786821705426356
+2023-06-14 13:59:51,949 DEBUG    Drawn bounding boxes with Confidence threshold = 0.7786821705426356
+2023-06-14 13:59:51,949 DEBUG    Displayed results with Confidence threshold = 0.7786821705426356
+2023-06-14 13:59:51,949 DEBUG    Displayed results with Confidence threshold = 0.7786821705426356
+2023-06-14 13:59:52,264 DEBUG    Slider value changed: 0.7720930232558139
+2023-06-14 13:59:52,274 DEBUG    Drawn bounding boxes with Confidence threshold = 0.7720930232558139
+2023-06-14 13:59:52,274 DEBUG    Displayed results with Confidence threshold = 0.7720930232558139
+2023-06-14 13:59:52,274 DEBUG    Displayed results with Confidence threshold = 0.7720930232558139
+2023-06-14 13:59:52,274 DEBUG    Slider value changed: 0.7589147286821706
+2023-06-14 13:59:52,284 DEBUG    Drawn bounding boxes with Confidence threshold = 0.7589147286821706
+2023-06-14 13:59:52,284 DEBUG    Displayed results with Confidence threshold = 0.7589147286821706
+2023-06-14 13:59:52,284 DEBUG    Displayed results with Confidence threshold = 0.7589147286821706
+2023-06-14 13:59:52,284 DEBUG    Slider value changed: 0.7523255813953488
+2023-06-14 13:59:52,284 DEBUG    Drawn bounding boxes with Confidence threshold = 0.7523255813953488
+2023-06-14 13:59:52,284 DEBUG    Displayed results with Confidence threshold = 0.7523255813953488
+2023-06-14 13:59:52,284 DEBUG    Displayed results with Confidence threshold = 0.7523255813953488
+2023-06-14 13:59:52,284 DEBUG    Slider value changed: 0.7457364341085271
+2023-06-14 13:59:52,284 DEBUG    Drawn bounding boxes with Confidence threshold = 0.7457364341085271
+2023-06-14 13:59:52,284 DEBUG    Displayed results with Confidence threshold = 0.7457364341085271
+2023-06-14 13:59:52,284 DEBUG    Displayed results with Confidence threshold = 0.7457364341085271
+2023-06-14 13:59:52,294 DEBUG    Slider value changed: 0.7391472868217054
+2023-06-14 13:59:52,294 DEBUG    Drawn bounding boxes with Confidence threshold = 0.7391472868217054
+2023-06-14 13:59:52,294 DEBUG    Displayed results with Confidence threshold = 0.7391472868217054
+2023-06-14 13:59:52,294 DEBUG    Displayed results with Confidence threshold = 0.7391472868217054
+2023-06-14 13:59:52,294 DEBUG    Slider value changed: 0.7325581395348837
+2023-06-14 13:59:52,294 DEBUG    Drawn bounding boxes with Confidence threshold = 0.7325581395348837
+2023-06-14 13:59:52,294 DEBUG    Displayed results with Confidence threshold = 0.7325581395348837
+2023-06-14 13:59:52,304 DEBUG    Displayed results with Confidence threshold = 0.7325581395348837
+2023-06-14 13:59:52,304 DEBUG    Slider value changed: 0.725968992248062
+2023-06-14 13:59:52,304 DEBUG    Drawn bounding boxes with Confidence threshold = 0.725968992248062
+2023-06-14 13:59:52,304 DEBUG    Displayed results with Confidence threshold = 0.725968992248062
+2023-06-14 13:59:52,304 DEBUG    Displayed results with Confidence threshold = 0.725968992248062
+2023-06-14 13:59:52,304 DEBUG    Slider value changed: 0.7193798449612402
+2023-06-14 13:59:52,304 DEBUG    Drawn bounding boxes with Confidence threshold = 0.7193798449612402
+2023-06-14 13:59:52,304 DEBUG    Displayed results with Confidence threshold = 0.7193798449612402
+2023-06-14 13:59:52,304 DEBUG    Displayed results with Confidence threshold = 0.7193798449612402
+2023-06-14 13:59:52,304 DEBUG    Slider value changed: 0.7127906976744185
+2023-06-14 13:59:52,314 DEBUG    Drawn bounding boxes with Confidence threshold = 0.7127906976744185
+2023-06-14 13:59:52,314 DEBUG    Displayed results with Confidence threshold = 0.7127906976744185
+2023-06-14 13:59:52,314 DEBUG    Displayed results with Confidence threshold = 0.7127906976744185
+2023-06-14 13:59:52,317 DEBUG    Slider value changed: 0.7062015503875969
+2023-06-14 13:59:52,317 DEBUG    Drawn bounding boxes with Confidence threshold = 0.7062015503875969
+2023-06-14 13:59:52,324 DEBUG    Displayed results with Confidence threshold = 0.7062015503875969
+2023-06-14 13:59:52,324 DEBUG    Displayed results with Confidence threshold = 0.7062015503875969
+2023-06-14 13:59:52,324 DEBUG    Slider value changed: 0.6864341085271317
+2023-06-14 13:59:52,324 DEBUG    Drawn bounding boxes with Confidence threshold = 0.6864341085271317
+2023-06-14 13:59:52,324 DEBUG    Displayed results with Confidence threshold = 0.6864341085271317
+2023-06-14 13:59:52,324 DEBUG    Displayed results with Confidence threshold = 0.6864341085271317
+2023-06-14 13:59:52,324 DEBUG    Slider value changed: 0.6732558139534883
+2023-06-14 13:59:52,334 DEBUG    Drawn bounding boxes with Confidence threshold = 0.6732558139534883
+2023-06-14 13:59:52,334 DEBUG    Displayed results with Confidence threshold = 0.6732558139534883
+2023-06-14 13:59:52,334 DEBUG    Displayed results with Confidence threshold = 0.6732558139534883
+2023-06-14 13:59:52,334 DEBUG    Slider value changed: 0.6666666666666666
+2023-06-14 13:59:52,334 DEBUG    Drawn bounding boxes with Confidence threshold = 0.6666666666666666
+2023-06-14 13:59:52,334 DEBUG    Displayed results with Confidence threshold = 0.6666666666666666
+2023-06-14 13:59:52,334 DEBUG    Displayed results with Confidence threshold = 0.6666666666666666
+2023-06-14 13:59:52,334 DEBUG    Slider value changed: 0.6468992248062015
+2023-06-14 13:59:52,344 DEBUG    Drawn bounding boxes with Confidence threshold = 0.6468992248062015
+2023-06-14 13:59:52,344 DEBUG    Displayed results with Confidence threshold = 0.6468992248062015
+2023-06-14 13:59:52,344 DEBUG    Displayed results with Confidence threshold = 0.6468992248062015
+2023-06-14 13:59:52,344 DEBUG    Slider value changed: 0.6337209302325582
+2023-06-14 13:59:52,344 DEBUG    Drawn bounding boxes with Confidence threshold = 0.6337209302325582
+2023-06-14 13:59:52,344 DEBUG    Displayed results with Confidence threshold = 0.6337209302325582
+2023-06-14 13:59:52,344 DEBUG    Displayed results with Confidence threshold = 0.6337209302325582
+2023-06-14 13:59:52,344 DEBUG    Slider value changed: 0.6271317829457363
+2023-06-14 13:59:52,344 DEBUG    Drawn bounding boxes with Confidence threshold = 0.6271317829457363
+2023-06-14 13:59:52,354 DEBUG    Displayed results with Confidence threshold = 0.6271317829457363
+2023-06-14 13:59:52,354 DEBUG    Displayed results with Confidence threshold = 0.6271317829457363
+2023-06-14 13:59:52,354 DEBUG    Slider value changed: 0.613953488372093
+2023-06-14 13:59:52,354 DEBUG    Drawn bounding boxes with Confidence threshold = 0.613953488372093
+2023-06-14 13:59:52,354 DEBUG    Displayed results with Confidence threshold = 0.613953488372093
+2023-06-14 13:59:52,354 DEBUG    Displayed results with Confidence threshold = 0.613953488372093
+2023-06-14 13:59:52,354 DEBUG    Slider value changed: 0.6007751937984496
+2023-06-14 13:59:52,362 DEBUG    Drawn bounding boxes with Confidence threshold = 0.6007751937984496
+2023-06-14 13:59:52,362 DEBUG    Displayed results with Confidence threshold = 0.6007751937984496
+2023-06-14 13:59:52,362 DEBUG    Displayed results with Confidence threshold = 0.6007751937984496
+2023-06-14 13:59:52,362 DEBUG    Slider value changed: 0.5875968992248062
+2023-06-14 13:59:52,364 DEBUG    Drawn bounding boxes with Confidence threshold = 0.5875968992248062
+2023-06-14 13:59:52,364 DEBUG    Displayed results with Confidence threshold = 0.5875968992248062
+2023-06-14 13:59:52,364 DEBUG    Displayed results with Confidence threshold = 0.5875968992248062
+2023-06-14 13:59:52,364 DEBUG    Slider value changed: 0.5810077519379845
+2023-06-14 13:59:52,364 DEBUG    Drawn bounding boxes with Confidence threshold = 0.5810077519379845
+2023-06-14 13:59:52,364 DEBUG    Displayed results with Confidence threshold = 0.5810077519379845
+2023-06-14 13:59:52,364 DEBUG    Displayed results with Confidence threshold = 0.5810077519379845
+2023-06-14 13:59:52,364 DEBUG    Slider value changed: 0.5744186046511628
+2023-06-14 13:59:52,375 DEBUG    Drawn bounding boxes with Confidence threshold = 0.5744186046511628
+2023-06-14 13:59:52,375 DEBUG    Displayed results with Confidence threshold = 0.5744186046511628
+2023-06-14 13:59:52,375 DEBUG    Displayed results with Confidence threshold = 0.5744186046511628
+2023-06-14 13:59:52,375 DEBUG    Slider value changed: 0.5612403100775193
+2023-06-14 13:59:52,375 DEBUG    Drawn bounding boxes with Confidence threshold = 0.5612403100775193
+2023-06-14 13:59:52,375 DEBUG    Displayed results with Confidence threshold = 0.5612403100775193
+2023-06-14 13:59:52,375 DEBUG    Displayed results with Confidence threshold = 0.5612403100775193
+2023-06-14 13:59:52,375 DEBUG    Slider value changed: 0.548062015503876
+2023-06-14 13:59:52,375 DEBUG    Drawn bounding boxes with Confidence threshold = 0.548062015503876
+2023-06-14 13:59:52,375 DEBUG    Displayed results with Confidence threshold = 0.548062015503876
+2023-06-14 13:59:52,375 DEBUG    Displayed results with Confidence threshold = 0.548062015503876
+2023-06-14 13:59:52,384 DEBUG    Slider value changed: 0.5414728682170543
+2023-06-14 13:59:52,384 DEBUG    Drawn bounding boxes with Confidence threshold = 0.5414728682170543
+2023-06-14 13:59:52,384 DEBUG    Displayed results with Confidence threshold = 0.5414728682170543
+2023-06-14 13:59:52,384 DEBUG    Displayed results with Confidence threshold = 0.5414728682170543
+2023-06-14 13:59:52,384 DEBUG    Slider value changed: 0.5282945736434108
+2023-06-14 13:59:52,384 DEBUG    Drawn bounding boxes with Confidence threshold = 0.5282945736434108
+2023-06-14 13:59:52,384 DEBUG    Displayed results with Confidence threshold = 0.5282945736434108
+2023-06-14 13:59:52,384 DEBUG    Displayed results with Confidence threshold = 0.5282945736434108
+2023-06-14 13:59:52,384 DEBUG    Slider value changed: 0.5151162790697674
+2023-06-14 13:59:52,394 DEBUG    Drawn bounding boxes with Confidence threshold = 0.5151162790697674
+2023-06-14 13:59:52,394 DEBUG    Displayed results with Confidence threshold = 0.5151162790697674
+2023-06-14 13:59:52,394 DEBUG    Displayed results with Confidence threshold = 0.5151162790697674
+2023-06-14 13:59:52,394 DEBUG    Slider value changed: 0.501937984496124
+2023-06-14 13:59:52,394 DEBUG    Drawn bounding boxes with Confidence threshold = 0.501937984496124
+2023-06-14 13:59:52,394 DEBUG    Displayed results with Confidence threshold = 0.501937984496124
+2023-06-14 13:59:52,394 DEBUG    Displayed results with Confidence threshold = 0.501937984496124
+2023-06-14 13:59:52,394 DEBUG    Slider value changed: 0.49534883720930234
+2023-06-14 13:59:52,404 DEBUG    Drawn bounding boxes with Confidence threshold = 0.49534883720930234
+2023-06-14 13:59:52,404 DEBUG    Displayed results with Confidence threshold = 0.49534883720930234
+2023-06-14 13:59:52,404 DEBUG    Displayed results with Confidence threshold = 0.49534883720930234
+2023-06-14 13:59:52,404 DEBUG    Slider value changed: 0.47558139534883725
+2023-06-14 13:59:52,404 DEBUG    Drawn bounding boxes with Confidence threshold = 0.47558139534883725
+2023-06-14 13:59:52,404 DEBUG    Displayed results with Confidence threshold = 0.47558139534883725
+2023-06-14 13:59:52,404 DEBUG    Displayed results with Confidence threshold = 0.47558139534883725
+2023-06-14 13:59:52,404 DEBUG    Slider value changed: 0.46899224806201545
+2023-06-14 13:59:52,404 DEBUG    Drawn bounding boxes with Confidence threshold = 0.46899224806201545
+2023-06-14 13:59:52,404 DEBUG    Displayed results with Confidence threshold = 0.46899224806201545
+2023-06-14 13:59:52,404 DEBUG    Displayed results with Confidence threshold = 0.46899224806201545
+2023-06-14 13:59:52,414 DEBUG    Slider value changed: 0.46240310077519375
+2023-06-14 13:59:52,414 DEBUG    Drawn bounding boxes with Confidence threshold = 0.46240310077519375
+2023-06-14 13:59:52,414 DEBUG    Displayed results with Confidence threshold = 0.46240310077519375
+2023-06-14 13:59:52,414 DEBUG    Displayed results with Confidence threshold = 0.46240310077519375
+2023-06-14 13:59:52,414 DEBUG    Slider value changed: 0.44922480620155036
+2023-06-14 13:59:52,414 DEBUG    Drawn bounding boxes with Confidence threshold = 0.44922480620155036
+2023-06-14 13:59:52,414 DEBUG    Displayed results with Confidence threshold = 0.44922480620155036
+2023-06-14 13:59:52,414 DEBUG    Displayed results with Confidence threshold = 0.44922480620155036
+2023-06-14 13:59:52,414 DEBUG    Slider value changed: 0.436046511627907
+2023-06-14 13:59:52,424 DEBUG    Drawn bounding boxes with Confidence threshold = 0.436046511627907
+2023-06-14 13:59:52,424 DEBUG    Displayed results with Confidence threshold = 0.436046511627907
+2023-06-14 13:59:52,424 DEBUG    Displayed results with Confidence threshold = 0.436046511627907
+2023-06-14 13:59:52,424 DEBUG    Slider value changed: 0.4228682170542636
+2023-06-14 13:59:52,424 DEBUG    Drawn bounding boxes with Confidence threshold = 0.4228682170542636
+2023-06-14 13:59:52,424 DEBUG    Displayed results with Confidence threshold = 0.4228682170542636
+2023-06-14 13:59:52,424 DEBUG    Displayed results with Confidence threshold = 0.4228682170542636
+2023-06-14 13:59:52,424 DEBUG    Slider value changed: 0.4096899224806201
+2023-06-14 13:59:52,424 DEBUG    Drawn bounding boxes with Confidence threshold = 0.4096899224806201
+2023-06-14 13:59:52,434 DEBUG    Displayed results with Confidence threshold = 0.4096899224806201
+2023-06-14 13:59:52,434 DEBUG    Displayed results with Confidence threshold = 0.4096899224806201
+2023-06-14 13:59:52,434 DEBUG    Slider value changed: 0.389922480620155
+2023-06-14 13:59:52,434 DEBUG    Drawn bounding boxes with Confidence threshold = 0.389922480620155
+2023-06-14 13:59:52,434 DEBUG    Displayed results with Confidence threshold = 0.389922480620155
+2023-06-14 13:59:52,434 DEBUG    Displayed results with Confidence threshold = 0.389922480620155
+2023-06-14 13:59:52,434 DEBUG    Slider value changed: 0.3701550387596899
+2023-06-14 13:59:52,434 DEBUG    Drawn bounding boxes with Confidence threshold = 0.3701550387596899
+2023-06-14 13:59:52,434 DEBUG    Displayed results with Confidence threshold = 0.3701550387596899
+2023-06-14 13:59:52,434 DEBUG    Displayed results with Confidence threshold = 0.3701550387596899
+2023-06-14 13:59:52,434 DEBUG    Slider value changed: 0.3569767441860465
+2023-06-14 13:59:52,444 DEBUG    Drawn bounding boxes with Confidence threshold = 0.3569767441860465
+2023-06-14 13:59:52,444 DEBUG    Displayed results with Confidence threshold = 0.3569767441860465
+2023-06-14 13:59:52,444 DEBUG    Displayed results with Confidence threshold = 0.3569767441860465
+2023-06-14 13:59:52,444 DEBUG    Slider value changed: 0.35038759689922483
+2023-06-14 13:59:52,444 DEBUG    Drawn bounding boxes with Confidence threshold = 0.35038759689922483
+2023-06-14 13:59:52,444 DEBUG    Displayed results with Confidence threshold = 0.35038759689922483
+2023-06-14 13:59:52,444 DEBUG    Displayed results with Confidence threshold = 0.35038759689922483
+2023-06-14 13:59:52,444 DEBUG    Slider value changed: 0.3372093023255814
+2023-06-14 13:59:52,444 DEBUG    Drawn bounding boxes with Confidence threshold = 0.3372093023255814
+2023-06-14 13:59:52,444 DEBUG    Displayed results with Confidence threshold = 0.3372093023255814
+2023-06-14 13:59:52,444 DEBUG    Displayed results with Confidence threshold = 0.3372093023255814
+2023-06-14 13:59:52,454 DEBUG    Slider value changed: 0.324031007751938
+2023-06-14 13:59:52,454 DEBUG    Drawn bounding boxes with Confidence threshold = 0.324031007751938
+2023-06-14 13:59:52,454 DEBUG    Displayed results with Confidence threshold = 0.324031007751938
+2023-06-14 13:59:52,454 DEBUG    Displayed results with Confidence threshold = 0.324031007751938
+2023-06-14 13:59:52,454 DEBUG    Slider value changed: 0.3174418604651163
+2023-06-14 13:59:52,454 DEBUG    Drawn bounding boxes with Confidence threshold = 0.3174418604651163
+2023-06-14 13:59:52,454 DEBUG    Displayed results with Confidence threshold = 0.3174418604651163
+2023-06-14 13:59:52,454 DEBUG    Displayed results with Confidence threshold = 0.3174418604651163
+2023-06-14 13:59:52,454 DEBUG    Slider value changed: 0.30426356589147285
+2023-06-14 13:59:52,462 DEBUG    Drawn bounding boxes with Confidence threshold = 0.30426356589147285
+2023-06-14 13:59:52,462 DEBUG    Displayed results with Confidence threshold = 0.30426356589147285
+2023-06-14 13:59:52,462 DEBUG    Displayed results with Confidence threshold = 0.30426356589147285
+2023-06-14 13:59:52,464 DEBUG    Slider value changed: 0.29108527131782946
+2023-06-14 13:59:52,464 DEBUG    Drawn bounding boxes with Confidence threshold = 0.29108527131782946
+2023-06-14 13:59:52,464 DEBUG    Displayed results with Confidence threshold = 0.29108527131782946
+2023-06-14 13:59:52,464 DEBUG    Displayed results with Confidence threshold = 0.29108527131782946
+2023-06-14 13:59:52,464 DEBUG    Slider value changed: 0.28449612403100777
+2023-06-14 13:59:52,464 DEBUG    Drawn bounding boxes with Confidence threshold = 0.28449612403100777
+2023-06-14 13:59:52,464 DEBUG    Displayed results with Confidence threshold = 0.28449612403100777
+2023-06-14 13:59:52,464 DEBUG    Displayed results with Confidence threshold = 0.28449612403100777
+2023-06-14 13:59:52,464 DEBUG    Slider value changed: 0.2779069767441861
+2023-06-14 13:59:52,464 DEBUG    Drawn bounding boxes with Confidence threshold = 0.2779069767441861
+2023-06-14 13:59:52,464 DEBUG    Displayed results with Confidence threshold = 0.2779069767441861
+2023-06-14 13:59:52,464 DEBUG    Displayed results with Confidence threshold = 0.2779069767441861
+2023-06-14 13:59:52,474 DEBUG    Slider value changed: 0.2713178294573644
+2023-06-14 13:59:52,474 DEBUG    Drawn bounding boxes with Confidence threshold = 0.2713178294573644
+2023-06-14 13:59:52,474 DEBUG    Displayed results with Confidence threshold = 0.2713178294573644
+2023-06-14 13:59:52,474 DEBUG    Displayed results with Confidence threshold = 0.2713178294573644
+2023-06-14 13:59:52,474 DEBUG    Slider value changed: 0.2647286821705427
+2023-06-14 13:59:52,474 DEBUG    Drawn bounding boxes with Confidence threshold = 0.2647286821705427
+2023-06-14 13:59:52,474 DEBUG    Displayed results with Confidence threshold = 0.2647286821705427
+2023-06-14 13:59:52,474 DEBUG    Displayed results with Confidence threshold = 0.2647286821705427
+2023-06-14 13:59:52,474 DEBUG    Slider value changed: 0.25155038759689924
+2023-06-14 13:59:52,474 DEBUG    Drawn bounding boxes with Confidence threshold = 0.25155038759689924
+2023-06-14 13:59:52,474 DEBUG    Displayed results with Confidence threshold = 0.25155038759689924
+2023-06-14 13:59:52,484 DEBUG    Displayed results with Confidence threshold = 0.25155038759689924
+2023-06-14 13:59:52,484 DEBUG    Slider value changed: 0.24496124031007752
+2023-06-14 13:59:52,484 DEBUG    Drawn bounding boxes with Confidence threshold = 0.24496124031007752
+2023-06-14 13:59:52,484 DEBUG    Displayed results with Confidence threshold = 0.24496124031007752
+2023-06-14 13:59:52,484 DEBUG    Displayed results with Confidence threshold = 0.24496124031007752
+2023-06-14 13:59:52,484 DEBUG    Slider value changed: 0.23837209302325582
+2023-06-14 13:59:52,484 DEBUG    Drawn bounding boxes with Confidence threshold = 0.23837209302325582
+2023-06-14 13:59:52,484 DEBUG    Displayed results with Confidence threshold = 0.23837209302325582
+2023-06-14 13:59:52,484 DEBUG    Displayed results with Confidence threshold = 0.23837209302325582
+2023-06-14 13:59:52,484 DEBUG    Slider value changed: 0.2317829457364341
+2023-06-14 13:59:52,484 DEBUG    Drawn bounding boxes with Confidence threshold = 0.2317829457364341
+2023-06-14 13:59:52,484 DEBUG    Displayed results with Confidence threshold = 0.2317829457364341
+2023-06-14 13:59:52,484 DEBUG    Displayed results with Confidence threshold = 0.2317829457364341
+2023-06-14 13:59:52,494 DEBUG    Slider value changed: 0.2251937984496124
+2023-06-14 13:59:52,494 DEBUG    Drawn bounding boxes with Confidence threshold = 0.2251937984496124
+2023-06-14 13:59:52,494 DEBUG    Displayed results with Confidence threshold = 0.2251937984496124
+2023-06-14 13:59:52,494 DEBUG    Displayed results with Confidence threshold = 0.2251937984496124
+2023-06-14 13:59:52,494 DEBUG    Slider value changed: 0.2186046511627907
+2023-06-14 13:59:52,494 DEBUG    Drawn bounding boxes with Confidence threshold = 0.2186046511627907
+2023-06-14 13:59:52,494 DEBUG    Displayed results with Confidence threshold = 0.2186046511627907
+2023-06-14 13:59:52,494 DEBUG    Displayed results with Confidence threshold = 0.2186046511627907
+2023-06-14 13:59:52,494 DEBUG    Slider value changed: 0.212015503875969
+2023-06-14 13:59:52,504 DEBUG    Drawn bounding boxes with Confidence threshold = 0.212015503875969
+2023-06-14 13:59:52,504 DEBUG    Displayed results with Confidence threshold = 0.212015503875969
+2023-06-14 13:59:52,504 DEBUG    Displayed results with Confidence threshold = 0.212015503875969
+2023-06-14 13:59:52,504 DEBUG    Slider value changed: 0.2054263565891473
+2023-06-14 13:59:52,504 DEBUG    Drawn bounding boxes with Confidence threshold = 0.2054263565891473
+2023-06-14 13:59:52,504 DEBUG    Displayed results with Confidence threshold = 0.2054263565891473
+2023-06-14 13:59:52,504 DEBUG    Displayed results with Confidence threshold = 0.2054263565891473
+2023-06-14 13:59:52,504 DEBUG    Slider value changed: 0.19883720930232557
+2023-06-14 13:59:52,504 DEBUG    Drawn bounding boxes with Confidence threshold = 0.19883720930232557
+2023-06-14 13:59:52,504 DEBUG    Displayed results with Confidence threshold = 0.19883720930232557
+2023-06-14 13:59:52,504 DEBUG    Displayed results with Confidence threshold = 0.19883720930232557
+2023-06-14 13:59:52,504 DEBUG    Slider value changed: 0.19224806201550387
+2023-06-14 13:59:52,514 DEBUG    Drawn bounding boxes with Confidence threshold = 0.19224806201550387
+2023-06-14 13:59:52,514 DEBUG    Displayed results with Confidence threshold = 0.19224806201550387
+2023-06-14 13:59:52,514 DEBUG    Displayed results with Confidence threshold = 0.19224806201550387
+2023-06-14 13:59:52,514 DEBUG    Slider value changed: 0.18565891472868218
+2023-06-14 13:59:52,514 DEBUG    Drawn bounding boxes with Confidence threshold = 0.18565891472868218
+2023-06-14 13:59:52,514 DEBUG    Displayed results with Confidence threshold = 0.18565891472868218
+2023-06-14 13:59:52,514 DEBUG    Displayed results with Confidence threshold = 0.18565891472868218
+2023-06-14 13:59:52,514 DEBUG    Slider value changed: 0.17906976744186048
+2023-06-14 13:59:52,514 DEBUG    Drawn bounding boxes with Confidence threshold = 0.17906976744186048
+2023-06-14 13:59:52,514 DEBUG    Displayed results with Confidence threshold = 0.17906976744186048
+2023-06-14 13:59:52,514 DEBUG    Displayed results with Confidence threshold = 0.17906976744186048
+2023-06-14 13:59:52,524 DEBUG    Slider value changed: 0.17248062015503876
+2023-06-14 13:59:52,524 DEBUG    Drawn bounding boxes with Confidence threshold = 0.17248062015503876
+2023-06-14 13:59:52,524 DEBUG    Displayed results with Confidence threshold = 0.17248062015503876
+2023-06-14 13:59:52,524 DEBUG    Displayed results with Confidence threshold = 0.17248062015503876
+2023-06-14 13:59:52,524 DEBUG    Slider value changed: 0.16589147286821704
+2023-06-14 13:59:52,524 DEBUG    Drawn bounding boxes with Confidence threshold = 0.16589147286821704
+2023-06-14 13:59:52,524 DEBUG    Displayed results with Confidence threshold = 0.16589147286821704
+2023-06-14 13:59:52,524 DEBUG    Displayed results with Confidence threshold = 0.16589147286821704
+2023-06-14 13:59:52,524 DEBUG    Slider value changed: 0.15930232558139534
+2023-06-14 13:59:52,534 DEBUG    Drawn bounding boxes with Confidence threshold = 0.15930232558139534
+2023-06-14 13:59:52,534 DEBUG    Displayed results with Confidence threshold = 0.15930232558139534
+2023-06-14 13:59:52,534 DEBUG    Displayed results with Confidence threshold = 0.15930232558139534
+2023-06-14 13:59:52,534 DEBUG    Slider value changed: 0.15271317829457365
+2023-06-14 13:59:52,534 DEBUG    Drawn bounding boxes with Confidence threshold = 0.15271317829457365
+2023-06-14 13:59:52,534 DEBUG    Displayed results with Confidence threshold = 0.15271317829457365
+2023-06-14 13:59:52,534 DEBUG    Displayed results with Confidence threshold = 0.15271317829457365
+2023-06-14 13:59:52,534 DEBUG    Slider value changed: 0.14612403100775195
+2023-06-14 13:59:52,534 DEBUG    Drawn bounding boxes with Confidence threshold = 0.14612403100775195
+2023-06-14 13:59:52,534 DEBUG    Displayed results with Confidence threshold = 0.14612403100775195
+2023-06-14 13:59:52,534 DEBUG    Displayed results with Confidence threshold = 0.14612403100775195
+2023-06-14 13:59:52,534 DEBUG    Slider value changed: 0.13953488372093023
+2023-06-14 13:59:52,544 DEBUG    Drawn bounding boxes with Confidence threshold = 0.13953488372093023
+2023-06-14 13:59:52,544 DEBUG    Displayed results with Confidence threshold = 0.13953488372093023
+2023-06-14 13:59:52,544 DEBUG    Displayed results with Confidence threshold = 0.13953488372093023
+2023-06-14 13:59:52,544 DEBUG    Slider value changed: 0.13294573643410854
+2023-06-14 13:59:52,544 DEBUG    Drawn bounding boxes with Confidence threshold = 0.13294573643410854
+2023-06-14 13:59:52,544 DEBUG    Displayed results with Confidence threshold = 0.13294573643410854
+2023-06-14 13:59:52,544 DEBUG    Displayed results with Confidence threshold = 0.13294573643410854
+2023-06-14 13:59:52,544 DEBUG    Slider value changed: 0.1263565891472868
+2023-06-14 13:59:52,554 DEBUG    Drawn bounding boxes with Confidence threshold = 0.1263565891472868
+2023-06-14 13:59:52,554 DEBUG    Displayed results with Confidence threshold = 0.1263565891472868
+2023-06-14 13:59:52,554 DEBUG    Displayed results with Confidence threshold = 0.1263565891472868
+2023-06-14 13:59:52,554 DEBUG    Slider value changed: 0.11976744186046512
+2023-06-14 13:59:52,554 DEBUG    Drawn bounding boxes with Confidence threshold = 0.11976744186046512
+2023-06-14 13:59:52,554 DEBUG    Displayed results with Confidence threshold = 0.11976744186046512
+2023-06-14 13:59:52,554 DEBUG    Displayed results with Confidence threshold = 0.11976744186046512
+2023-06-14 13:59:52,554 DEBUG    Slider value changed: 0.11317829457364342
+2023-06-14 13:59:52,562 DEBUG    Drawn bounding boxes with Confidence threshold = 0.11317829457364342
+2023-06-14 13:59:52,562 DEBUG    Displayed results with Confidence threshold = 0.11317829457364342
+2023-06-14 13:59:52,562 DEBUG    Displayed results with Confidence threshold = 0.11317829457364342
+2023-06-14 13:59:52,562 DEBUG    Slider value changed: 0.10658914728682171
+2023-06-14 13:59:52,564 DEBUG    Drawn bounding boxes with Confidence threshold = 0.10658914728682171
+2023-06-14 13:59:52,564 DEBUG    Displayed results with Confidence threshold = 0.10658914728682171
+2023-06-14 13:59:52,564 DEBUG    Displayed results with Confidence threshold = 0.10658914728682171
+2023-06-14 13:59:52,564 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:52,564 DEBUG    Drawn bounding boxes with Confidence threshold = 0.1
+2023-06-14 13:59:52,564 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,564 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,564 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:52,574 DEBUG    Drawn bounding boxes with Confidence threshold = 0.1
+2023-06-14 13:59:52,574 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,574 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,574 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:52,574 DEBUG    Drawn bounding boxes with Confidence threshold = 0.1
+2023-06-14 13:59:52,574 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,574 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,574 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:52,574 DEBUG    Drawn bounding boxes with Confidence threshold = 0.1
+2023-06-14 13:59:52,574 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,574 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,584 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:52,584 DEBUG    Drawn bounding boxes with Confidence threshold = 0.1
+2023-06-14 13:59:52,584 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,584 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,584 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:52,584 DEBUG    Drawn bounding boxes with Confidence threshold = 0.1
+2023-06-14 13:59:52,584 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,584 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,594 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:52,594 DEBUG    Drawn bounding boxes with Confidence threshold = 0.1
+2023-06-14 13:59:52,594 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,594 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,594 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:52,594 DEBUG    Drawn bounding boxes with Confidence threshold = 0.1
+2023-06-14 13:59:52,594 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,594 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,604 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:52,604 DEBUG    Drawn bounding boxes with Confidence threshold = 0.1
+2023-06-14 13:59:52,604 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,604 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,614 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:52,624 DEBUG    Drawn bounding boxes with Confidence threshold = 0.1
+2023-06-14 13:59:52,624 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,624 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,624 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:52,634 DEBUG    Drawn bounding boxes with Confidence threshold = 0.1
+2023-06-14 13:59:52,634 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,634 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,634 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:52,644 DEBUG    Drawn bounding boxes with Confidence threshold = 0.1
+2023-06-14 13:59:52,644 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,644 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,644 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:52,644 DEBUG    Drawn bounding boxes with Confidence threshold = 0.1
+2023-06-14 13:59:52,644 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,644 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,655 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:52,655 DEBUG    Drawn bounding boxes with Confidence threshold = 0.1
+2023-06-14 13:59:52,655 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,655 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,663 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:52,664 DEBUG    Drawn bounding boxes with Confidence threshold = 0.1
+2023-06-14 13:59:52,664 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,664 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,664 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:52,664 DEBUG    Drawn bounding boxes with Confidence threshold = 0.1
+2023-06-14 13:59:52,664 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,664 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,664 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:52,675 DEBUG    Drawn bounding boxes with Confidence threshold = 0.1
+2023-06-14 13:59:52,675 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,675 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,675 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:52,675 DEBUG    Drawn bounding boxes with Confidence threshold = 0.1
+2023-06-14 13:59:52,675 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,675 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,684 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:52,684 DEBUG    Drawn bounding boxes with Confidence threshold = 0.1
+2023-06-14 13:59:52,684 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,684 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,684 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:52,694 DEBUG    Drawn bounding boxes with Confidence threshold = 0.1
+2023-06-14 13:59:52,694 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,694 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,694 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:52,694 DEBUG    Drawn bounding boxes with Confidence threshold = 0.1
+2023-06-14 13:59:52,694 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,694 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,699 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:52,700 DEBUG    Drawn bounding boxes with Confidence threshold = 0.1
+2023-06-14 13:59:52,700 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,700 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,700 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:52,705 DEBUG    Drawn bounding boxes with Confidence threshold = 0.1
+2023-06-14 13:59:52,705 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,705 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,705 DEBUG    Slider value changed: 0.1
+2023-06-14 13:59:52,705 DEBUG    Drawn bounding boxes with Confidence threshold = 0.1
+2023-06-14 13:59:52,705 DEBUG    Displayed results with Confidence threshold = 0.1
+2023-06-14 13:59:52,705 DEBUG    Displayed results with Confidence threshold = 0.1
