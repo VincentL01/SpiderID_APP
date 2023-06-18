@@ -1,6 +1,7 @@
 import os
 import pandas as pd
 from pathlib import Path
+import tkinter
 from tkinter import ttk
 import shutil
 import json
@@ -96,7 +97,7 @@ class EVALUATION_V7():
         if self.processed_before(file_name):
             logger.info(f"File {file_name} has been processed before. Analyze again?")
             #display message box using tkinter, ask user if they want to overwrite
-            choice = ttk.messagebox.askyesno(title="Duplication", message="File already exists. Analyze again?")
+            choice = tkinter.messagebox.askyesno(title="Duplication", message="File already exists. Analyze again?")
             if choice == False:
                 logger.debug("User chose not to continue analysis")
                 return

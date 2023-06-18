@@ -157,12 +157,14 @@ def process_img():
             os.mkdir(temp_dir)
         else:
             for file in os.listdir(temp_dir):
-                # move all files in temp_dir to processed folder
-                try:
-                    os.rename(os.path.join(temp_dir, file), os.path.join('processed', file))
-                except FileExistsError:
-                    os.remove(os.path.join('processed', file))
-                    os.rename(os.path.join(temp_dir, file), os.path.join('processed', file))
+                os.remove(os.path.join(temp_dir, file))
+        #     for file in os.listdir(temp_dir):
+        #         # move all files in temp_dir to processed folder
+        #         try:
+        #             os.rename(os.path.join(temp_dir, file), os.path.join('processed', file))
+        #         except FileExistsError:
+        #             os.remove(os.path.join('processed', file))
+        #             os.rename(os.path.join(temp_dir, file), os.path.join('processed', file))
         for im_path in img_path:
             img_name = os.path.basename(im_path).split('.')[0]
             # replace all spaces with _
@@ -263,6 +265,14 @@ def process_img():
     # # save result
     # result_label = tk.Label(result_window, text='Saving result...')
     # result_label.pack()
+
+    for file in os.listdir(temp_dir):
+        # move all files in temp_dir to processed folder
+        try:
+            os.rename(os.path.join(temp_dir, file), os.path.join('processed', file))
+        except FileExistsError:
+            os.remove(os.path.join('processed', file))
+            os.rename(os.path.join(temp_dir, file), os.path.join('processed', file))
 
     notify_label.config(text='Image processed!', fg='green', font= notify_font)
 
