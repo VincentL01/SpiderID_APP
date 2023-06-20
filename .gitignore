@@ -16,6 +16,7 @@ temp/*
 traced_model.pt
 ori/*
 Log/*
+bin/yolov7/*
 
 
 # Distribution / packaging
