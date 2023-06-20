@@ -45,7 +45,7 @@ Our app uses a YOLO-based Convolutional Neural Network (CNN) trained on open-acc
 
 1. **DOWNLOAD** application zip file by **LEFT CLICK** on the **CODE** box in the repository above, and choose ```Download ZIP``` (~162Mb):
 
-    ![tutorial_img_01](https://github.com/ThangLC304/SpiderID_APP/blob/main/bin/support/downloadsetup00.png?raw=true)
+    ![tutorial_img_00](https://github.com/ThangLC304/SpiderID_APP/blob/main/bin/support/downloadsetup00.png?raw=true)
 
 
 2. **EXTRACT** downloaded file at a location of your choice
@@ -53,13 +53,14 @@ Our app uses a YOLO-based Convolutional Neural Network (CNN) trained on open-acc
 
 3. **RIGHT CLICK** ```setup.bat``` file and choose **Run as Administrator**
 
-![tutorial_img_02](https://github.com/ThangLC304/SpiderID_APP/blob/main/bin/support/downloadsetup01.png?raw=true)
+![tutorial_img_01](https://github.com/ThangLC304/SpiderID_APP/blob/main/bin/support/downloadsetup01.png?raw=true)
 
 The setup will run automatically, it would take several minutes.
 
 
 4. **RUN** the app by **DOUBLE CLICK** on ```run.bat``` in the installed folder.
 
+![tutorial_img_02](https://github.com/ThangLC304/SpiderID_APP/blob/main/bin/support/downloadsetup02.png?raw=true)
 
 5. If in any step of running setup.bat or run.bat there is the window of Window Protection, please use the following steps:
 
