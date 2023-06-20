@@ -148,6 +148,6 @@ echo ===========================================================================
 echo                                    INSTALLATION COMPLETED !
 echo =================================================================================================
 echo .
-echo          PLEASE RUN THE SpiderID_APP from run.bat file located in C:\SpiderID folder.
+echo          PLEASE RUN THE SpiderID_APP from run.bat file located in the same folder.
 echo .
 pause
