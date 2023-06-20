@@ -1,19 +1,19 @@
 <!-- Put the logo of I-Shou university and ChungYuan University on the same line -->
 
-# SpiderID_APP
+# __SpiderID_APP__
 
 ![alt text](https://github.com/ThangLC304/SpiderID_APP/blob/main/bin/support/universities.png?raw=true)
 
 
-# Authorship
+# __Authorship__
 
-## Author:
+## __Author:__
 
 Luong Cao Thang  
 PhD candidate, I-Shou University, Kaohsiung, Taiwan.  
 Email: [thang.luongcao@gmail.com](mailto:thang.luongcao@gmail.com)  
 
-## Correspondence:
+## __Correspondence:__
 
 Prof. Chih-Hsin Hung  
 Laboratory of Biotechnology, I-Shou University, Kaohsiung, Taiwan.  
@@ -24,24 +24,24 @@ Laboratory of Biotechnology, ChungYuan Christian University, Taoyuan, Taiwan.
 Email: [cdhsiao@cycu.edu.tw](mailto:cdhsiao@cycu.edu.tw)  
 
 
-# Spider Identification App
+# __Spider Identification App__
 Implement YOLO-based models, the state-of-the-art object detection models, as a solution for spider recognition.
 The first version have been trained on Taiwan spiders dataset.
 
 
-## Overview
+## __Overview__
 Our app uses a YOLO-based Convolutional Neural Network (CNN) trained on open-access data to accurately identify spiders native to Taiwan. With its user-friendly interface, simply upload an image of a spider and the app will return a prediction of its genus in short amount of time. 
 
 
-## Features
+## __Features__
 - Real-time spider identification
 - YOLO-based CNN trained on open-access data
 - User-friendly interface
 
 
-## INSTALLATION GUIDE
+## __INSTALLATION GUIDE__
 
-### For Non-coding Users:
+### __For Non-coding Users:__
 
 1. **DOWNLOAD** application zip file by **LEFT CLICK** on the **CODE** box in the repository above, and choose ```Download ZIP``` (~162Mb):
 
@@ -72,8 +72,9 @@ Our app uses a YOLO-based Convolutional Neural Network (CNN) trained on open-acc
 
     ![window_protect_image_01](https://github.com/ThangLC304/SpiderID_APP/blob/main/bin/support/ifwindowprotect01.png?raw=true)
 
+<br>
 
-### For Users who are familiar with coding
+### __For Users who are familiar with coding:__
 
 __1. Clone to your computer using git__
 
@@ -88,7 +89,7 @@ __3. Run app by__
     python main.py
 
 
-## APP INSTRUCTION
+## __APP INSTRUCTION__
 
 ![APP_GUI_00](https://github.com/ThangLC304/SpiderID_APP/blob/main/bin/support/app_gui00.png?raw=true)
 
@@ -132,5 +133,5 @@ __3. Run app by__
 
 
 
-## Help protect biodiversity
+## __Help protect biodiversity__
 Join the fight against biodiversity loss and enhance your spider knowledge with our Spider Identification App!
