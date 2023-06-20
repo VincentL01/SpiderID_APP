@@ -138,7 +138,6 @@ class ImageViewer(tk.Toplevel):
         self.weightDropDown.bind("<<ComboboxSelected>>", self.load_from_history)
 
 
-
     def load_from_history(self, event=None):
         # get weight_name from self.weightDropDown
         self.weight_name = self.weightDropDown.get()
@@ -151,8 +150,12 @@ class ImageViewer(tk.Toplevel):
         with open(HISTORY_PATH, 'r') as f:
             history = json.load(f)
 
-        self.images_history = history[self.weight_name]
-        logger.debug(f"Images analyzed using weight {self.weight_name}: {len(self.images_history)}")
+        try:
+            self.images_history = history[self.weight_name]
+            logger.debug(f"Images analyzed using weight {self.weight_name}: {len(self.images_history)}")
+        except:
+            logger.debug(f"No history found for weight {self.weight_name}")
+            return
         
         self.image_files = list(self.images_history.keys())
         logger.debug(f"Image files: {self.image_files}")

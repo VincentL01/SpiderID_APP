@@ -53,14 +53,14 @@ Our app uses a YOLO-based Convolutional Neural Network (CNN) trained on open-acc
 
 3. **RIGHT CLICK** ```setup.bat``` file and choose **Run as Administrator**
 
-![tutorial_img_01](https://github.com/ThangLC304/SpiderID_APP/blob/main/bin/support/downloadsetup01.png?raw=true)
+    ![tutorial_img_01](https://github.com/ThangLC304/SpiderID_APP/blob/main/bin/support/downloadsetup01.png?raw=true)
 
-The setup will run automatically, it would take several minutes.
+    The setup will run automatically, it would take several minutes.
 
 
 4. **RUN** the app by **DOUBLE CLICK** on ```run.bat``` in the installed folder.
 
-![tutorial_img_02](https://github.com/ThangLC304/SpiderID_APP/blob/main/bin/support/downloadsetup02.png?raw=true)
+    ![tutorial_img_02](https://github.com/ThangLC304/SpiderID_APP/blob/main/bin/support/downloadsetup02.png?raw=true)
 
 5. If in any step of running setup.bat or run.bat there is the window of Window Protection, please use the following steps:
 
@@ -90,7 +90,7 @@ __3. Run app by__
 
 ## APP INSTRUCTION
 
-![alt text](https://github.com/ThangLC304/SpiderID_APP/blob/main/bin/support/APP.png?raw=true)
+![APP_GUI_00](https://github.com/ThangLC304/SpiderID_APP/blob/main/bin/support/app_gui00.png?raw=true)
 
 1. **Weight selection:**
 
@@ -120,12 +120,15 @@ __3. Run app by__
 
 4. **History View:**
 
+    ![APP_GUI_01](https://github.com/ThangLC304/SpiderID_APP/blob/main/bin/support/app_gui01.png?raw=true)
+
     In this feature, Users can view the identified images.
 
-    - User can retrieve list of images were identified by respective Weight.
-    - The bounding boxes and identification results are displayed using the lowest Confidence threshold, 
-    adjusting the threshold can filter out the lower confidence results.
-    - If an image is identified multiple times, select different Instances
+    1. User can retrieve list of images were identified by selecting the ```Weight```.
+    2. **DOUBLE CLICK** on image name to load its history
+    3. The bounding boxes and identification results are displayed using the lowest Confidence threshold, 
+    adjusting the ```Threshold slider``` can filter out the lower confidence results.
+    4. If an image is identified multiple times, select different ```Instances```
 
 
 

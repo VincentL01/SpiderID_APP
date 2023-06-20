@@ -63,6 +63,10 @@ landing_photo_path = resource_path('bin/support/landing_photo.png')
 ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_WEIGHT_DIR = os.path.join(ROOT_PATH, 'bin', 'weights')
 
+PROCESSED_DIR = os.path.join(ROOT_PATH, 'processed')
+if not os.path.isdir(PROCESSED_DIR):
+    os.mkdir(PROCESSED_DIR)
+
 #[TODO] make a log file, where it stores img_name, weight used and result, so next time the same image is loaded, it will not run detection again
 
 DEFAULT_WEIGHT = True
