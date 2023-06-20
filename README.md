@@ -128,7 +128,7 @@ __3. Run app by__
     1. User can retrieve list of images were identified by selecting the ```Weight```.
     2. **DOUBLE CLICK** on image name to load its history
     3. The bounding boxes and identification results are displayed using the lowest Confidence threshold, 
-    adjusting the ```Threshold slider``` can filter out the lower confidence results.
+    adjusting the ```Confidence Threshold``` **Slider** can filter out the lower confidence results.
     4. If an image is identified multiple times, select different ```Instances```
 
 
