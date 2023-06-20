@@ -43,22 +43,33 @@ Our app uses a YOLO-based Convolutional Neural Network (CNN) trained on open-acc
 
 ### For Non-coding Users:
 
-1. Download **APP**:
-
-    **LEFT CLICK** on the **CODE** box in the repository above, and choose ```Download ZIP``` (~162Mb):
+1. **DOWNLOAD** application zip file by **LEFT CLICK** on the **CODE** box in the repository above, and choose ```Download ZIP``` (~162Mb):
 
     ![tutorial_img_01](https://github.com/ThangLC304/SpiderID_APP/blob/main/bin/support/downloadsetup00.png?raw=true)
 
-    **Extract file** at a location of your choice
 
-2. **RIGHT CLICK** ```setup.bat``` file and choose **Run as Administrator**
+2. **EXTRACT** downloaded file at a location of your choice
 
-![alt text](https://github.com/ThangLC304/SpiderID_APP/blob/main/bin/support/downloadsetup01.png?raw=true)
+
+3. **RIGHT CLICK** ```setup.bat``` file and choose **Run as Administrator**
+
+![tutorial_img_02](https://github.com/ThangLC304/SpiderID_APP/blob/main/bin/support/downloadsetup01.png?raw=true)
 
 The setup will run automatically, it would take several minutes.
 
-3. Run the app by double click on ```run.bat``` in the installed folder.
 
+4. **RUN** the app by **DOUBLE CLICK** on ```run.bat``` in the installed folder.
+
+
+5. If in any step of running setup.bat or run.bat there is the window of Window Protection, please use the following steps:
+
+    **LEFT CLICK** ```"More info"```
+
+    ![window_protect_image_00](https://github.com/ThangLC304/SpiderID_APP/blob/main/bin/support/ifwindowprotect00.png?raw=true)
+
+    **LEFT CLICK** ```Run anyway```
+
+    ![window_protect_image_01](https://github.com/ThangLC304/SpiderID_APP/blob/main/bin/support/ifwindowprotect01.png?raw=true)
 
 
 ### For Users who are familiar with coding
