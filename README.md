@@ -57,6 +57,10 @@ Our app uses a YOLO-based Convolutional Neural Network (CNN) trained on open-acc
 
     The setup will run automatically, it would take several minutes.
 
+    When finished you would see the following screen, press any key to exit setup
+
+    ![tutorial_img_02](https://github.com/ThangLC304/SpiderID_APP/blob/main/bin/support/downloadsetup03.png?raw=true)
+
 
 4. **RUN** the app by **DOUBLE CLICK** on ```run.bat``` in the installed folder.
 
