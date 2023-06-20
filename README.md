@@ -121,7 +121,7 @@ __3. Run app by__
 
 4. **History View:**
 
-    ![APP_GUI_01](https://github.com/ThangLC304/SpiderID_APP/blob/main/bin/support/app_gui01.png?raw=true)
+    ![APP_GUI_01](https://github.com/ThangLC304/SpiderID_APP/blob/main/bin/support/app_gui02.png?raw=true)
 
     In this feature, Users can view the identified images.
 
