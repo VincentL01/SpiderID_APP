@@ -28,11 +28,18 @@ class ResultFrame(ttk.Frame):
     def __init__(self, master, *args, **kwargs):
         super().__init__(master, *args, **kwargs)
 
+
     def add_label(self, text, color):
-        label = ttk.Label(self, text=text)
-        # set text color
-        label.config(foreground=color)
-        label.pack(side='top', fill='x')
+        label_frame = ttk.Frame(self)
+        label_frame.pack(side='top', fill='x')
+
+        label = ttk.Label(label_frame, text=text)
+        # label.config(foreground=color)
+        label.grid(row=0, column=0, padx=10, pady=10, sticky='nsew')
+
+        color_box = tk.Canvas(label_frame, width=20, height=20, bg=color)
+        color_box.grid(row=0, column=1, padx=30, pady=30, sticky='nsew')
+
     
     def delete_all(self):
         for widget in self.winfo_children():
@@ -51,26 +58,25 @@ class ImageViewer(tk.Toplevel):
         print("PROCESSED_DIR: ", PROCESSED_DIR)
 
         self.title("Image Viewer")
-        self.geometry("500x500")
+        self.geometry("550x500")
 
-        self.top = None  # Toplevel window
+        self.top = None
 
-        # Frame for Listbox
         self.frame = ttk.Frame(self)
         # self.frame.place(x=10, y=10, width=200, height=200)
         self.frame.grid(row=0, rowspan=2, column=0, padx=10, pady=10, sticky='nsew')
 
         # Scrollbar
-        self.scrollbar = ttk.Scrollbar(self.frame)
-        self.scrollbar.pack(side='right', fill='y')
+        self.small_scrollbar = ttk.Scrollbar(self.frame)
+        self.small_scrollbar.pack(side='right', fill='y')
 
         # Listbox
         self.listbox = tk.Listbox(self.frame, 
                                   width=50, 
-                                  yscrollcommand=self.scrollbar.set)
+                                  yscrollcommand=self.small_scrollbar.set)
         self.listbox.pack(side='left', fill='both')
         self.listbox.bind("<Double-Button-1>", self.display_info)
-        self.scrollbar.config(command=self.listbox.yview)
+        self.small_scrollbar.config(command=self.listbox.yview)
 
         # Slider
         self.slider_frame = ttk.Frame(self)
@@ -128,9 +134,12 @@ class ImageViewer(tk.Toplevel):
         # INIT LOAD
         self.load_from_history()
 
+        # Bind weightDropDown to load_from_history
+        self.weightDropDown.bind("<<ComboboxSelected>>", self.load_from_history)
 
 
-    def load_from_history(self):
+
+    def load_from_history(self, event=None):
         # get weight_name from self.weightDropDown
         self.weight_name = self.weightDropDown.get()
         logger.debug(f"Loading history for weight: {self.weight_name}")
@@ -178,7 +187,7 @@ class ImageViewer(tk.Toplevel):
     def spawn_top_widget(self, title='Image Viewer'):
         self.top = Toplevel(self)
         self.top.title(title)
-        self.top.geometry("+%d+%d" % (self.winfo_x() + 500, self.winfo_y()))
+        self.top.geometry("+%d+%d" % (self.winfo_x() + 550, self.winfo_y()))
         self.panel = ttk.Label(self.top)
         self.panel.pack()
 
