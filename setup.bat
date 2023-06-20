@@ -7,6 +7,9 @@ set "venv_name=spiderid_env"
 REM set APP_DIR to current directory
 set "APP_DIR=%~dp0"
 
+set "yolo_repo=https://github.com/WongKinYiu/yolov7.git"
+set "target_dir=%APP_DIR%\bin\yolov7"
+
 if "%OS%"=="Windows_NT" (
   set "miniconda_url=https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe"
   set "miniconda_installer=%~dp0Miniconda3-latest-Windows-x86_64.exe"
@@ -19,6 +22,8 @@ if "%OS%"=="Windows_NT" (
 REM if not exists anaconda or miniconda, install
 if "%OS%"=="Windows_NT" (
   set "bat_found=0"
+
+  echo "OS is Windows"
 
   for %%p in (
     "C:\ProgramData\miniconda3"
@@ -46,7 +51,12 @@ if "%OS%"=="Windows_NT" (
   ) else (
       echo Anaconda or Miniconda already installed
   )
-) else (
+) 
+
+if NOT "%OS%"=="Windows_NT" (
+
+  echo "OS is not Windows"
+
   if not exist "$HOME/miniconda3" (
     if not exist "$HOME/anaconda3" (
       echo Downloading Miniconda...
@@ -74,40 +84,53 @@ if exist "%conda_path%\envs\%venv_name%" (
     echo Creating virtual environment with Python %python_version%...
     if "%OS%"=="Windows_NT" (
         call %conda_path%\Scripts\conda create -n %venv_name% python==%python_version% -y
-        set "activate_cmd=call %conda_path%\Scripts\activate.bat %venv_name%"
     ) else (
         $conda_path/bin/conda create -n %venv_name% python=%python_version% -y
-        set "activate_cmd=source $conda_path/bin/activate %venv_name%"
     )
 )
 
+if "%OS%"=="Windows_NT" (
+        set "activate_cmd=call %conda_path%\Scripts\activate.bat %venv_name%"
+        set "install_cmd=call %conda_path%\envs\%venv_name%\Scripts\pip install -r requirements.txt"
+        set "get_git=call %conda_path%\Scripts\conda install -c anaconda git -y"
+        set "clone_cmd=call %conda_path%\Library\bin\git.exe clone %yolo_repo% %target_dir%"
+) else (
+        set "activate_cmd=source $conda_path/bin/activate %venv_name%"
+        set "install_cmd=call $conda_path/bin/pip install -r requirements.txt"
+        set "get_git=call $conda_path/bin/conda install -c anaconda git -y"
+        set "clone_cmd=call $conda_path/bin/git clone %yolo_repo% %target_dir%"
+)
 
-echo Activating virtual environment... at %conda_path%\envs\%venv_name%
-%activate_cmd%
 
-echo Installing TAN requirements
-cd %APP_DIR%
-pip install -r requirements.txt
+echo "Current conda path is : %conda_path%"
 
 REM Check if Git is installed
 where git >nul 2>nul
 if errorlevel 1 (
   echo Downloading and installing Git...
-  call conda install -c anaconda git -y
+  %get_git%
 ) else (
   echo Git is already installed. Skipping installation.
 )
 
+echo Activating virtual environment... at %conda_path%\envs\%venv_name%
+%activate_cmd%
+
+echo Go into directory of APP
+cd %APP_DIR%
+
+echo Installing TAN requirements
+%install_cmd%
+
+
 echo Virtual environment setup complete. You can now use Git and other tools within this environment.
 
 
-set "yolo_repo=https://github.com/WongKinYiu/yolov7.git"
-set "target_dir=%APP_DIR%\bin\yolov7"
 
 REM Task 3
 if exist "%target_dir%" (
-  set /p "user_input=The folder %APP_DIR%\bin\yolov7 already exists. Do you want to overwrite it? (Y/N): "
-  if /i "%user_input%"=="Y" (
+  set /p "user_input=The folder %APP_DIR%\bin\yolov7 already exists. Do you want to overwrite it? (y/n): "
+  if /i "%user_input%"=="y" (
     echo Removing existing YOLOv7 folder...
     rmdir /s /q "%target_dir%"
   ) else (
@@ -116,11 +139,11 @@ if exist "%target_dir%" (
 )
 
 echo Cloning YOLOv7 repository...
-git clone %yolo_repo% "%target_dir%"
+%clone_cmd%
 
 :InstallYOLOv7
 echo Installing YOLOv7 requirements...
-pip install -r requirements.txt"
+%install_cmd%
 
 echo Copying detect.py to %target_dir% folder...
 copy detect.py "%target_dir%" /y

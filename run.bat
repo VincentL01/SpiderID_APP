@@ -1,7 +1,7 @@
 @echo off
 setlocal enabledelayedexpansion
 
-set "venv_name=spiderid_env"
+set "venv_name=test"
 
 REM set APP_DIR to directory of this file
 set "APP_DIR=%~dp0"
@@ -43,8 +43,6 @@ if "%OS%"=="Windows_NT" (
   )
 
   set "activate_cmd=!bat_path! !env_path!"
-
-  echo %activate_cmd%
 
 ) else (
   set "conda_path=$HOME/miniconda3"
