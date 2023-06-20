@@ -337,7 +337,7 @@ def exit_program():
 ### GUI ###
 
 root = tk.Tk()
-root.title('SpiderID APP')
+root.title('SpiderID APP -- Version 1.0.2')
 
 canvas = tk.Canvas(root, width=700, height=700, bg='lightsteelblue2', relief='raised')
 canvas.pack()
