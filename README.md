@@ -43,31 +43,23 @@ Our app uses a YOLO-based Convolutional Neural Network (CNN) trained on open-acc
 
 ### For Non-coding Users:
 
-1. Download **ONLY** ```setup.bat``` file first:
+1. Download **APP**:
 
-    **RIGHT CLICK** on the ```setup.bat``` file in the repository above, and choose ```Open link in new tab```:
+    **LEFT CLICK** on the **CODE** box in the repository above, and choose ```Download ZIP``` (~162Mb):
 
-    ![alt text](https://github.com/ThangLC304/SpiderID_APP/blob/main/bin/support/downloadsetup00.png?raw=true)
+    ![tutorial_img_01](https://github.com/ThangLC304/SpiderID_APP/blob/main/bin/support/downloadsetup00.png?raw=true)
 
-    **LEFT CLICK** on the ```Raw``` button
+    **Extract file** at a location of your choice
 
-    ![alt text](https://github.com/ThangLC304/SpiderID_APP/blob/main/bin/support/downloadsetup01.png?raw=true)
+2. **RIGHT CLICK** ```setup.bat``` file and choose **Run as Administrator**
 
-    **RIGHT CLICK** anywhere on the page, choose save as
-
-    ![alt text](https://github.com/ThangLC304/SpiderID_APP/blob/main/bin/support/downloadsetup02.png?raw=true)
-
-    **CHANGE** file type to **All Files**, make sure the File name is ```setup.bat```
-
-    ![alt text](https://github.com/ThangLC304/SpiderID_APP/blob/main/bin/support/downloadsetup03.png?raw=true)
-
-2. **RIGHT CLICK** and **Run as Administrator**, it will ask you if you want to change installation path from the default one, default installation path is ```C:\SpiderID```
-
-![alt text](https://github.com/ThangLC304/SpiderID_APP/blob/main/bin/support/Installation.png?raw=true)
+![alt text](https://github.com/ThangLC304/SpiderID_APP/blob/main/bin/support/downloadsetup01.png?raw=true)
 
 The setup will run automatically, it would take several minutes.
 
-3. Run the app by double click on run.bat in the installed folder.
+3. Run the app by double click on ```run.bat``` in the installed folder.
+
+
 
 ### For Users who are familiar with coding
 
@@ -113,6 +105,16 @@ __3. Run app by__
 
     Accepted video formats are:
     ```['mov', 'avi', 'mp4', 'mpg', 'mpeg', 'm4v', 'wmv', 'mkv']```
+
+4. **History View:**
+
+    In this feature, Users can view the identified images.
+
+    - User can retrieve list of images were identified by respective Weight.
+    - The bounding boxes and identification results are displayed using the lowest Confidence threshold, 
+    adjusting the threshold can filter out the lower confidence results.
+    - If an image is identified multiple times, select different Instances
+
 
 
 ## Help protect biodiversity

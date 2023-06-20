@@ -8,7 +8,8 @@ REM set APP_DIR to current directory
 set "APP_DIR=%~dp0"
 
 set "yolo_repo=https://github.com/WongKinYiu/yolov7.git"
-set "target_dir=%APP_DIR%\bin\yolov7"
+set "yolo_dir=%APP_DIR%\bin\yolov7"
+set "yolo_check_dir=%APP_DIR%\bin\yolov7\models"
 
 if "%OS%"=="Windows_NT" (
   set "miniconda_url=https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe"
@@ -93,12 +94,12 @@ if "%OS%"=="Windows_NT" (
         set "activate_cmd=call %conda_path%\Scripts\activate.bat %venv_name%"
         set "install_cmd=call %conda_path%\envs\%venv_name%\Scripts\pip install -r requirements.txt"
         set "get_git=call %conda_path%\Scripts\conda install -c anaconda git -y"
-        set "clone_cmd=call %conda_path%\Library\bin\git.exe clone %yolo_repo% %target_dir%"
+        set "clone_cmd=call %conda_path%\Library\bin\git.exe clone %yolo_repo% %yolo_dir%"
 ) else (
         set "activate_cmd=source $conda_path/bin/activate %venv_name%"
         set "install_cmd=call $conda_path/bin/pip install -r requirements.txt"
         set "get_git=call $conda_path/bin/conda install -c anaconda git -y"
-        set "clone_cmd=call $conda_path/bin/git clone %yolo_repo% %target_dir%"
+        set "clone_cmd=call $conda_path/bin/git clone %yolo_repo% %yolo_dir%"
 )
 
 
@@ -122,36 +123,31 @@ cd %APP_DIR%
 echo Installing TAN requirements
 %install_cmd%
 
-
+echo =================================================================================================
 echo Virtual environment setup complete. You can now use Git and other tools within this environment.
-
+echo =================================================================================================
 
 
 REM Task 3
-if exist "%target_dir%" (
-  set /p "user_input=The folder %APP_DIR%\bin\yolov7 already exists. Do you want to overwrite it? (y/n): "
-  if /i "%user_input%"=="y" (
-    echo Removing existing YOLOv7 folder...
-    rmdir /s /q "%target_dir%"
-  ) else (
-    goto InstallYOLOv7
-  )
+echo Checking if YOLOv7 has been cloned...
+if exist "%yolo_check_dir%" (
+  goto SkipCloning
+) else (
+  echo YOLOv7 has not been cloned yet.
+  rmdir /s /q "%yolo_dir%"
 )
 
 echo Cloning YOLOv7 repository...
 %clone_cmd%
 
-:InstallYOLOv7
-echo Installing YOLOv7 requirements...
-%install_cmd%
+:SkipCloning
+echo Copying detect.py to %yolo_dir% folder...
+copy detect.py "%yolo_dir%" /y
 
-echo Copying detect.py to %target_dir% folder...
-copy detect.py "%target_dir%" /y
-
-echo =============================
-echo    INSTALLATION COMPLETED
-echo =============================
+echo =================================================================================================
+echo                                    INSTALLATION COMPLETED !
+echo =================================================================================================
 echo .
-echo PLEASE RUN THE SpiderID_APP from run.bat file located in C:\SpiderID folder.
+echo          PLEASE RUN THE SpiderID_APP from run.bat file located in C:\SpiderID folder.
 echo .
 pause
