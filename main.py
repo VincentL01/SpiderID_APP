@@ -4,7 +4,7 @@ import os
 import tkinter as tk
 from tkinter import filedialog
 from tkinter import ttk
-from PIL import ImageTk, Image, ImageResampling
+from PIL import ImageTk, Image
 import time
 import sys
 from googletrans import Translator
@@ -361,9 +361,9 @@ try:
 except:
     logger.warning("Image ANTIALIAS failed, using LANCZOS instead")
     if img.width > img.height:
-        img = img.resize((612, int(img.height * 612 / img.width)), ImageResampling.LANCZOS)
+        img = img.resize((612, int(img.height * 612 / img.width)), Image.Resampling.LANCZOS)
     else:
-        img = img.resize((int(img.width * 612 / img.height), 612), ImageResampling.LANCZOS)
+        img = img.resize((int(img.width * 612 / img.height), 612), Image.Resampling.LANCZOS)
 img = ImageTk.PhotoImage(img)
 img_label.config(image=img)
 # give it a thin black border
