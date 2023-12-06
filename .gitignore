@@ -18,6 +18,7 @@ ori/*
 Log/*
 bin/yolov7/*
 local/*
+bin/history.json
 
 # Distribution / packaging
 .Python

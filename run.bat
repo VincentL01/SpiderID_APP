@@ -1,7 +1,7 @@
 @echo off
 setlocal enabledelayedexpansion
 
-set "venv_name=test"
+set "venv_name=spiderid_env"
 
 REM set APP_DIR to directory of this file
 set "APP_DIR=%~dp0"

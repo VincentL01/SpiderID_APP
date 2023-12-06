@@ -24,8 +24,6 @@ REM if not exists anaconda or miniconda, install
 if "%OS%"=="Windows_NT" (
   set "bat_found=0"
 
-  echo "OS is Windows"
-
   for %%p in (
     "C:\ProgramData\miniconda3"
     "C:\ProgramData\Anaconda3"
@@ -38,7 +36,7 @@ if "%OS%"=="Windows_NT" (
           set "conda_path=%%~p"
           set "bat_found=1"
       )
-  )
+    )
 
   if !bat_found!==0 (
       echo Downloading Miniconda...
@@ -48,16 +46,10 @@ if "%OS%"=="Windows_NT" (
       start /wait "" "%miniconda_installer%" /InstallationType=JustMe /AddToPath=0 /RegisterPython=0 /S /D=%UserProfile%\miniconda3
 
       set "conda_path=%UserProfile%\miniconda3"
-    )
   ) else (
-      echo Anaconda or Miniconda already installed
-  )
-) 
-
-if NOT "%OS%"=="Windows_NT" (
-
-  echo "OS is not Windows"
-
+    echo Anaconda or Miniconda already installed
+    )
+) else (
   if not exist "$HOME/miniconda3" (
     if not exist "$HOME/anaconda3" (
       echo Downloading Miniconda...
