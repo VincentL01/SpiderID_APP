@@ -78,6 +78,9 @@ echo Copying setup.bat ...
 xcopy /y /q /e "%my_dir%\setup.bat" "%cd%\setup.bat"
 echo Copying run.bat ...
 xcopy /y /q /e "%my_dir%\run.bat" "%cd%\run.bat"
+echo Copying detect.py ...
+xcopy /y /q /e "%my_dir%\detect.py" "%cd%\detect.py"
+
 
 
 @REM Remove temp_update folder
