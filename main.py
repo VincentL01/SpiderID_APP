@@ -237,11 +237,12 @@ def process_img():
         bb_img = Image.open(img_withbb_path)
         bb_img = bb_img.convert('RGB')
         # if the image is too big, resize it, highest dimension = 800, keep aspect ratio
-        if bb_img.width > 800 or bb_img.height > 800:
-            if bb_img.width > bb_img.height:
-                bb_img = bb_img.resize((800, int(bb_img.height*800/bb_img.width)), Image.ANTIALIAS)
-            else:
-                bb_img = bb_img.resize((int(bb_img.width*800/bb_img.height), 800), Image.ANTIALIAS)
+        bb_img = image_resizer(bb_img, 800)
+        # if bb_img.width > 800 or bb_img.height > 800:
+        #     if bb_img.width > bb_img.height:
+        #         bb_img = bb_img.resize((800, int(bb_img.height*800/bb_img.width)), Image.ANTIALIAS)
+        #     else:
+        #         bb_img = bb_img.resize((int(bb_img.width*800/bb_img.height), 800), Image.ANTIALIAS)
         bb_img = ImageTk.PhotoImage(bb_img)
         bb_window.geometry(f'{bb_img.width()+50}x{bb_img.height()+50}')
         bb_label.config(image=bb_img)
