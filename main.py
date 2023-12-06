@@ -118,9 +118,9 @@ def choose_weight():
 def image_resizer(input_img, size_limit):
     if input_img.width > size_limit or input_img.height > size_limit:
         if input_img.width > input_img.height:
-            input_img = input_img.resize((size_limit, int(input_img.height*size_limit/input_img.width)), Image.Resampling.ANTIALIAS)
+            input_img = input_img.resize((size_limit, int(input_img.height*size_limit/input_img.width)), Image.Resampling.LANCZOS)
         else:
-            input_img = input_img.resize((int(input_img.width*size_limit/input_img.height), size_limit), Image.Resampling.ANTIALIAS)
+            input_img = input_img.resize((int(input_img.width*size_limit/input_img.height), size_limit), Image.Resampling.LANCZOS)
     return input_img
     
 
