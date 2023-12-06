@@ -68,7 +68,7 @@ Our app uses a YOLO-based Convolutional Neural Network (CNN) trained on open-acc
 
 5. If in any step of running setup.bat or run.bat there is the window of Window Protection, please use the following steps:
 
-    **LEFT CLICK** ```"More info"```
+    **LEFT CLICK** ```More info```
 
     ![window_protect_image_00](https://github.com/ThangLC304/SpiderID_APP/blob/main/bin/support/ifwindowprotect00.png?raw=true)
 

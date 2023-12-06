@@ -4,7 +4,7 @@ import os
 import tkinter as tk
 from tkinter import filedialog
 from tkinter import ttk
-from PIL import ImageTk, Image
+from PIL import ImageTk, Image, ImageResampling
 import time
 import sys
 from googletrans import Translator
@@ -353,10 +353,17 @@ img_label = tk.Label(canvas)
 # load initial photo
 img = Image.open(landing_photo_path)
 # resize image to make large dimension is 612, small dimension is scaled accordingly
-if img.width > img.height:
-    img = img.resize((612, int(img.height*612/img.width)), Image.ANTIALIAS)
-else:
-    img = img.resize((int(img.width*612/img.height), 612), Image.ANTIALIAS)
+try:
+    if img.width > img.height:
+        img = img.resize((612, int(img.height*612/img.width)), Image.ANTIALIAS)
+    else:
+        img = img.resize((int(img.width*612/img.height), 612), Image.ANTIALIAS)
+except:
+    logger.warning("Image ANTIALIAS failed, using LANCZOS instead")
+    if img.width > img.height:
+        img = img.resize((612, int(img.height * 612 / img.width)), ImageResampling.LANCZOS)
+    else:
+        img = img.resize((int(img.width * 612 / img.height), 612), ImageResampling.LANCZOS)
 img = ImageTk.PhotoImage(img)
 img_label.config(image=img)
 # give it a thin black border
