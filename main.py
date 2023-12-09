@@ -160,6 +160,7 @@ def process_img():
         img = ImageTk.PhotoImage(Image.open(img_path))
         IMAGE_LOADED = True
         button_process.config(state='normal')
+        temp_dir = None
     else:
         print('Loaded multiple images..')
         SINGLE_IMG = False
@@ -265,6 +266,10 @@ def process_img():
         result_window.geometry(f'400x{bb_img.height()+50}')
         result_label.config(text=display_text)
 
+        # lift the result_window to the top
+        result_window.lift()
+        bb_window.lift()
+
     else:
         logger.info("Multiple images detected")
         csv_out, _ = runner.get_info_multiple()
@@ -273,20 +278,23 @@ def process_img():
         result_label.config(text=display_text)
         logger.info("Result saved to {}".format(csv_out))
 
+        # lift the result_window to the top
+        result_window.lift()
+
     # except Exception as e:
     #     result_label.config(text='Error occured: {}'.format(e))
 
     # # save result
     # result_label = tk.Label(result_window, text='Saving result...')
     # result_label.pack()
-
-    for file in os.listdir(temp_dir):
-        # move all files in temp_dir to processed folder
-        try:
-            os.rename(os.path.join(temp_dir, file), os.path.join('processed', file))
-        except FileExistsError:
-            os.remove(os.path.join('processed', file))
-            os.rename(os.path.join(temp_dir, file), os.path.join('processed', file))
+    if temp_dir != None:
+        for file in os.listdir(temp_dir):
+            # move all files in temp_dir to processed folder
+            try:
+                os.rename(os.path.join(temp_dir, file), os.path.join('processed', file))
+            except FileExistsError:
+                os.remove(os.path.join('processed', file))
+                os.rename(os.path.join(temp_dir, file), os.path.join('processed', file))
 
     notify_label.config(text='Image processed!', fg='green', font= notify_font)
 

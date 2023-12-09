@@ -24,7 +24,7 @@ def resize_to_fit(img, max_width, max_height):
     new_width = int(img_width * ratio)
     new_height = int(img_height * ratio)
 
-    img = img.resize((new_width, new_height), Image.ANTIALIAS)
+    img = img.resize((new_width, new_height), Image.Resampling.LANCZOS)
 
     return img, new_width, new_height
 
