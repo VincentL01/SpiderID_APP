@@ -116,9 +116,9 @@ class EVALUATION_V7():
                 #             continue
 
         default_args = [
-            f"{DETECT_PATH_V7}",
-            f"--source {self.media_path}",
-            f"--weights {self.weight_path}",
+            f'"{DETECT_PATH_V7}"',
+            f'--source "{self.media_path}"',
+            f'--weights "{self.weight_path}"',
             "--conf-thres 0.03",
             "--iou-thres 0.5",
             "--save-txt",
