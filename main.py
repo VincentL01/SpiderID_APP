@@ -4,7 +4,7 @@ import os
 import tkinter as tk
 from tkinter import filedialog
 from tkinter import ttk
-from PIL import ImageTk, Image, ImageResampling
+from PIL import ImageTk, Image
 import time
 import sys
 from googletrans import Translator
@@ -114,6 +114,15 @@ def choose_weight():
     else:
         logger.info("No weight file selected, using default weight")
         pass
+
+def image_resizer(input_img, size_limit):
+    if input_img.width > size_limit or input_img.height > size_limit:
+        if input_img.width > input_img.height:
+            input_img = input_img.resize((size_limit, int(input_img.height*size_limit/input_img.width)), Image.Resampling.LANCZOS)
+        else:
+            input_img = input_img.resize((int(input_img.width*size_limit/input_img.height), size_limit), Image.Resampling.LANCZOS)
+    return input_img
+    
 
 def process_img():
     SINGLE_IMG = True
@@ -228,11 +237,12 @@ def process_img():
         bb_img = Image.open(img_withbb_path)
         bb_img = bb_img.convert('RGB')
         # if the image is too big, resize it, highest dimension = 800, keep aspect ratio
-        if bb_img.width > 800 or bb_img.height > 800:
-            if bb_img.width > bb_img.height:
-                bb_img = bb_img.resize((800, int(bb_img.height*800/bb_img.width)), Image.ANTIALIAS)
-            else:
-                bb_img = bb_img.resize((int(bb_img.width*800/bb_img.height), 800), Image.ANTIALIAS)
+        bb_img = image_resizer(bb_img, 800)
+        # if bb_img.width > 800 or bb_img.height > 800:
+        #     if bb_img.width > bb_img.height:
+        #         bb_img = bb_img.resize((800, int(bb_img.height*800/bb_img.width)), Image.ANTIALIAS)
+        #     else:
+        #         bb_img = bb_img.resize((int(bb_img.width*800/bb_img.height), 800), Image.ANTIALIAS)
         bb_img = ImageTk.PhotoImage(bb_img)
         bb_window.geometry(f'{bb_img.width()+50}x{bb_img.height()+50}')
         bb_label.config(image=bb_img)
@@ -353,17 +363,18 @@ img_label = tk.Label(canvas)
 # load initial photo
 img = Image.open(landing_photo_path)
 # resize image to make large dimension is 612, small dimension is scaled accordingly
-try:
-    if img.width > img.height:
-        img = img.resize((612, int(img.height*612/img.width)), Image.ANTIALIAS)
-    else:
-        img = img.resize((int(img.width*612/img.height), 612), Image.ANTIALIAS)
-except:
-    logger.warning("Image ANTIALIAS failed, using LANCZOS instead")
-    if img.width > img.height:
-        img = img.resize((612, int(img.height * 612 / img.width)), ImageResampling.LANCZOS)
-    else:
-        img = img.resize((int(img.width * 612 / img.height), 612), ImageResampling.LANCZOS)
+img = image_resizer(img, 612)
+# try:
+#     if img.width > img.height:
+#         img = img.resize((612, int(img.height*612/img.width)), Image.ANTIALIAS)
+#     else:
+#         img = img.resize((int(img.width*612/img.height), 612), Image.ANTIALIAS)
+# except:
+#     logger.warning("Image ANTIALIAS failed, using LANCZOS instead")
+#     if img.width > img.height:
+#         img = img.resize((612, int(img.height * 612 / img.width)), Image.Resampling.LANCZOS)
+#     else:
+#         img = img.resize((int(img.width * 612 / img.height), 612), Image.Resampling.LANCZOS)
 img = ImageTk.PhotoImage(img)
 img_label.config(image=img)
 # give it a thin black border
