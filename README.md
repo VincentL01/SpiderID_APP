@@ -41,6 +41,10 @@ Our app uses a YOLO-based Convolutional Neural Network (CNN) trained on open-acc
 
 ## __INSTALLATION GUIDE__
 
+
+### __VIDEO TUTORIAL__
+Tutorial video on our <a href = "https://www.youtube.com/watch?v=qNqk_iO_xTA&t=1">youtube channel</a>.
+
 ### __For Non-coding Users:__
 
 1. **DOWNLOAD** application zip file by **LEFT CLICK** on the **CODE** box in the repository above, and choose ```Download ZIP``` (~162Mb):
@@ -135,6 +139,8 @@ __3. Run app by__
     adjusting the ```Confidence Threshold``` **Slider** can filter out the lower confidence results.
     4. If an image is identified multiple times, select different ```Instances```
 
+<br>
+..OR..
 
 
 ## __Help protect biodiversity__
